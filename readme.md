@@ -12,3 +12,8 @@ vor dem ersten push auszuführen:
 
 wenn euer Klon nicht mehr aktuell ist:
     git pull origin master
+
+zum Hochladen:
+	git add .
+	git commit -m "eine Nachricht"
+	git push origin master
