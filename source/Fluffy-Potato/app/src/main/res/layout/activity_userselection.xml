@@ -10,23 +10,30 @@
     android:orientation="vertical"
     tools:context="com.example.agiprojekt.Main">
 
-    <TextView
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Herzlich willkommen"
-        android:textSize="40sp"
-        android:id="@+id/main_textView_welcome"
-        android:gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_above="@+id/main_btn_start"/>
+        android:text="Neuen User anlegen"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:id="@+id/usrsel_btn_create"
+        android:layout_below="@+id/usrsel_spinner_user" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:text="Weiter"
         android:textAllCaps="false"
         android:textSize="25sp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/main_btn_start"/>
+        android:layout_below="@+id/usrsel_btn_create"
+        android:id="@+id/usrsel_btn_select"/>
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usrsel_spinner_user"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
 
 </RelativeLayout>

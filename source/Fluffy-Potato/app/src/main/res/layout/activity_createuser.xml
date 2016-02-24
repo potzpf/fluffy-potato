@@ -10,23 +10,28 @@
     android:orientation="vertical"
     tools:context="com.example.agiprojekt.Main">
 
+
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Herzlich willkommen"
-        android:textSize="40sp"
-        android:id="@+id/main_textView_welcome"
-        android:gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_above="@+id/main_btn_start"/>
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Usernamen eingeben:"
+        android:id="@+id/crtusr_textView_username" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/crtusr_editText_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:text="Anlegen"
         android:textAllCaps="false"
         android:textSize="25sp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/main_btn_start"/>
-
+        android:layout_below="@+id/crtusr_editText_username"
+        android:id="@+id/crtusr_btn_create"/>
 </RelativeLayout>

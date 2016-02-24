@@ -10,23 +10,31 @@
     android:orientation="vertical"
     tools:context="com.example.agiprojekt.Main">
 
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Herzlich willkommen"
-        android:textSize="40sp"
-        android:id="@+id/main_textView_welcome"
+        android:layout_height="50sp"
+        android:text="Lösung"
+        android:textSize="20sp"
+        android:id="@+id/resc_textView_answer"
         android:gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_above="@+id/main_btn_start"/>
+        android:textAlignment="center" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:text="Das wusste ich"
         android:textAllCaps="false"
         android:textSize="25sp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/main_btn_start"/>
+        android:id="@+id/resc_btn_true"
+        android:layout_marginTop="50sp" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Das muss ich noch üben"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:layout_below="@+id/resc_btn_true"
+        android:id="@+id/resc_btn_false"/>
 </RelativeLayout>

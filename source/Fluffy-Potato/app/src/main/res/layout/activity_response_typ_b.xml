@@ -12,21 +12,32 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Herzlich willkommen"
-        android:textSize="40sp"
-        android:id="@+id/main_textView_welcome"
+        android:layout_height="110sp"
+        android:text="Richtig wäre:"
+        android:textSize="30sp"
         android:gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_above="@+id/main_btn_start"/>
+        android:id="@+id/resb_textView_wrong"
+        android:textAlignment="center"
+        android:background="#fa7474" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:text="Antwort"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/resb_textView_answer"
+        android:textAlignment="center"
+        android:layout_below="@id/resb_textView_wrong"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:text="Weiter"
         android:textAllCaps="false"
+        android:id="@+id/resb_btn_next"
         android:textSize="25sp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/main_btn_start"/>
+        android:layout_below="@id/resb_textView_answer"
+        />
 
 </RelativeLayout>

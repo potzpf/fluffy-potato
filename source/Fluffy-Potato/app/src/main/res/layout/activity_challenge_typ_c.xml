@@ -10,23 +10,20 @@
     android:orientation="vertical"
     tools:context="com.example.agiprojekt.Main">
 
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Herzlich willkommen"
-        android:textSize="40sp"
-        android:id="@+id/main_textView_welcome"
-        android:gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_above="@+id/main_btn_start"/>
+        android:layout_height="50sp"
+        android:textSize="20sp"
+        android:text="Fragestellung"
+        android:id="@+id/challc_textView_question" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:text="Lösung anzeigen"
         android:textAllCaps="false"
         android:textSize="25sp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/main_btn_start"/>
-
+        android:layout_below="@+id/challc_textView_question"
+        android:id="@+id/challc_btn_show"/>
 </RelativeLayout>
