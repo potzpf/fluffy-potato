@@ -4,16 +4,16 @@
 
 ## git
 
-https://help.github.com/articles/fetching-a-remote/
-https://help.github.com/articles/pushing-to-a-remote/
+https://help.github.com/articles/fetching-a-remote/  
+https://help.github.com/articles/pushing-to-a-remote/   
 
-vor dem ersten push auszuführen:
-    git remote add origin https://github.com/potzpf/fluffy-potato.git
+vor dem ersten push auszuführen:   
+    git remote add origin https://github.com/potzpf/fluffy-potato.git   
 
-wenn euer Klon nicht mehr aktuell ist:
-    git pull origin master
+wenn euer Klon nicht mehr aktuell ist:   
+    git pull origin master   
 
-zum Hochladen:
-	git add .
-	git commit -m "eine Nachricht"
-	git push origin master
+zum Hochladen:   
+	git add .   
+	git commit -m "eine Nachricht"   
+	git push origin master   
