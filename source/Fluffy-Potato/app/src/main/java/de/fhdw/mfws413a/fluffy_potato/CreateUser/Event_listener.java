@@ -15,14 +15,14 @@ public class Event_listener implements View.OnClickListener{
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
 
-        pGui.getBtn_Start().setOnClickListener(this);
+        pGui.getBtn_CreateUser().setOnClickListener(this);
         mLogic = pLogic;
 
     }
 
     @Override public void onClick(View v) {
 
-        mLogic.OnButtonStartClick();
+        mLogic.OnButtonCreateUserClick();
 
     }
 }

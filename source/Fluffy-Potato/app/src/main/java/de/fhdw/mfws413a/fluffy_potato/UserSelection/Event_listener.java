@@ -15,15 +15,23 @@ public class Event_listener implements View.OnClickListener{
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
 
-        pGui.getBtn_Start().setOnClickListener(this);
+        pGui.getBtn_CreateNewUser().setOnClickListener(this);
+        pGui.getBtn_GoToFileSelection().setOnClickListener(this);
         mLogic = pLogic;
 
     }
 
     @Override public void onClick(View v) {
-
-        mLogic.OnButtonStartClick();
-
+        switch(v.getId() {
+            case R.id.usrsel_btn_select:
+                mLogic.OnButtonCreateNewUserClick();
+                break;
+            case R.id.usrsel_spinner_user:
+                mLogic.OnButtonGoToFileSelection();
+                break;
+        }
     }
+    // on items select list, kein clicked event
+
 }
 

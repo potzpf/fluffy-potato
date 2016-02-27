@@ -1,13 +1,12 @@
 package de.fhdw.mfws413a.fluffy_potato.Welcome;
 
 import android.view.View;
-import de.fhdw.mfws413a.fluffy_potato.R;
 
 public class Event_listener implements View.OnClickListener{
 
     //Vars
 
-    private AppLogic mLogic;
+    private AppLogic mLogic;// variable für alle klassen, da hier die funktionen deklariert sind, die wirklich aufgerufen werden
 
     //Methods
 
@@ -20,7 +19,7 @@ public class Event_listener implements View.OnClickListener{
 
     @Override public void onClick(View v) {
 
-        mLogic.OnButtonStartClick();
+        mLogic.OnButtonStartClick(); //
 
     }
 }

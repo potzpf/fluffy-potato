@@ -2,7 +2,6 @@ package de.fhdw.mfws413a.fluffy_potato.Welcome;
 
 import android.app.Activity;
 import android.widget.Button;
-
 import de.fhdw.mfws413a.fluffy_potato.R;
 
 public class Gui {

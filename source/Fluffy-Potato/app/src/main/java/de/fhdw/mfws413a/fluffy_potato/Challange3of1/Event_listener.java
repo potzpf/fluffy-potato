@@ -15,15 +15,22 @@ public class Event_listener implements View.OnClickListener{
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
 
-        pGui.getBtn_Start().setOnClickListener(this);
+        pGui.getBtn_answera().setOnClickListener(this);
+        pGui.getBtn_answerb().setOnClickListener(this);
+        pGui.getBtn_answerc().setOnClickListener(this);
         mLogic = pLogic;
 
     }
 
     @Override public void onClick(View v) {
-
-        mLogic.OnButtonStartClick();
-
+        switch(v.getId(){
+            case R.id.challa_btn_answer_a: mLogic.OnButtonStartClick();
+                break;
+            case R.id.challa_btn_answer_b: mLogic.OnButtonStartClick();
+                break;
+            case R.id.challa_btn_answer_c: mLogic.OnButtonStartClick();
+                break;
+        }
     }
 }
 
