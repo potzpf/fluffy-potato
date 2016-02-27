@@ -1,3 +1,5 @@
+package de.fhdw.mfws413a.fluffy_potato;
+
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.transform.*;
@@ -14,23 +16,23 @@ import java.io.File;
 import java.util.ArrayList;
 
 
-public class Main {
-	public static void main(String[] args) throws Exception {
-	
-		Storage fio = new Storage();
-		ArrayList<String> users = fio.users.getNameList();
-		
-		for(int i = 0; i < users.size(); i++) {
-			System.out.println("user: " + users.get(i));
-		}
-		
-		fio.users.add("potzpf");
-		fio.users.delete("potzpf");
-		fio.save(fio.users);
-	}
-}
+//public class Main {
+//	public static void main(String[] args) throws Exception {
+//
+//		Storage fio = new Storage();
+//		ArrayList<String> users = fio.users.getNameList();
+//
+//		for(int i = 0; i < users.size(); i++) {
+//			System.out.println("user: " + users.get(i));
+//		}
+//
+//		fio.users.add("potzpf");
+//		fio.users.delete("potzpf");
+//		fio.save(fio.users);
+//	}
+//}
 
-class Storage {
+public class Storage {
 	UserPotato users;
 	
 	public Storage() throws Exception {
