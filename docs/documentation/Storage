@@ -1,0 +1,5 @@
+class Storage
+Diese Klasse bietet aus Referenzen zu den drei Klassen (User, Index, Folder), welche den tatsächlichen File I/O realisieren.
+
+class UserPotato
+Diese Klasse ist für die Benutzerverwaltung (Anlegen, Ändern, Löschen), sowie für benutzerspezifische Einstellungen (Zeitklassen) zuständig.
