@@ -17,7 +17,7 @@ public class Event_listener implements View.OnClickListener{
     public Event_listener(AppLogic pLogic, Gui pGui) {
         pGui.getBtnCreateNewUser().setOnClickListener(this);
         pGui.getBtnGoToFileSelection().setOnClickListener(this);
-        pGui.getSpSelectUser().setOnClickListener(this);
+        //pGui.getSpSelectUser().setOnClickListener(this);
         mLogic = pLogic;
     }
 

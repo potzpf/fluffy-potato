@@ -23,7 +23,7 @@ public class Navigation {
         //intent.putExtra(Constants.KEY_PARAM_NUMBER_OF_CORRECT_CHALLENGES, numberOfCorrectChallenges);
 
         callingActivity.startActivity(intent);
-        //callingActivity.finish();
+        callingActivity.finish();
 
     }
     public static void startActivityCreateUser(Activity callingActivity) {

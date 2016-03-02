@@ -21,10 +21,11 @@ public class Data {
         mActivity = pActivity;
         try {
             mFio = new Storage();
+            mUsers = mFio.users.getNameList();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        mUsers = mFio.users.getNameList();
+
     }
 
     public Activity getActivity() {
