@@ -21,14 +21,10 @@ public class AppLogic {
     public void onButtonCreateNewUserClick(){
         System.out.println("Button Create User clicked");
         Navigation.startActivityCreateUser(mData.getActivity());
-        //Navigation.startActivityUserSelection(mData.getActivity());
-
-
     }
-    public void onButtonGoToFileSelectionClick(){
+
+    public void onButtonGoToFileSelectionClick() {
         System.out.println("Button Go To File Selection clicked");
         //Navigation.startActivityUserSelection(mData.getActivity());
-
-
     }
 }

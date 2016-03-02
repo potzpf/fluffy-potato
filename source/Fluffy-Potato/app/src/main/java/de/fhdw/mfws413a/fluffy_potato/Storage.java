@@ -33,7 +33,7 @@ import java.util.ArrayList;
 //}
 
 public class Storage {
-	UserPotato users;
+	public UserPotato users;
 	
 	public Storage() throws Exception {
 		users = new UserPotato();
@@ -65,67 +65,6 @@ public class Storage {
 class Potato {
 	Document doc;
 	String name;
-}
-
-class UserPotato extends Potato {
-	Document doc;
-	String name = "user";
-	
-	public UserPotato() throws Exception {
-		load();
-	}
-	
-	public void load() throws Exception {
-		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-		
-		doc = dBuilder.parse(new File("users.xml"));
-		doc.getDocumentElement().normalize();
-	}
-	
-	public ArrayList<String> getNameList() {
-		ArrayList<String> ret = new ArrayList<String>();
-		NodeList nList = doc.getElementsByTagName("user");
-		
-		for (int i = 0; i < nList.getLength(); i++) {
-			Node nNode = nList.item(i);
-					
-			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-				ret.add(((Element) nNode).getAttribute("name"));
-			}
-		}
-		return ret;
-	}
-	
-	public boolean add(String name) {
-		
-		if (getNameList().contains(name)) {
-			return false;
-		};
-		Element root = doc.getDocumentElement();
-		Element user = doc.createElement("user");
-		user.setAttribute("name", name);
-		root.appendChild(user);
-		
-		return true;
-	}
-	
-	public boolean delete(String name) {
-		if (!getNameList().contains(name)) {
-			return false;
-		}
-		Element root = doc.getDocumentElement();
-		
-		NodeList nList = doc.getElementsByTagName("user");
-		for (int i = 0; i< nList.getLength(); i++) {
-			Node nNode = nList.item(i);
-			
-			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-				root.removeChild(nNode);
-			}
-		}
-		return true;
-	}
 }
 
 class Challenge {
