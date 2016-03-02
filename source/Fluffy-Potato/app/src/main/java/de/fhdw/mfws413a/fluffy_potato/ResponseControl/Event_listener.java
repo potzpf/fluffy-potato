@@ -2,8 +2,8 @@ package de.fhdw.mfws413a.fluffy_potato.ResponseControl;
 
 import android.view.View;
 
-import de.fhdw.mfws413a.fluffy_potato.Welcome.AppLogic;
-import de.fhdw.mfws413a.fluffy_potato.Welcome.Gui;
+import de.fhdw.mfws413a.fluffy_potato.ResponseControl.AppLogic;
+import de.fhdw.mfws413a.fluffy_potato.ResponseControl.Gui;
 import de.fhdw.mfws413a.fluffy_potato.R;
 
 public class Event_listener implements View.OnClickListener{
@@ -16,18 +16,18 @@ public class Event_listener implements View.OnClickListener{
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
 
-        pGui.getBtn_True().setOnClickListener(this);
-        pGui.getBtn_False().setOnClickListener(this);
+        pGui.getBtnAnswerRight().setOnClickListener(this);
+        pGui.getBtnAnswerWrong().setOnClickListener(this);
         mLogic = pLogic;
 
 
     }
 
     @Override public void onClick(View v) {
-        switch(v.getId(){
-            case R.id.resc_btn_true: mLogic.OnButtonTrueClick();
+        switch(v.getId()){
+            case R.id.resc_btn_true: mLogic.onButtonAnswerRightClick();
                 break;
-            case R.id.resc_btn_false: mLogic.OnButtonFalseClick();
+            case R.id.resc_btn_false: mLogic.onButtonAnswerWrongClick();
                 break;
         }
     }

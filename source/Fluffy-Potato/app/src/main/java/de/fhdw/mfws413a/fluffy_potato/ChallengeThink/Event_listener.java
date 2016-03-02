@@ -1,9 +1,9 @@
-package de.fhdw.mfws413a.fluffy_potato.ResponsRight;
+package de.fhdw.mfws413a.fluffy_potato.ChallengeThink;
 
 import android.view.View;
 
-import de.fhdw.mfws413a.fluffy_potato.Welcome.AppLogic;
-import de.fhdw.mfws413a.fluffy_potato.Welcome.Gui;
+import de.fhdw.mfws413a.fluffy_potato.ChallengeThink.AppLogic;
+import de.fhdw.mfws413a.fluffy_potato.ChallengeThink.Gui;
 
 public class Event_listener implements View.OnClickListener{
 
@@ -15,14 +15,14 @@ public class Event_listener implements View.OnClickListener{
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
 
-        pGui.getBtn_NextRight().setOnClickListener(this);
+        pGui.getBtnAnswerThink().setOnClickListener(this);
         mLogic = pLogic;
 
     }
 
     @Override public void onClick(View v) {
 
-        mLogic.OnButtonnextRightClick();
+        mLogic.onButtonAnswerThinkClick();
 
     }
 }

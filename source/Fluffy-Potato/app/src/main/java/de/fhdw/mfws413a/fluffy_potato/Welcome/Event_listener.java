@@ -6,7 +6,7 @@ public class Event_listener implements View.OnClickListener{
 
     //Vars
 
-    private AppLogic mLogic;// variable für alle klassen, da hier die funktionen deklariert sind, die wirklich aufgerufen werden
+    private AppLogic mLogic;// variable fr alle klassen, da hier die funktionen deklariert sind, die wirklich aufgerufen werden
 
     //Methods
 

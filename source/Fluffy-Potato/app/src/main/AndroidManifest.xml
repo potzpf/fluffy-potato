@@ -15,6 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Challenge1Of3.Init"></activity>
+        <activity android:name=".ChallengeInput.Init"></activity>
+        <activity android:name=".ChallengeThink.Init"></activity>
+        <activity android:name=".CreateUser.Init"></activity>
+        <activity android:name=".ResponseControl.Init"></activity>
+        <activity android:name=".ResponseFalse.Init"></activity>
+        <activity android:name=".ResponseRight.Init"></activity>
+        <activity android:name=".UserSelection.Init"></activity>
     </application>
 
 </manifest>

@@ -1,9 +1,9 @@
-package de.fhdw.mfws413a.fluffy_potato.challengeInput;
+package de.fhdw.mfws413a.fluffy_potato.ChallengeInput;
 
 import android.view.View;
 
-import de.fhdw.mfws413a.fluffy_potato.Welcome.AppLogic;
-import de.fhdw.mfws413a.fluffy_potato.Welcome.Gui;
+import de.fhdw.mfws413a.fluffy_potato.ChallengeInput.AppLogic;
+import de.fhdw.mfws413a.fluffy_potato.ChallengeInput.Gui;
 
 public class Event_listener implements View.OnClickListener{
 
@@ -15,14 +15,14 @@ public class Event_listener implements View.OnClickListener{
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
 
-        pGui.getBtn_ShowNext().setOnClickListener(this);
+        pGui.getBtnAnswerInput().setOnClickListener(this);
         mLogic = pLogic;
 
     }
 
     @Override public void onClick(View v) {
 
-        mLogic.OnButtonShowNextClick();
+        mLogic.onButtonAnswerInputClick();
 
     }
 }

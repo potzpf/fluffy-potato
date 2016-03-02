@@ -1,5 +1,7 @@
 package de.fhdw.mfws413a.fluffy_potato.Welcome;
 
+import de.fhdw.mfws413a.fluffy_potato.Navigation.Navigation;
+
 public class AppLogic {
 
     //vars
@@ -17,7 +19,8 @@ public class AppLogic {
     }
 
     public void OnButtonStartClick(){
-
+        System.out.println("Button Start clicked");
+        Navigation.startActivityUserSelection(mData.getActivity());
 
 
     }
