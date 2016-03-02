@@ -1,4 +1,4 @@
-package de.fhdw.mfws413a.fluffy_potato.Welcome;
+package de.fhdw.mfws413a.fluffy_potato.UserSelection;
 
 public class AppLogic {
 
@@ -16,9 +16,9 @@ public class AppLogic {
 
     }
 
-    public void OnButtonStartClick(){
+    public void OnButtonCreateNewUserClick() {
+    }
 
-        //td/implement navigation to userselection
-
+    public void OnButtonGoToFileSelection() {
     }
 }
