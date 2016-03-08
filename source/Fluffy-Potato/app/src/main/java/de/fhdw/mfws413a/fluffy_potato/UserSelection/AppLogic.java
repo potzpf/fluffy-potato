@@ -15,6 +15,7 @@ public class AppLogic {
 
         mData = pData;
         mGui = pGui;
+        mGui.SetUsers(mData.getUsers(),mData.getActivity());
 
     }
 
@@ -24,7 +25,8 @@ public class AppLogic {
     }
 
     public void onButtonGoToFileSelectionClick() {
-        System.out.println("Button Go To File Selection clicked");
+        mData.setActUser(mGui.getSpSelectUser().getSelectedItem().toString());
+        System.out.println("Button Go To File Selection clicked"+mData.getActUser());
         //Navigation.startActivityUserSelection(mData.getActivity());
     }
 }

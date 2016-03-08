@@ -3,6 +3,7 @@ package de.fhdw.mfws413a.fluffy_potato.UserSelection;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import de.fhdw.mfws413a.fluffy_potato.UserPotato;
 import de.fhdw.mfws413a.fluffy_potato.UserSelection.Event_listener;
 
 public class Init extends AppCompatActivity {

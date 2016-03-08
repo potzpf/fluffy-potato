@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import de.fhdw.mfws413a.fluffy_potato.CreateUser.Event_listener;
+import de.fhdw.mfws413a.fluffy_potato.UserPotato;
 
 public class Init extends AppCompatActivity {
 
@@ -15,14 +16,13 @@ public class Init extends AppCompatActivity {
 
     //Methods
 
-    @Override protected void onCreate(Bundle savedInstanceState) {
+    @Override protected void onCreate(Bundle psavedInstanceState) {
 
-        super.onCreate(savedInstanceState);
+        super.onCreate(psavedInstanceState);
         initGui();
         initData();
         initLogic();
         initEvents();
-
     }
 
     private void initGui(){

@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import java.util.ArrayList;
 import de.fhdw.mfws413a.fluffy_potato.R;
+import de.fhdw.mfws413a.fluffy_potato.UserPotato;
 
 public class Gui {
 
@@ -38,13 +39,13 @@ public class Gui {
         return mSpSelectUser;
     }
 
-    public void SetUsers(ArrayList<String> pUsers, Activity pActivity){
+    public void SetUsers(UserPotato pUsers, Activity pActivity){
 
         ArrayAdapter<String> lArrayAdapter;
 
         mSpSelectUser.setAdapter(lArrayAdapter = new ArrayAdapter<String>(pActivity,
                         R.layout.activity_userselection,
-                        pUsers)
+                        pUsers.getNameList())
         );
 
 

@@ -1,5 +1,7 @@
 package de.fhdw.mfws413a.fluffy_potato;
 
+import android.os.Parcelable;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

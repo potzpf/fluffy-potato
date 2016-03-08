@@ -3,12 +3,15 @@ package de.fhdw.mfws413a.fluffy_potato.Navigation;
 import android.app.Activity;
 import android.content.Intent;
 
+import de.fhdw.mfws413a.fluffy_potato.Const;
+import de.fhdw.mfws413a.fluffy_potato.UserPotato;
+
 /**
  * Created by cmoeller on 01.03.2016.
  */
 public class Navigation {
 
-    public static void startActivityUserSelection(Activity callingActivity){
+    public static void startActivityUserSelection(Activity callingActivity, String pUser){
         /* Parameter
         Activity callingActivity,
         int currentChallengeId,
@@ -18,7 +21,7 @@ public class Navigation {
 
 
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.UserSelection.Init.class);
-        //intent.putExtra(Constants.KEY_PARAM_CURRENT_CHALLENGE_ID, currentChallengeId);
+        intent.putExtra(Const.P_USER_List, pUser);
         //intent.putExtra(Constants.KEY_PARAM_NUMBER_OF_ANSWERED_CHALLENGES, numberOfAnsweredChallenges);
         //intent.putExtra(Constants.KEY_PARAM_NUMBER_OF_CORRECT_CHALLENGES, numberOfCorrectChallenges);
 
@@ -30,7 +33,7 @@ public class Navigation {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.CreateUser.Init.class);
 
         callingActivity.startActivity(intent);
-        //callingActivity.finish();
+        callingActivity.finish();
     }
 
     public static void startActivityChallenge1Of3 () {

@@ -20,6 +20,6 @@ public class AppLogic {
 
     public void OnButtonStartClick(){
         System.out.println("Button Start clicked");
-        Navigation.startActivityUserSelection(mData.getActivity());
+        Navigation.startActivityUserSelection(mData.getActivity(),"");
     }
 }

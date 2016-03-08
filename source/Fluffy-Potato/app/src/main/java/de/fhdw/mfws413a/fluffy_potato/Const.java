@@ -5,6 +5,6 @@ package de.fhdw.mfws413a.fluffy_potato;
  */
 public class Const {
 
-    public static final String P_CUR_USER ="CurrentChallengeID";
+    public static final String P_USER_List ="User_List";
 
 }
