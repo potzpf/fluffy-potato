@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3schools.com"
+xmlns="http://www.w3schools.com"
+elementFormDefault="qualified">
+
+<xs:element name="challenge">
+  <xs:complexType>
+    <xs:sequence>
+	
+      <xs:element name="question" type="xs:string"/>
+	  
+      <xs:element name="solution">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="true" type="xs:boolean" default="false"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+	  
+    </xs:sequence>
+    <xs:attribute name="cid" type="xs:integer" />
+    <xs:attribute name="type" type="xs:string" default="q/a" />
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
