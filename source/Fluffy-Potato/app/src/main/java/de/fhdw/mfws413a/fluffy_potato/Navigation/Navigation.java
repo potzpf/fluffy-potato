@@ -36,26 +36,44 @@ public class Navigation {
         callingActivity.finish();
     }
 
-    public static void startActivityChallenge1Of3 () {
+    public static void startActivityChallenge1Of3 (Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Challenge1Of3.Init.class);
 
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
     }
 
-    public static void startActivityChallengeInput () {
+    public static void startActivityChallengeInput (Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.ChallengeInput.Init.class);
 
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
     }
 
-    public static void startActivityChallengeThink () {
+    public static void startActivityChallengeThink (Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.ChallengeThink.Init.class);
 
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
     }
-    public static void startActivityResponseFalse () {
+    public static void startActivityResponseFalse (Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.ResponseFalse.Init.class);
 
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
     }
 
-    public static void startActivityResponseRight () {
+    public static void startActivityResponseRight (Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.ResponseRight.Init.class);
 
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
     }
 
-    public static void startActivityResponseControl () {
+    public static void startActivityResponseControl (Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.ResponseControl.Init.class);
 
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
     }
 }

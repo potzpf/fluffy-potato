@@ -30,7 +30,7 @@ public class Data {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        if (lUser != ""){
+        if (lUser != "" && mUsers != null){
             mUsers.add(lUser);
         }
     }
