@@ -8,11 +8,11 @@ import java.util.ArrayList;
 public class Challenge {
 
     private String mQuestion;
-    private Integer mChallengeTyp;
+    private String mChallengeTyp;
     private ArrayList<String> mRightAnswereList;
     private ArrayList<String> mAnswereList;
 
-    public Challenge(Integer pChallengeTyp,String pQuestion) {
+    public Challenge(String pChallengeTyp,String pQuestion) {
         mChallengeTyp = pChallengeTyp;
         mQuestion     = pQuestion;
     }
@@ -41,7 +41,7 @@ public class Challenge {
         return mAnswereList;
     }
 
-    public Integer getChallengeTyp() {
+    public String getChallengeTyp() {
         return mChallengeTyp;
     }
 
