@@ -1,9 +1,8 @@
 package de.fhdw.mfws413a.fluffy_potato.UserSelection;
 
 import android.app.Activity;
-import java.util.ArrayList;
 
-import de.fhdw.mfws413a.fluffy_potato.Const;
+import de.fhdw.mfws413a.fluffy_potato.Data.Const;
 import de.fhdw.mfws413a.fluffy_potato.Storage;
 import de.fhdw.mfws413a.fluffy_potato.UserPotato;
 

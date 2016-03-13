@@ -3,8 +3,7 @@ package de.fhdw.mfws413a.fluffy_potato.Navigation;
 import android.app.Activity;
 import android.content.Intent;
 
-import de.fhdw.mfws413a.fluffy_potato.Const;
-import de.fhdw.mfws413a.fluffy_potato.UserPotato;
+import de.fhdw.mfws413a.fluffy_potato.Data.Const;
 
 /**
  * Created by cmoeller on 01.03.2016.
