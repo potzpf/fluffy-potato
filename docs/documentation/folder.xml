@@ -1,0 +1,68 @@
+<folder>
+  <file name="Geschichte">
+    <member cid="3"/>
+    <member cid="8"/>
+  </file>
+  <file name="Politik">
+    <member cid="4"/>
+    <member cid="5"/>
+    <member cid="6"/>
+    <member cid="7"/>
+    <member cid="36"/>
+    <member cid="37"/>
+  </file>
+  <file name="Erdkunde">
+    <member cid="9"/>
+    <member cid="10"/>
+    <member cid="11"/>
+    <member cid=""/>
+  </file>
+  <file name="Musik">
+    <member cid="13"/>
+    <member cid="14"/>
+    <member cid="34"/>
+    <member cid="40"/>
+  </file>
+  <file name="Litratur">
+    <member cid="22"/>
+    <member cid="23"/>
+    <member cid="39"/> 
+    <member cid="41"/>
+  </file>
+  <file name="Kultur">
+    <member cid="18"/>
+    <member cid="19"/>
+    <member cid="21"/>
+    <member cid="32"/>
+    <member cid="35"/>
+    <member cid="42"/>
+  </file>
+  <file name="IT">
+    <member cid="28"/>
+    <member cid="29"/>
+    <member cid="30"/>
+    <member cid="33"/>
+  </file>
+  <file name="Naturwissnschaftn">
+    <member cid="1"/>
+    <member cid="2"/>
+    <member cid="27"/>
+    <member cid="31"/>
+  </file>
+  <file name="Englisch">
+    <member cid="12"/>
+    <member cid="17"/>
+    <member cid="16"/>
+    <member cid="15"/>
+  </file>
+  <file name="Religion">
+    <member cid="20"/>
+    <member cid="25"/>
+    <member cid="26"/>
+    <member cid="44"/>
+  </file>
+  <file name="Bauwesen">
+    <member cid="24"/>
+    <member cid="43"/>
+  </file>
+</folder>
