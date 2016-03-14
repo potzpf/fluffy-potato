@@ -35,6 +35,13 @@ public class Navigation {
         callingActivity.finish();
     }
 
+    public static void startActivityFileSelection(Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.FileSelection.Init.class);
+
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
+    }
+
     public static void startActivityChallenge1Of3 (Activity callingActivity) {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Challenge1Of3.Init.class);
 

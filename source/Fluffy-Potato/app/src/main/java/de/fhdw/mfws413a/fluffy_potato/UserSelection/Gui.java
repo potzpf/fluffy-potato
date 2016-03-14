@@ -41,12 +41,12 @@ public class Gui {
 
     public void SetUsers(UserPotato pUsers, Activity pActivity){
 
-        ArrayAdapter<String> lArrayAdapter = new ArrayAdapter<String>(pActivity,
+      /*  ArrayAdapter<String> lArrayAdapter = new ArrayAdapter<String>(pActivity,
                 R.layout.activity_userselection,
                 pUsers.getNameList());
 
         mSpSelectUser.setAdapter(lArrayAdapter );
-
+        */
 
     }
 }

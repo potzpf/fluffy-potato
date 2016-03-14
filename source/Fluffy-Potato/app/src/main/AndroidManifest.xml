@@ -24,6 +24,7 @@
         <activity android:name=".ResponseFalse.Init"></activity>
         <activity android:name=".ResponseRight.Init"></activity>
         <activity android:name=".UserSelection.Init"></activity>
+        <activity android:name=".FileSelection.Init"></activity>
     </application>
 
 </manifest>
