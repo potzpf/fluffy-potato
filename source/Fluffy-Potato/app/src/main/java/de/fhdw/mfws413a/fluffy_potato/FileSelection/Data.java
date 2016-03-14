@@ -1,8 +1,6 @@
-package de.fhdw.mfws413a.fluffy_potato.ResponseRight;
+package de.fhdw.mfws413a.fluffy_potato.FileSelection;
 
 import android.app.Activity;
-
-import de.fhdw.mfws413a.fluffy_potato.Data.Challenge;
 
 public class Data {
 

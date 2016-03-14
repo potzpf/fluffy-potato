@@ -3,6 +3,7 @@
     package="de.fhdw.mfws413a.fluffy_potato">
 
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -23,6 +24,7 @@
         <activity android:name=".ResponseFalse.Init"></activity>
         <activity android:name=".ResponseRight.Init"></activity>
         <activity android:name=".UserSelection.Init"></activity>
+        <activity android:name=".FileSelection.Init"></activity>
     </application>
 
 </manifest>

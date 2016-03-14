@@ -3,8 +3,7 @@ package de.fhdw.mfws413a.fluffy_potato.Navigation;
 import android.app.Activity;
 import android.content.Intent;
 
-import de.fhdw.mfws413a.fluffy_potato.Const;
-import de.fhdw.mfws413a.fluffy_potato.UserPotato;
+import de.fhdw.mfws413a.fluffy_potato.Data.Const;
 
 /**
  * Created by cmoeller on 01.03.2016.
@@ -31,6 +30,13 @@ public class Navigation {
     }
     public static void startActivityCreateUser(Activity callingActivity) {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.CreateUser.Init.class);
+
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
+    }
+
+    public static void startActivityFileSelection(Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.FileSelection.Init.class);
 
         callingActivity.startActivity(intent);
         callingActivity.finish();
