@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.agiprojekt.Main">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endergebnis"
+        android:id="@+id/scr_textView_titel"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bearbeitet:"
+        android:textSize="20sp"
+        android:id="@+id/scr_textView_answ"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/scr_textView_titel"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Richtig:"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/scr_textView_right"
+        android:layout_below="@+id/scr_textView_answ"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Falsch:"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/scr_textView_wrong"
+        android:layout_below="@+id/scr_textView_right"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Zahl"
+        android:layout_marginTop="25dp"
+        android:id="@+id/scr_textView_answ2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scr_textView_titel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Zahl"
+        android:layout_marginTop="10dp"
+        android:id="@+id/scr_textView_right2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scr_textView_answ2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Zahl"
+        android:id="@+id/scr_textView_wrong2"
+        android:layout_alignTop="@+id/scr_textView_wrong"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detailansicht"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:id="@+id/scr_button_detail"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

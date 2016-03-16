@@ -31,6 +31,7 @@
         android:text="Weiter"
         android:textAllCaps="false"
         android:textSize="25sp"
-        android:layout_below="@+id/challb_edittext_answer"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:id="@+id/challb_btn_next"/>
 </RelativeLayout>

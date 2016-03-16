@@ -37,7 +37,8 @@
         android:textAllCaps="false"
         android:id="@+id/resb_btn_next"
         android:textSize="25sp"
-        android:layout_below="@id/resb_textView_answer"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         />
 
 </RelativeLayout>

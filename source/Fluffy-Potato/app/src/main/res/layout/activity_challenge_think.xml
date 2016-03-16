@@ -24,6 +24,7 @@
         android:text="Lösung anzeigen"
         android:textAllCaps="false"
         android:textSize="25sp"
-        android:layout_below="@+id/challc_textView_question"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:id="@+id/challc_btn_show"/>
 </RelativeLayout>

@@ -21,27 +21,33 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Antwort A"
+        android:text="Weiter"
         android:textAllCaps="false"
         android:textSize="25sp"
-        android:id="@+id/challa_btn_answer_a"
-        android:layout_below="@+id/challa_textView_question"/>
+        android:id="@+id/challa_btn_next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
 
-    <Button
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Antwort A"
+        android:id="@+id/challa_checkBox_answer_a"
+       />
+
+    <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Antwort B"
-        android:textAllCaps="false"
-        android:textSize="25sp"
-        android:layout_below="@+id/challa_btn_answer_a"
-        android:id="@+id/challa_btn_answer_b"/>
+        android:id="@+id/challa_checkBox_answer_b"
+        android:layout_below="@+id/challa_checkBox_answer_a" />
 
-    <Button
+    <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Antwort C"
-        android:textAllCaps="false"
-        android:textSize="25sp"
-        android:layout_below="@+id/challa_btn_answer_b"
-        android:id="@+id/challa_btn_answer_c"/>
+        android:id="@+id/challa_checkBox_answer_c"
+        android:layout_below="@+id/challa_checkBox_answer_b" />
 </RelativeLayout>
