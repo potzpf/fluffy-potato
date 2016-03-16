@@ -2,9 +2,6 @@ package de.fhdw.mfws413a.fluffy_potato.Data;
 
 import java.util.ArrayList;
 
-/**
- * Created by Dome-FH on 13.03.2016.
- */
 public class Challenge {
 
     private String mQuestion;
@@ -17,6 +14,7 @@ public class Challenge {
         mQuestion     = pQuestion;
     }
 
+
     public Boolean isRightAnswere(String pAnswere){
         Integer lRightCount;
 
@@ -28,6 +26,7 @@ public class Challenge {
         }
         return lRightCount > 0;
     }
+
 
     public String getQuestion() {
         return mQuestion;
@@ -44,6 +43,7 @@ public class Challenge {
     public String getChallengeTyp() {
         return mChallengeTyp;
     }
+
 
     public void addRightAnswere(String pAnswer){
         mRightAnswereList.add(pAnswer);

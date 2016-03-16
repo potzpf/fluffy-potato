@@ -116,7 +116,8 @@
 <challenge cid="16" type="input">
      <question> Wie heißt das deutsche Wort für "possible"?
   </question>
-     <solution true="true"> eventuell oder möglich </solution>
+     <solution true="true"> eventuell </solution>
+	 <solution true="true"> möglich </solution>
    </challenge>
 
 <challenge cid="17" type="input">

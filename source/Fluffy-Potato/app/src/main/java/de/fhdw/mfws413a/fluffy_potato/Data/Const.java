@@ -7,8 +7,8 @@ public class Const {
 
     public static final String P_USER_List       ="User_List";
 
-    public static final String P_CHALLENGE_1OF3  ="1of3";
-    public static final String P_CHALLENGE_IN    ="in";
+    public static final String P_CHALLENGE_1OF3  ="Xof3";
+    public static final String P_CHALLENGE_IN    ="input";
     public static final String P_CHALLENGE_THINK ="think";
 
 

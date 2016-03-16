@@ -3,28 +3,28 @@
     package="de.fhdw.mfws413a.fluffy_potato">
 
     <application
-        android:name=".MyApp"
+        android:name=".Data.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Welcome.Init">
+        <activity android:name=".Activitys.Welcome.Init">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Challenge1Of3.Init"></activity>
-        <activity android:name=".ChallengeInput.Init"></activity>
-        <activity android:name=".ChallengeThink.Init"></activity>
-        <activity android:name=".CreateUser.Init"></activity>
-        <activity android:name=".ResponseControl.Init"></activity>
-        <activity android:name=".ResponseFalse.Init"></activity>
-        <activity android:name=".ResponseRight.Init"></activity>
-        <activity android:name=".UserSelection.Init"></activity>
-        <activity android:name=".FileSelection.Init"></activity>
+        <activity android:name=".Activitys.Challenge1Of3.Init"></activity>
+        <activity android:name=".Activitys.ChallengeInput.Init"></activity>
+        <activity android:name=".Activitys.ChallengeThink.Init"></activity>
+        <activity android:name=".Activitys.CreateUser.Init"></activity>
+        <activity android:name=".Activitys.ResponseControl.Init"></activity>
+        <activity android:name=".Activitys.ResponseFalse.Init"></activity>
+        <activity android:name=".Activitys.ResponseRight.Init"></activity>
+        <activity android:name=".Activitys.UserSelection.Init"></activity>
+        <activity android:name=".Activitys.FileSelection.Init"></activity>
     </application>
 
 </manifest>
