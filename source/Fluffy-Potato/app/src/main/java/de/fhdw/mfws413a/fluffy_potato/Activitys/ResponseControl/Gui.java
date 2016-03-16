@@ -2,6 +2,7 @@ package de.fhdw.mfws413a.fluffy_potato.Activitys.ResponseControl;
 
 import android.app.Activity;
 import android.widget.Button;
+import android.widget.TextView;
 
 import de.fhdw.mfws413a.fluffy_potato.R;
 
@@ -11,6 +12,7 @@ public class Gui {
 
     private Button mBtnAnswerRight;
     private Button mBtnAnswerWrong;
+    private TextView mTvRightAnsweres;
 
     //methods
 
@@ -19,6 +21,7 @@ public class Gui {
         pActivity.setContentView(R.layout.activity_response_control);
         mBtnAnswerRight = (Button) pActivity.findViewById(R.id.resc_btn_true);
         mBtnAnswerWrong = (Button)pActivity.findViewById(R.id.resc_btn_false);
+        mTvRightAnsweres = (TextView) pActivity.findViewById(R.id.resc_textView_answer);
 
     }
 
@@ -27,5 +30,9 @@ public class Gui {
     }
     public Button getBtnAnswerWrong() {
         return mBtnAnswerWrong;
+    }
+
+    public TextView getTvRightAnsweres() {
+        return mTvRightAnsweres;
     }
 }

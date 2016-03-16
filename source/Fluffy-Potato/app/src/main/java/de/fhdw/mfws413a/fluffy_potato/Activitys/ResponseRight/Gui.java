@@ -2,6 +2,7 @@ package de.fhdw.mfws413a.fluffy_potato.Activitys.ResponseRight;
 
 import android.app.Activity;
 import android.widget.Button;
+import android.widget.TextView;
 
 import de.fhdw.mfws413a.fluffy_potato.R;
 
@@ -11,14 +12,17 @@ public class Gui {
 
     private Button mBtnNextChallenge;
 
+
     //methods
 
     public Gui(Activity pActivity) {
         pActivity.setContentView(R.layout.activity_response_right);
         mBtnNextChallenge = (Button) pActivity.findViewById(R.id.resa_btn_next);
+
     }
 
     public Button getBtnNextChallenge() {
         return mBtnNextChallenge;
     }
+
 }

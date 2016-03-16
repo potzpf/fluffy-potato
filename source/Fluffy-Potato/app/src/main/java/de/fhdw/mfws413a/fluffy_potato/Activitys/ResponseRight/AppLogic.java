@@ -18,6 +18,7 @@ public class AppLogic {
         mData = pData;
         mGui = pGui;
 
+
     }
 
     public void onButtonNextChallengeClick(){

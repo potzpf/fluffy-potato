@@ -3,6 +3,8 @@ package de.fhdw.mfws413a.fluffy_potato.Activitys.ResponseRight;
 import android.app.Activity;
 import android.app.Application;
 
+import java.util.ArrayList;
+
 import de.fhdw.mfws413a.fluffy_potato.Data.MyApp;
 
 public class Data {
