@@ -25,6 +25,9 @@
         <activity android:name=".Activities.ResponseRight.Init"></activity>
         <activity android:name=".Activities.UserSelection.Init"></activity>
         <activity android:name=".Activities.FileSelection.Init"></activity>
+        <activity android:name=".Activities.UserEdit.Init"></activity>
+        <activity android:name=".Activities.Score.Init"></activity>
+        <activity android:name=".Activities.DetailScore.Init"></activity>
     </application>
 
 </manifest>
