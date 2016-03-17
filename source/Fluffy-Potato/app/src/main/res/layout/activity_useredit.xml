@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Klasse I"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30px"
         android:id="@+id/usredt_textView_ph1"
         android:layout_alignParentLeft="true" />
 
@@ -26,7 +26,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Klasse II"
         android:id="@+id/usredt_textView_ph2"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40px"
         android:layout_below="@id/usredt_textView_ph1"/>
 
     <TextView
@@ -35,7 +35,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Klasse III"
         android:id="@+id/usredt_textView_ph3"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40px"
         android:layout_below="@id/usredt_textView_ph2"/>
 
     <TextView
@@ -44,7 +44,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Klasse IV"
         android:id="@+id/usredt_textView_ph4"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40px"
         android:layout_below="@id/usredt_textView_ph3"/>
 
     <TextView
@@ -53,7 +53,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Klasse V"
         android:id="@+id/usredt_textView_ph5"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40px"
         android:layout_below="@id/usredt_textView_ph4"/>
 
     <TextView
@@ -62,18 +62,18 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Klasse VI"
         android:id="@+id/usredt_textView_ph6"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40px"
         android:layout_below="@id/usredt_textView_ph5"/>
 
     <EditText
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="wrap_content"
         android:id="@+id/usredt_editText_ph1"
         android:layout_centerHorizontal="true"
         android:inputType="number"/>
 
     <EditText
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:id="@+id/usredt_editText_ph2"
@@ -82,7 +82,7 @@
         android:inputType="number"/>
 
     <EditText
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="wrap_content"
         android:id="@+id/usredt_editText_ph3"
         android:layout_marginTop="5dp"
@@ -91,7 +91,7 @@
         android:inputType="number"/>
 
     <EditText
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="wrap_content"
         android:id="@+id/usredt_editText_ph4"
         android:layout_marginTop="3dp"
@@ -100,7 +100,7 @@
         android:inputType="number"/>
 
     <EditText
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="wrap_content"
         android:id="@+id/usredt_editText_ph5"
         android:layout_marginTop="2dp"
@@ -109,7 +109,7 @@
         android:inputType="number"/>
 
     <EditText
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="wrap_content"
         android:id="@+id/usredt_editText_ph6"
         android:layout_marginTop="2dp"
@@ -118,13 +118,13 @@
         android:inputType="number"/>
 
     <Spinner
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="40dp"
         android:id="@+id/usredt_spinner_ph1"
         android:layout_alignParentRight="true" />
 
     <Spinner
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="40dp"
         android:id="@+id/usredt_spinner_ph2"
         android:layout_alignParentRight="true"
@@ -132,7 +132,7 @@
         android:layout_marginTop="5dp"/>
 
     <Spinner
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="40dp"
         android:id="@+id/usredt_spinner_ph3"
         android:layout_alignParentRight="true"
@@ -140,7 +140,7 @@
         android:layout_marginTop="5dp"/>
 
     <Spinner
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="40dp"
         android:id="@+id/usredt_spinner_ph4"
         android:layout_alignParentRight="true"
@@ -148,7 +148,7 @@
         android:layout_marginTop="5dp"/>
 
     <Spinner
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="40dp"
         android:id="@+id/usredt_spinner_ph5"
         android:layout_alignParentRight="true"
@@ -156,7 +156,7 @@
         android:layout_marginTop="5dp"/>
 
     <Spinner
-        android:layout_width="100dp"
+        android:layout_width="200px"
         android:layout_height="40dp"
         android:id="@+id/usredt_spinner_ph6"
         android:layout_alignParentRight="true"

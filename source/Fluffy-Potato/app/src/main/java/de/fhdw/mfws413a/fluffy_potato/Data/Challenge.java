@@ -4,53 +4,69 @@ import java.util.ArrayList;
 
 public class Challenge {
 
+    private Integer mChallengeID;
     private String mQuestion;
     private String mChallengeTyp;
-    private ArrayList<String> mRightAnswereList;
-    private ArrayList<String> mAnswereList;
+    private ArrayList<Solution> mAnswers;
 
-    public Challenge(String pChallengeTyp,String pQuestion) {
+    public Challenge(Integer pChallengeID ,String pChallengeTyp,String pQuestion,ArrayList<Solution> pAnswereList) {
+        mChallengeID = pChallengeID;
         mChallengeTyp = pChallengeTyp;
         mQuestion     = pQuestion;
+        mAnswers = pAnswereList;
     }
 
+    public Integer getChallengeID() {
+        return mChallengeID;
+    }
 
-    public Boolean isRightAnswere(String pAnswere){
+    public String getQuestion() {
+        return mQuestion;
+    }
+
+    public String getTyp() {
+        return mChallengeTyp;
+    }
+
+    public String getAnswere(Integer pIndex) {
+        return mAnswers.get(pIndex).getText();
+    }
+
+    public String getRightAnswerText(){
+        String lAnswereText = "";
+
+        for (int i = 0; i <answerSize()-1; i++) {
+            lAnswereText = lAnswereText + getAnswere(i);
+            if (i+1 < answerSize()){
+                lAnswereText = lAnswereText + "\n";
+            }
+        }
+        return lAnswereText;
+    }
+
+    public int answerSize() {
+        return mAnswers.size();
+    }
+
+    public boolean isRightAnswere(String pAnswere){
         Integer lRightCount;
 
         lRightCount = 0;
-        for (int i = 0; i < mRightAnswereList.size(); i++) {
-            if (pAnswere.equals(mRightAnswereList.get(i))){
+        for (int i = 0; i < answerSize()-1; i++) {
+            if (pAnswere.equals(getAnswere(i)) && mAnswers.get(i).isCorrect()) {
                 lRightCount++;
             }
         }
         return lRightCount > 0;
     }
 
-
-    public String getQuestion() {
-        return mQuestion;
-    }
-
-    public ArrayList<String> getRightAnswereList() {
-        return mRightAnswereList;
-    }
-
-    public ArrayList<String> getAnswereList() {
-        return mAnswereList;
-    }
-
-    public String getChallengeTyp() {
-        return mChallengeTyp;
+    public boolean isRightAnswer(int i) {
+        if (mAnswers.get(i).isCorrect()== true) {
+            return true;
+        }
+        return false;
     }
 
 
-    public void addRightAnswere(String pAnswer){
-        mRightAnswereList.add(pAnswer);
-    }
-
-    public void addAnswere(String pAnswer){
-        mAnswereList.add(pAnswer);
-    }
 
 }

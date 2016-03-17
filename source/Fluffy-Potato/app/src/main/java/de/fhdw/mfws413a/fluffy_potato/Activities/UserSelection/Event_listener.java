@@ -1,6 +1,8 @@
 package de.fhdw.mfws413a.fluffy_potato.Activities.UserSelection;
 
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Spinner;
 
 import de.fhdw.mfws413a.fluffy_potato.R;
 
@@ -13,9 +15,11 @@ public class Event_listener implements View.OnClickListener{
     //Methods
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
+
+
         pGui.getBtnCreateNewUser().setOnClickListener(this);
         pGui.getBtnGoToFileSelection().setOnClickListener(this);
-        //pGui.getSpSelectUser().setOnClickListener(this);
+        //pGui.getSpSelectUser().setOnItemSelectedListener();
         mLogic = pLogic;
     }
 

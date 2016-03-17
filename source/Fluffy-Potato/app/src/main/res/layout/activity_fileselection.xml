@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Wähle eine Kartei aus:"
-        android:textSize="25dp"
+        android:textSize="50px"
         android:id="@+id/textViewInfoText"/>
 
     <ListView
@@ -31,5 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/listView_fileSelection"
         android:text="Weiter"
+        android:textSize="50px"
         android:id="@+id/btn_start_challenge"/>
 </RelativeLayout>

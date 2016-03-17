@@ -2,7 +2,10 @@ package de.fhdw.mfws413a.fluffy_potato.Activities.UserSelection;
 
 import android.app.Activity;
 
+import java.util.ArrayList;
+
 import de.fhdw.mfws413a.fluffy_potato.Data.Const;
+import de.fhdw.mfws413a.fluffy_potato.Data.MyApp;
 import de.fhdw.mfws413a.fluffy_potato.Storage;
 import de.fhdw.mfws413a.fluffy_potato.UserPotato;
 
@@ -11,9 +14,8 @@ public class Data {
   //vars
 
     private Activity          mActivity;
-    private Storage           mFio;
-    private UserPotato        mUsers;
-    private String            mActUser;  //in global verschieben
+    private ArrayList<String> mUserList;
+    private MyApp             mGlobal;
 
   //Methods
 
@@ -21,32 +23,31 @@ public class Data {
         String lUser;
 
         mActivity = pActivity;
-        lUser = mActivity.getIntent().getStringExtra(Const.P_USER_List);
+        mGlobal = (MyApp) mActivity.getApplication();
+        mUserList = mGlobal.getAppIF().getUserNames();
 
-        try {
-            mFio = new Storage();
-            mUsers = mFio.users;
-        } catch (Exception e) {
-            e.printStackTrace();
+        lUser = mActivity.getIntent().getStringExtra(Const.P_USER_List);
+        if (lUser.equals("")){
+          //nix
+        }else{
+            mUserList.add(lUser);
         }
-        if (lUser != "" && mUsers != null){
-            mUsers.add(lUser);
-        }
+        //speichern!
     }
 
     public Activity getActivity() {
         return mActivity;
     }
 
-    public UserPotato getUsers() {
-        return mUsers;
+    public ArrayList<String> getUsers() {
+        return mUserList;
     }
 
     public String getActUser() {
-        return mActUser;
+        return mGlobal.getActUser();
     }
 
     public void setActUser(String pActUser) {
-        mActUser = pActUser;
+        mGlobal.setActUser(pActUser);
     }
 }
