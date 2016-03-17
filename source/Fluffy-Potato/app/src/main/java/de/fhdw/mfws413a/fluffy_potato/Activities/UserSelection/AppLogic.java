@@ -1,5 +1,9 @@
 package de.fhdw.mfws413a.fluffy_potato.Activities.UserSelection;
 
+import android.widget.Toast;
+
+import java.util.ArrayList;
+
 import de.fhdw.mfws413a.fluffy_potato.Navigation.Navigation;
 
 public class AppLogic {
@@ -26,7 +30,8 @@ public class AppLogic {
 
     public void onButtonGoToFileSelectionClick() {
         mData.setActUser(mGui.getSpSelectUser().getSelectedItem().toString());
-        System.out.println("Button Go To File Selection clicked"+mData.getActUser());
+        Toast.makeText(mData.getActivity().getApplicationContext(),mData.getActUser(),Toast.LENGTH_LONG).show();
+        System.out.println("Button Go To File Selection clicked" + mData.getActUser());
         Navigation.startActivityFileSelection(mData.getActivity());
     }
 }

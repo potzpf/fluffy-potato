@@ -24,8 +24,8 @@ public class AppLogic {
         System.out.println("Button Next Challenge Right clicked");
         if ( mData.Global.incCurrentChallengeIndex() ) {
 
-            switch (mData.Global.getCurrentChallenge().getChallengeTyp()) {
-                case Const.P_CHALLENGE_1OF3:
+            switch (mData.Global.getCurrentChallenge().getTyp()) {
+                case Const.P_CHALLENGE_XOF3:
                     Navigation.startActivityChallenge1Of3(mData.getActivity());
                     break;
                 case Const.P_CHALLENGE_IN:

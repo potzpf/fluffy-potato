@@ -15,16 +15,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/usrsel_spinner_user"
+        android:textSize="100px"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="55dp" />
+        android:layout_marginTop="55px"
+        android:layout_marginLeft="15px"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Neuen User anlegen"
         android:textAllCaps="false"
-        android:textSize="25sp"
+        android:textSize="50px"
         android:id="@+id/usrsel_btn_create"
+        android:layout_marginTop="30px"
         android:layout_below="@+id/usrsel_spinner_user" />
 
     <Button
@@ -32,7 +35,7 @@
         android:layout_height="wrap_content"
         android:text="Zeit Einstellungen"
         android:textAllCaps="false"
-        android:textSize="25sp"
+        android:textSize="50px"
         android:id="@+id/usrsel_btn_time"
         android:layout_below="@+id/usrsel_btn_create" />
 
@@ -41,7 +44,7 @@
         android:layout_height="wrap_content"
         android:text="Weiter"
         android:textAllCaps="false"
-        android:textSize="25sp"
+        android:textSize="50px"
         android:id="@+id/usrsel_btn_next"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />

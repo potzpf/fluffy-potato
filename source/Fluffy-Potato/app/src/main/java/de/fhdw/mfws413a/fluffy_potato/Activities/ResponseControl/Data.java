@@ -23,15 +23,6 @@ public class Data {
     }
 
     public String getRightAnswereText(){
-        String lAnswereText = "";
-        ArrayList<String> lAnswereList = Global.getCurrentChallenge().getRightAnswereList();
-
-        for (int i = 0; i <lAnswereList.size()-1 ; i++) {
-            lAnswereText = lAnswereText + lAnswereList.get(i);
-            if (i+1 < lAnswereList.size()){
-                lAnswereText = lAnswereText + "\n";
-            }
-        }
-        return lAnswereText;
+       return Global.getCurrentChallenge().getRightAnswerText();
     }
 }
