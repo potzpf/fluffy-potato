@@ -9,22 +9,22 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activitys.Welcome.Init">
+        <activity android:name=".Activities.Welcome.Init">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activitys.Challenge1Of3.Init"></activity>
-        <activity android:name=".Activitys.ChallengeInput.Init"></activity>
-        <activity android:name=".Activitys.ChallengeThink.Init"></activity>
-        <activity android:name=".Activitys.CreateUser.Init"></activity>
-        <activity android:name=".Activitys.ResponseControl.Init"></activity>
-        <activity android:name=".Activitys.ResponseFalse.Init"></activity>
-        <activity android:name=".Activitys.ResponseRight.Init"></activity>
-        <activity android:name=".Activitys.UserSelection.Init"></activity>
-        <activity android:name=".Activitys.FileSelection.Init"></activity>
+        <activity android:name=".Activities.Challenge1Of3.Init"></activity>
+        <activity android:name=".Activities.ChallengeInput.Init"></activity>
+        <activity android:name=".Activities.ChallengeThink.Init"></activity>
+        <activity android:name=".Activities.CreateUser.Init"></activity>
+        <activity android:name=".Activities.ResponseControl.Init"></activity>
+        <activity android:name=".Activities.ResponseFalse.Init"></activity>
+        <activity android:name=".Activities.ResponseRight.Init"></activity>
+        <activity android:name=".Activities.UserSelection.Init"></activity>
+        <activity android:name=".Activities.FileSelection.Init"></activity>
     </application>
 
 </manifest>

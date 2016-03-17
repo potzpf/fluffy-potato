@@ -23,19 +23,21 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Das wusste ich"
-        android:textAllCaps="false"
-        android:textSize="25sp"
-        android:id="@+id/resc_btn_true"
-        android:layout_above="@id/resc_btn_false"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Das muss ich noch üben"
         android:textAllCaps="false"
         android:textSize="25sp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/resc_btn_false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Das wusste ich"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:id="@+id/resc_btn_true"
+        android:layout_above="@id/resc_btn_false"/>
+
+
 </RelativeLayout>

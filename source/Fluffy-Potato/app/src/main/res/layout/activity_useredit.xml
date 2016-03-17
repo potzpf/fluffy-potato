@@ -69,7 +69,8 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:id="@+id/usredt_editText_ph1"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
 
     <EditText
         android:layout_width="100dp"
@@ -77,7 +78,8 @@
         android:layout_marginTop="5dp"
         android:id="@+id/usredt_editText_ph2"
         android:layout_below="@id/usredt_editText_ph1"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
 
     <EditText
         android:layout_width="100dp"
@@ -85,7 +87,8 @@
         android:id="@+id/usredt_editText_ph3"
         android:layout_marginTop="5dp"
         android:layout_below="@id/usredt_editText_ph2"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
 
     <EditText
         android:layout_width="100dp"
@@ -93,7 +96,8 @@
         android:id="@+id/usredt_editText_ph4"
         android:layout_marginTop="3dp"
         android:layout_below="@id/usredt_editText_ph3"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
 
     <EditText
         android:layout_width="100dp"
@@ -101,7 +105,8 @@
         android:id="@+id/usredt_editText_ph5"
         android:layout_marginTop="2dp"
         android:layout_below="@id/usredt_editText_ph4"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
 
     <EditText
         android:layout_width="100dp"
@@ -109,7 +114,8 @@
         android:id="@+id/usredt_editText_ph6"
         android:layout_marginTop="2dp"
         android:layout_below="@id/usredt_editText_ph5"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
 
     <Spinner
         android:layout_width="100dp"
