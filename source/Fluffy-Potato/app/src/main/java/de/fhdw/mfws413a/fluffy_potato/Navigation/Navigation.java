@@ -11,18 +11,9 @@ import de.fhdw.mfws413a.fluffy_potato.Data.Const;
 public class Navigation {
 
     public static void startActivityUserSelection(Activity callingActivity, String pUser){
-        /* Parameter
-        Activity callingActivity,
-        int currentChallengeId,
-        int numberOfCorrectChallenges,
-        int numberOfAnsweredChallenges
-         */
-
 
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.UserSelection.Init.class);
         intent.putExtra(Const.P_USER_List, pUser);
-        //intent.putExtra(Constants.KEY_PARAM_NUMBER_OF_ANSWERED_CHALLENGES, numberOfAnsweredChallenges);
-        //intent.putExtra(Constants.KEY_PARAM_NUMBER_OF_CORRECT_CHALLENGES, numberOfCorrectChallenges);
 
         callingActivity.startActivity(intent);
         callingActivity.finish();
