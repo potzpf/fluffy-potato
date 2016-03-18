@@ -34,4 +34,9 @@ public class AppLogic {
         System.out.println("Button Go To File Selection clicked" + mData.getActUser());
         Navigation.startActivityFileSelection(mData.getActivity());
     }
+
+    public void onButtonEditUserClick() {
+        System.out.println("Button Edit User clicked");
+        Navigation.startActivityUserEdit(mData.getActivity());
+    }
 }

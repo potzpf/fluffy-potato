@@ -18,6 +18,7 @@ public class Gui {
     private Button mBtnCreateUser;
     private Spinner mSpSelectUser;
     private Button mBtnGoToFileSelection;
+    private Button mBtnEditUser;
 
     //methods
 
@@ -26,6 +27,7 @@ public class Gui {
         mBtnCreateUser = (Button) pActivity.findViewById(R.id.usrsel_btn_create);
         mSpSelectUser = (Spinner)pActivity.findViewById(R.id.usrsel_spinner_user);
         mBtnGoToFileSelection = (Button)pActivity.findViewById(R.id.usrsel_btn_next);
+        mBtnEditUser = (Button)pActivity.findViewById(R.id.usrsel_btn_time);
 
     }
 
@@ -42,13 +44,15 @@ public class Gui {
         return mSpSelectUser;
     }
 
+    public Button getBtnEditUser() {
+        return mBtnEditUser;
+    }
+
     public void SetUsers(ArrayList<String> pUsers, Activity pActivity){
 
         ArrayAdapter<String> lArrayAdapter = new ArrayAdapter<String>(pActivity,
                 R.layout.spinner_layout, pUsers
                 );
         mSpSelectUser.setAdapter(lArrayAdapter );
-
-
     }
 }

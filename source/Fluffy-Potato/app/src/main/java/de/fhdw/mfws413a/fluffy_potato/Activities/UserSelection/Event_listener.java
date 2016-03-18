@@ -35,6 +35,9 @@ public class Event_listener implements View.OnClickListener{
             case R.id.usrsel_btn_create:
                 mLogic.onButtonCreateNewUserClick();
                 break;
+            case R.id.usrsel_btn_time:
+                mLogic.onButtonEditUserClick();
+                break;
         }
     }
     // on items select list, kein clicked event

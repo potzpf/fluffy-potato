@@ -25,28 +25,24 @@ public class Navigation {
         callingActivity.startActivity(intent);
         callingActivity.finish();
     }
-
     public static void startActivityFileSelection(Activity callingActivity) {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.FileSelection.Init.class);
 
         callingActivity.startActivity(intent);
         //callingActivity.finish();
     }
-
     public static void startActivityChallenge1Of3 (Activity callingActivity) {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.Challenge1Of3.Init.class);
 
         callingActivity.startActivity(intent);
         callingActivity.finish();
     }
-
     public static void startActivityChallengeInput (Activity callingActivity) {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.ChallengeInput.Init.class);
 
         callingActivity.startActivity(intent);
         callingActivity.finish();
     }
-
     public static void startActivityChallengeThink (Activity callingActivity) {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.ChallengeThink.Init.class);
 
@@ -59,18 +55,35 @@ public class Navigation {
         callingActivity.startActivity(intent);
         callingActivity.finish();
     }
-
     public static void startActivityResponseRight (Activity callingActivity) {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.ResponseRight.Init.class);
 
         callingActivity.startActivity(intent);
         callingActivity.finish();
     }
-
     public static void startActivityResponseControl (Activity callingActivity) {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.ResponseControl.Init.class);
 
         callingActivity.startActivity(intent);
         callingActivity.finish();
     }
+    public static void startActivityDetailScore(Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.UserSelection.Init.class);
+
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
+    }
+    public static void startActivityScore(Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.Score.Init.class);
+
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
+    }
+    public static void startActivityUserEdit(Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.UserEdit.Init.class);
+
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
+    }
+
 }
