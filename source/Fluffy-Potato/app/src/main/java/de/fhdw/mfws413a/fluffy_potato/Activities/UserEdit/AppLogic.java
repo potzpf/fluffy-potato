@@ -12,10 +12,8 @@ public class AppLogic {
     //Methods
 
     public AppLogic(Data pData, Gui pGui) {
-
         mData = pData;
         mGui = pGui;
-
         mGui.getEt_PC1().setText(mData.getTimespan(1));
         mGui.getEt_PC2().setText(mData.getTimespan(2));
         mGui.getEt_PC3().setText(mData.getTimespan(3));

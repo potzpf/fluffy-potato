@@ -11,7 +11,7 @@ public class Gui {
     //Vars
 
     private Button mBtnNextChallenge;
-    private TextView mTvRightAnsweres;
+    private TextView mTvRightAnswers;
 
     //methods
 
@@ -19,14 +19,14 @@ public class Gui {
 
         pActivity.setContentView(R.layout.activity_response_false);
         mBtnNextChallenge = (Button)pActivity.findViewById(R.id.resb_btn_next);
-        mTvRightAnsweres = (TextView) pActivity.findViewById(R.id.resb_textView_answer);
+        mTvRightAnswers = (TextView) pActivity.findViewById(R.id.resb_textView_answer);
     }
 
     public Button getBntNextChallenge() {
         return mBtnNextChallenge;
     }
 
-    public TextView getTvRightAnsweres() {
-        return mTvRightAnsweres;
+    public TextView getTvRightAnswers() {
+        return mTvRightAnswers;
     }
 }

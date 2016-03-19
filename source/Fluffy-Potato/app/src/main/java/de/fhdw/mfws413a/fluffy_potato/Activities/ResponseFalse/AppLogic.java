@@ -16,7 +16,7 @@ public class AppLogic {
 
         mData = pData;
         mGui = pGui;
-        mGui.getTvRightAnsweres().setText(mData.getRightAnswereText());
+        mGui.getTvRightAnswers().setText(mData.getRightAnswerText());
 
     }
 

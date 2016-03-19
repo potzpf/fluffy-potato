@@ -25,7 +25,7 @@ public class AppLogic {
     public void onButtonStartChallengeClick(){
         System.out.println("Button start Challenge clicked");
         if (mData.getSelectedFile().equals("")){
-            Toast.makeText(mData.getActivity().getApplicationContext(),"keine Kartei AusgewÃ¤hlt", Toast.LENGTH_LONG).show();
+            Toast.makeText(mData.getActivity().getApplicationContext(),"keine Kartei Ausgewählt", Toast.LENGTH_LONG).show();
         } else {
             mData.buildChallengeList(mData.getSelectedFile());
             if (mData.getDuePerFile(mData.getSelectedFile()) > 0) {
@@ -41,7 +41,7 @@ public class AppLogic {
                         break;
                 }
             }else{
-                Toast.makeText(mData.getActivity().getApplicationContext(),"keine fÃ¤lligen Aufgaben fÃ¼r "+mData.getSelectedFile(),
+                Toast.makeText(mData.getActivity().getApplicationContext(),"keine fälligen Aufgaben für "+mData.getSelectedFile(),
                                Toast.LENGTH_LONG).show();
             }
 

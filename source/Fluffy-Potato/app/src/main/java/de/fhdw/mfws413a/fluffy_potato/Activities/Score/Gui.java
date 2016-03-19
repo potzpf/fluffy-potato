@@ -24,6 +24,10 @@ public class Gui {
     //methods
 
     public Gui(Activity pActivity) {
+        pActivity.setContentView(R.layout.activity_score);
+        mBtnStart = (Button) pActivity.findViewById(R.id.scr_button_start);
+        mBtnDetail = (Button)pActivity.findViewById(R.id.scr_button_detail);
+    }
 
         pActivity.setContentView(R.layout.activity_score);
         mBtn_ToFiles = (Button) pActivity.findViewById(R.id.scr_button_ToFile);
