@@ -1,5 +1,7 @@
 package de.fhdw.mfws413a.fluffy_potato.Activities.ChallengeThink;
 
+import de.fhdw.mfws413a.fluffy_potato.Navigation.Navigation;
+
 public class AppLogic {
 
     //vars
@@ -13,12 +15,12 @@ public class AppLogic {
 
         mData = pData;
         mGui = pGui;
-
+        mGui.setChallenge(mData.getCurrentChallenge());
     }
 
     public void onButtonAnswerThinkClick(){
         System.out.println("Button Answer Think clicked");
-        //Navigation.startActivityUserSelection(mData.getActivity());
+        Navigation.startActivityResponseControl(mData.getActivity());
     }
 
 }

@@ -12,11 +12,13 @@ public class MyApp extends Application {
 
     private ArrayList<de.fhdw.mfws413a.fluffy_potato.Data.Challenge> gCurrentChallengeList;
     private Integer gCurrentChallengeIndex;
+    private Integer gRightAnsweredCount;
     private ApplicationInterface gAppIF = new ApplicationInterface();
     private String gActUser;
 
     public boolean incCurrentChallengeIndex(){
-        if (gCurrentChallengeIndex +1 == gCurrentChallengeList.size()-1){
+        if (gCurrentChallengeIndex +1 == gCurrentChallengeList.size()){
+            gCurrentChallengeIndex++;
             return false;
         }
         else{
@@ -40,5 +42,27 @@ public class MyApp extends Application {
 
     public void setActUser(String pActUser) {
         gActUser = pActUser;
+    }
+
+    public void setChallengeList(String pFile) {
+        gCurrentChallengeList = gAppIF.getDueChallenges(gActUser,pFile);
+        gCurrentChallengeIndex = 0;
+        gRightAnsweredCount = 0;
+    }
+
+    public String getCurrentChallengeType(){
+        return getCurrentChallenge().getTyp();
+    }
+
+    public void incRightAnsweredCount(){
+        gRightAnsweredCount++;
+    }
+
+    public Integer getRightAnsweredCount() {
+        return gRightAnsweredCount;
+    }
+
+    public Integer getDoneChallengesCount(){
+        return gCurrentChallengeIndex;
     }
 }

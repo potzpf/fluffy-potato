@@ -13,8 +13,9 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:layout_marginTop="30px"
         android:text="Fragestellung"
         android:id="@+id/challc_textView_question" />
 
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="Lösung anzeigen"
         android:textAllCaps="false"
-        android:textSize="25sp"
+        android:textSize="50px"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/challc_btn_show"/>

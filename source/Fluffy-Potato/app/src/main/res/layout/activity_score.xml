@@ -14,38 +14,38 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Endergebnis"
+        android:text="Endergebnis: "
         android:id="@+id/scr_textView_titel"
         android:layout_alignParentTop="true"
-        android:textSize="25sp"
+        android:textSize="50px"
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="220px"
         android:layout_height="wrap_content"
         android:text="Bearbeitet:"
-        android:textSize="20sp"
+        android:textSize="40px"
         android:id="@+id/scr_textView_answ"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60px"
         android:layout_below="@+id/scr_textView_titel"
         android:layout_alignParentLeft="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="220px"
         android:layout_height="wrap_content"
         android:text="Richtig:"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"
+        android:textSize="40px"
+        android:layout_marginTop="30px"
         android:id="@+id/scr_textView_right"
         android:layout_below="@+id/scr_textView_answ"
         android:layout_alignParentLeft="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="220px"
         android:layout_height="wrap_content"
         android:text="Falsch:"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"
+        android:textSize="40px"
+        android:layout_marginTop="30px"
         android:id="@+id/scr_textView_wrong"
         android:layout_below="@+id/scr_textView_right"
         android:layout_alignParentLeft="true" />
@@ -53,39 +53,40 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Zahl"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="60px"
         android:id="@+id/scr_textView_answ2"
-        android:layout_centerHorizontal="true"
+        android:textSize="40px"
+        android:layout_toRightOf="@id/scr_textView_answ"
         android:layout_below="@id/scr_textView_titel"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Zahl"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30px"
+        android:textSize="40px"
         android:id="@+id/scr_textView_right2"
-        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/scr_textView_right"
         android:layout_below="@id/scr_textView_answ2"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40px"
         android:text="Zahl"
         android:id="@+id/scr_textView_wrong2"
-        android:layout_alignTop="@+id/scr_textView_wrong"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="30px"
+        android:layout_below="@+id/scr_textView_right2"
+        android:layout_toRightOf="@+id/scr_textView_wrong" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Detailansicht"
+        android:text="Zur Kareti Auswahl"
         android:textAllCaps="false"
-        android:textSize="25sp"
-        android:id="@+id/scr_button_detail"
+        android:textSize="50px"
+        android:id="@+id/scr_button_ToFile"
         android:layout_alignParentBottom="true" />
 
 

@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="Fragestellung"
         android:layout_marginTop="30px"
-        android:textSize="40px"
+        android:textSize="30px"
         android:id="@+id/challa_textView_question"
         />
 
@@ -33,11 +33,11 @@
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70px"
+        android:layout_marginTop="30px"
         android:layout_centerVertical="true"
         android:layout_below="@+id/challa_textView_question"
         android:text="Antwort A"
-        android:textSize="50px"
+        android:textSize="40px"
         android:id="@+id/challa_checkBox_answer_a"
        />
 
@@ -45,8 +45,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Antwort B"
-        android:layout_marginTop="30px"
-        android:textSize="50px"
+        android:layout_marginTop="20px"
+        android:textSize="40px"
         android:id="@+id/challa_checkBox_answer_b"
         android:layout_below="@+id/challa_checkBox_answer_a" />
 
@@ -54,8 +54,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Antwort C"
-        android:layout_marginTop="30px"
-        android:textSize="50px"
+        android:layout_marginTop="20px"
+        android:textSize="40px"
         android:id="@+id/challa_checkBox_answer_c"
         android:layout_below="@+id/challa_checkBox_answer_b" />
 </RelativeLayout>

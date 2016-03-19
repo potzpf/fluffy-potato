@@ -35,10 +35,12 @@ public class Challenge {
     public String getRightAnswerText(){
         String lAnswereText = "";
 
-        for (int i = 0; i <answerSize()-1; i++) {
-            lAnswereText = lAnswereText + getAnswere(i);
-            if (i+1 < answerSize()){
-                lAnswereText = lAnswereText + "\n";
+        for (int i = 0; i <answerSize(); i++) {
+            if (isRightAnswer(i)) {
+                lAnswereText = lAnswereText + getAnswere(i);
+                if (i + 1 < answerSize()) {
+                    lAnswereText = lAnswereText + "\n\n";
+                }
             }
         }
         return lAnswereText;
@@ -52,7 +54,7 @@ public class Challenge {
         Integer lRightCount;
 
         lRightCount = 0;
-        for (int i = 0; i < answerSize()-1; i++) {
+        for (int i = 0; i < answerSize(); i++) {
             if (pAnswere.equals(getAnswere(i)) && mAnswers.get(i).isCorrect()) {
                 lRightCount++;
             }

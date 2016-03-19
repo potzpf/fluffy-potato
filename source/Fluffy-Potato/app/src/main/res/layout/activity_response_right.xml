@@ -12,12 +12,14 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="200sp"
+        android:layout_height="match_parent"
         android:text="Das war richtig!"
-        android:textSize="30sp"
+        android:textSize="60px"
         android:gravity="center"
         android:id="@+id/resa_textView_right"
         android:textAlignment="center"
+        android:layout_above="@+id/resa_btn_next"
+
         android:background="#a5ff8a" />
 
     <Button
@@ -25,7 +27,8 @@
         android:layout_height="wrap_content"
         android:text="Weiter"
         android:textAllCaps="false"
-        android:textSize="25sp"
+        android:textSize="50px"
+
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/resa_btn_next"/>

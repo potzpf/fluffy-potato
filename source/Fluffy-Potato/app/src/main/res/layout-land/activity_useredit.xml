@@ -13,78 +13,78 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="85px"
+        android:layout_height="60px"
         android:gravity="center"
-        android:textSize="40px"
+        android:textSize="30px"
         android:text="Klasse I"
-        android:layout_marginTop="20px"
+        android:layout_marginTop="0px"
         android:id="@+id/usredt_textView_ph1"
         android:layout_alignParentLeft="true" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="85px"
+        android:layout_height="60px"
         android:gravity="center"
-        android:textSize="40px"
+        android:textSize="30px"
         android:text="Klasse II"
         android:id="@+id/usredt_textView_ph2"
-        android:layout_marginTop="20px"
+        android:layout_marginTop="5px"
         android:layout_below="@id/usredt_textView_ph1"/>
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="85px"
+        android:layout_height="60px"
         android:gravity="center"
-        android:textSize="40px"
+        android:textSize="30px"
         android:text="Klasse III"
         android:id="@+id/usredt_textView_ph3"
-        android:layout_marginTop="20px"
+        android:layout_marginTop="5px"
         android:layout_below="@id/usredt_textView_ph2"/>
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="85px"
+        android:layout_height="60px"
         android:gravity="center"
-        android:textSize="40px"
+        android:textSize="30px"
         android:text="Klasse IV"
         android:id="@+id/usredt_textView_ph4"
-        android:layout_marginTop="20px"
+        android:layout_marginTop="5px"
         android:layout_below="@id/usredt_textView_ph3"/>
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="85px"
+        android:layout_height="60px"
         android:gravity="center"
-        android:textSize="40px"
+        android:textSize="30px"
         android:text="Klasse V"
         android:id="@+id/usredt_textView_ph5"
-        android:layout_marginTop="20px"
+        android:layout_marginTop="5px"
         android:layout_below="@id/usredt_textView_ph4"/>
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="85px"
+        android:layout_height="60px"
         android:gravity="center"
-        android:textSize="40px"
+        android:textSize="30px"
         android:text="Klasse VI"
         android:id="@+id/usredt_textView_ph6"
-        android:layout_marginTop="20px"
+        android:layout_marginTop="5px"
         android:layout_below="@id/usredt_textView_ph5"/>
 
     <EditText
         android:layout_width="200px"
-        android:layout_marginTop="20px"
-        android:layout_height="85px"
-        android:textSize="40px"
+        android:layout_marginTop="0px"
+        android:layout_height="60px"
+        android:textSize="30px"
         android:id="@+id/usredt_editText_ph1"
         android:layout_centerHorizontal="true"
         android:inputType="number"/>
 
     <EditText
         android:layout_width="200px"
-        android:layout_marginTop="20px"
-        android:textSize="40px"
-        android:layout_height="85px"
+        android:layout_marginTop="5px"
+        android:textSize="30px"
+        android:layout_height="60px"
         android:id="@+id/usredt_editText_ph2"
         android:layout_below="@id/usredt_editText_ph1"
         android:layout_centerHorizontal="true"
@@ -92,9 +92,9 @@
 
     <EditText
         android:layout_width="200px"
-        android:layout_marginTop="20px"
-        android:layout_height="85px"
-        android:textSize="40px"
+        android:layout_marginTop="5px"
+        android:layout_height="60px"
+        android:textSize="30px"
         android:id="@+id/usredt_editText_ph3"
         android:layout_below="@id/usredt_editText_ph2"
         android:layout_centerHorizontal="true"
@@ -102,9 +102,9 @@
 
     <EditText
         android:layout_width="200px"
-        android:layout_marginTop="20px"
-        android:layout_height="85px"
-        android:textSize="40px"
+        android:layout_marginTop="5px"
+        android:layout_height="60px"
+        android:textSize="30px"
         android:id="@+id/usredt_editText_ph4"
         android:layout_below="@id/usredt_editText_ph3"
         android:layout_centerHorizontal="true"
@@ -112,67 +112,67 @@
 
     <EditText
         android:layout_width="200px"
-        android:layout_marginTop="20px"
-        android:layout_height="85px"
+        android:layout_marginTop="5px"
+        android:layout_height="60px"
         android:id="@+id/usredt_editText_ph5"
-        android:textSize="40px"
+        android:textSize="30px"
         android:layout_below="@id/usredt_editText_ph4"
         android:layout_centerHorizontal="true"
         android:inputType="number"/>
 
     <EditText
         android:layout_width="200px"
-        android:layout_marginTop="20px"
-        android:layout_height="85px"
+        android:layout_marginTop="5px"
+        android:layout_height="60px"
         android:id="@+id/usredt_editText_ph6"
-        android:textSize="40px"
+        android:textSize="30px"
         android:layout_below="@id/usredt_editText_ph5"
         android:layout_centerHorizontal="true"
         android:inputType="number"/>
 
     <Spinner
         android:layout_width="200px"
-        android:layout_height="85px"
-        android:layout_marginTop="20px"
+        android:layout_height="60px"
+        android:layout_marginTop="0px"
         android:id="@+id/usredt_spinner_ph1"
         android:layout_alignParentRight="true" />
 
     <Spinner
         android:layout_width="200px"
-        android:layout_height="85px"
-        android:layout_marginTop="20px"
+        android:layout_height="60px"
+        android:layout_marginTop="5px"
         android:id="@+id/usredt_spinner_ph2"
         android:layout_alignParentRight="true"
         android:layout_below="@id/usredt_editText_ph1"/>
 
     <Spinner
         android:layout_width="200px"
-        android:layout_height="85px"
-        android:layout_marginTop="20px"
+        android:layout_height="60px"
+        android:layout_marginTop="5px"
         android:id="@+id/usredt_spinner_ph3"
         android:layout_alignParentRight="true"
         android:layout_below="@id/usredt_editText_ph2"/>
 
     <Spinner
         android:layout_width="200px"
-        android:layout_height="85px"
-        android:layout_marginTop="20px"
+        android:layout_height="60px"
+        android:layout_marginTop="5px"
         android:id="@+id/usredt_spinner_ph4"
         android:layout_alignParentRight="true"
         android:layout_below="@id/usredt_editText_ph3"/>
 
     <Spinner
         android:layout_width="200px"
-        android:layout_height="85px"
-        android:layout_marginTop="20px"
+        android:layout_height="60px"
+        android:layout_marginTop="5px"
         android:id="@+id/usredt_spinner_ph5"
         android:layout_alignParentRight="true"
         android:layout_below="@id/usredt_editText_ph4"/>
 
     <Spinner
         android:layout_width="200px"
-        android:layout_height="85px"
-        android:layout_marginTop="20px"
+        android:layout_height="60px"
+        android:layout_marginTop="5px"
         android:id="@+id/usredt_spinner_ph6"
         android:layout_alignParentRight="true"
         android:layout_below="@id/usredt_editText_ph5"/>
@@ -181,8 +181,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:textSize="50px"
+        android:textSize="35px"
         android:text="Änderungen bestätigen"
+        android:layout_marginBottom="0px"
         android:id="@+id/usredt_btn_edit"
         android:layout_alignParentBottom="true" />
 
