@@ -26,8 +26,4 @@ public class AppLogic {
         //System.out.println("Button Start clicked");
         Navigation.startActivityFileSelection(mData.getActivity());
     }
-
-    public void onButtonDetailClick() {
-        Navigation.startActivityDetailScore(mData.getActivity());
-    }
 }

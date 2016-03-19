@@ -14,7 +14,6 @@ public class Gui {
     //Vars
 
     private Button mBtnToFiles;
-    private Button mBtnToStart;
     private TextView mTvGoal;
     private TextView mTvDone;
     private TextView mTvRight;
@@ -27,7 +26,6 @@ public class Gui {
     public Gui(Activity pActivity) {
         pActivity.setContentView(R.layout.activity_score);
         mBtnToFiles = (Button) pActivity.findViewById(R.id.scr_button_ToFile);
-        mBtnToStart = (Button) pActivity.findViewById(R.id.scr_button_start);
         mTvGoal = (TextView) pActivity.findViewById(R.id.scr_textView_titel);
         mTvDone = (TextView) pActivity.findViewById(R.id.scr_textView_answ2);
         mTvRight = (TextView) pActivity.findViewById(R.id.scr_textView_right2);
@@ -37,10 +35,6 @@ public class Gui {
 
     public Button getBtnToFiles() {
         return mBtnToFiles;
-    }
-
-    public Button getBtnToStart() {
-        return mBtnToStart;
     }
 
     public TextView getTvGoal() {
