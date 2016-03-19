@@ -14,7 +14,8 @@ public class Event_listener implements View.OnClickListener{
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
 
-        pGui.getmBtn_ToFiles().setOnClickListener(this);
+        pGui.getBtnToFiles().setOnClickListener(this);
+        pGui.getBtnToStart().setOnClickListener(this);
         mLogic = pLogic;
     }
 

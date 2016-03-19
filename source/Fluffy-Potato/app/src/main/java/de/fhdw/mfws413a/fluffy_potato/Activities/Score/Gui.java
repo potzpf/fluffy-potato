@@ -13,11 +13,12 @@ public class Gui {
 
     //Vars
 
-    private Button mBtn_ToFiles;
-    private TextView mTv_Goal;
-    private TextView mTv_Done;
-    private TextView mTv_Right;
-    private TextView mTv_Wrong;
+    private Button mBtnToFiles;
+    private Button mBtnToStart;
+    private TextView mTvGoal;
+    private TextView mTvDone;
+    private TextView mTvRight;
+    private TextView mTvWrong;
 
 
 
@@ -25,37 +26,37 @@ public class Gui {
 
     public Gui(Activity pActivity) {
         pActivity.setContentView(R.layout.activity_score);
-        mBtnStart = (Button) pActivity.findViewById(R.id.scr_button_start);
-        mBtnDetail = (Button)pActivity.findViewById(R.id.scr_button_detail);
-    }
-
-        pActivity.setContentView(R.layout.activity_score);
-        mBtn_ToFiles = (Button) pActivity.findViewById(R.id.scr_button_ToFile);
-        mTv_Goal = (TextView) pActivity.findViewById(R.id.scr_textView_titel);
-        mTv_Done = (TextView) pActivity.findViewById(R.id.scr_textView_answ2);
-        mTv_Right = (TextView) pActivity.findViewById(R.id.scr_textView_right2);
-        mTv_Wrong = (TextView) pActivity.findViewById(R.id.scr_textView_wrong2);
+        mBtnToFiles = (Button) pActivity.findViewById(R.id.scr_button_ToFile);
+        mBtnToStart = (Button) pActivity.findViewById(R.id.scr_button_start);
+        mTvGoal = (TextView) pActivity.findViewById(R.id.scr_textView_titel);
+        mTvDone = (TextView) pActivity.findViewById(R.id.scr_textView_answ2);
+        mTvRight = (TextView) pActivity.findViewById(R.id.scr_textView_right2);
+        mTvWrong = (TextView) pActivity.findViewById(R.id.scr_textView_wrong2);
 
     }
 
-    public Button getmBtn_ToFiles() {
-        return mBtn_ToFiles;
+    public Button getBtnToFiles() {
+        return mBtnToFiles;
     }
 
-    public TextView getmTv_Goal() {
-        return mTv_Goal;
+    public Button getBtnToStart() {
+        return mBtnToStart;
     }
 
-    public TextView getmTv_Done() {
-        return mTv_Done;
+    public TextView getTvGoal() {
+        return mTvGoal;
     }
 
-    public TextView getmTv_Right() {
-        return mTv_Right;
+    public TextView getTvDone() {
+        return mTvDone;
     }
 
-    public TextView getmTv_Wrong() {
-        return mTv_Wrong;
+    public TextView getTvRight() {
+        return mTvRight;
+    }
+
+    public TextView getTvWrong() {
+        return mTvWrong;
     }
 
     public void setGoal(double pPercentage) {
@@ -64,18 +65,18 @@ public class Gui {
         decimalFormatSymbols.setDecimalSeparator('.');
         decimalFormatSymbols.setGroupingSeparator(',');
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00", decimalFormatSymbols);
-        mTv_Goal.setText(mTv_Goal.getText() + decimalFormat.format(pPercentage * 100)+"%");
+        mTvGoal.setText(mTvGoal.getText() + decimalFormat.format(pPercentage * 100)+"%");
     }
 
     public void setDone(int pDone) {
-        mTv_Done.setText(Integer.toString(pDone));
+        mTvDone.setText(Integer.toString(pDone));
     }
 
     public void setRight(int pRight) {
-        mTv_Right.setText(Integer.toString(pRight));
+        mTvRight.setText(Integer.toString(pRight));
     }
 
     public void setWrong(int pWrong) {
-        mTv_Wrong.setText(Integer.toString(pWrong));
+        mTvWrong.setText(Integer.toString(pWrong));
     }
 }
