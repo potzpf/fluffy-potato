@@ -9,20 +9,16 @@ public class Gui {
 
     //Vars
 
-    private Button mBtn_Start;
+    private Button mBtnSave;
 
     //methods
 
     public Gui(Activity pActivity) {
-
-        pActivity.setContentView(R.layout.activity_main);
-        mBtn_Start = (Button) pActivity.findViewById(R.id.main_btn_start);
-
+        pActivity.setContentView(R.layout.activity_useredit);
+        mBtnSave = (Button) pActivity.findViewById(R.id.usr_btn_edit);
     }
 
-    public Button getBtn_Start() {
-
-        return mBtn_Start;
-
+    public Button getBtnSave() {
+        return mBtnSave;
     }
 }

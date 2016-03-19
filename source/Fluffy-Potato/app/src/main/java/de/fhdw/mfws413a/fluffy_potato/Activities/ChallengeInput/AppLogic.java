@@ -18,7 +18,15 @@ public class AppLogic {
 
     public void onButtonAnswerInputClick(){
         System.out.println("Button Answer Input clicked");
-        //Navigation.startActivityUserSelection(mData.getActivity());
+        //ckeck if answer is right or wrong to navigate to the corresponding Activity
+       /* switch(isAnswerRight()){
+            case true:
+                Navigation.startActivityResponseRight(mData.getActivity());
+                break;
+            case false:
+                Navigation.startActivityResponseFalse(mData.getActivity());
+                break;
+        } */
     }
 
 }

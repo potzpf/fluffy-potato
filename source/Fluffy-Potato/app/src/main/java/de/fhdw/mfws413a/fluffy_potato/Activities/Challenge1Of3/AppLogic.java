@@ -18,11 +18,12 @@ public class AppLogic {
 
     public void onButtonNextClick(){
         System.out.println("Button Next in Challenge1of3 clicked");
-       /* switch(answer){
-            case answer == true:
+       //ckeck if answer is right or wrong to navigate to the corresponding Activity
+       /* switch(isAnswerRight()){
+            case true:
                 Navigation.startActivityResponseRight(mData.getActivity());
                 break;
-            case answer == false:
+            case false:
                 Navigation.startActivityResponseFalse(mData.getActivity());
                 break;
         } */

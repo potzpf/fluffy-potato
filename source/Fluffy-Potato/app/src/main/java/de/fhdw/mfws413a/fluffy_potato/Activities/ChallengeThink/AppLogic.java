@@ -18,7 +18,15 @@ public class AppLogic {
 
     public void onButtonAnswerThinkClick(){
         System.out.println("Button Answer Think clicked");
-        //Navigation.startActivityUserSelection(mData.getActivity());
+        //ckeck if answer is right or wrong to navigate to the corresponding Activity
+       /* switch(isAnswerRight()){
+            case true:
+                Navigation.startActivityResponseRight(mData.getActivity());
+                break;
+            case false:
+                Navigation.startActivityResponseFalse(mData.getActivity());
+                break;
+        } */
     }
 
 }

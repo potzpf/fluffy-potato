@@ -19,7 +19,7 @@ public class Event_listener implements View.OnClickListener{
 
         pGui.getBtnCreateNewUser().setOnClickListener(this);
         pGui.getBtnGoToFileSelection().setOnClickListener(this);
-        //pGui.getSpSelectUser().setOnItemSelectedListener();
+        pGui.getBtnEditUser().setOnClickListener(this);
         mLogic = pLogic;
     }
 

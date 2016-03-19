@@ -36,7 +36,7 @@ public class AppLogic {
                     break;
             }
         }else{
-            //statistik öffnen
+            Navigation.startActivityScore(mData.getActivity());
         }
     }
 }

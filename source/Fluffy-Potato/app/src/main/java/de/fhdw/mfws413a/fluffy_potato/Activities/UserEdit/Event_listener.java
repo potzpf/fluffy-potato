@@ -11,16 +11,12 @@ public class Event_listener implements View.OnClickListener{
     //Methods
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
-
-        pGui.getBtn_Start().setOnClickListener(this);
+        pGui.getBtnSave().setOnClickListener(this);
         mLogic = pLogic;
-
     }
 
     @Override public void onClick(View v) {
-
-        mLogic.OnButtonStartClick(); //
-
+        mLogic.onButtonSaveClick(); //
     }
 }
 

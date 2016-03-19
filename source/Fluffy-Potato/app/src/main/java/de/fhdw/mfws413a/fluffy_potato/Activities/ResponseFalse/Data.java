@@ -24,7 +24,7 @@ public class Data {
     }
 
 
-    public String getRightAnswereText(){
+    public String getRightAnswerText(){
         return Global.getCurrentChallenge().getRightAnswerText();
     }
 

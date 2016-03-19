@@ -243,7 +243,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="223dp">
+        android:layout_marginTop="223dp"
+        android:id="@+id/lastLine">
 
         <TextView
             android:layout_width="wrap_content"
@@ -272,4 +273,9 @@
             android:textAlignment="center"
             android:id="@+id/det_textView_faellig6" />
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zurück"
+        android:id="@+id/det_btn_back"/>
 </RelativeLayout>

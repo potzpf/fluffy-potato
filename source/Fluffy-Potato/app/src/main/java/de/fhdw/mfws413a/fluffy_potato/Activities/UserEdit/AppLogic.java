@@ -12,14 +12,12 @@ public class AppLogic {
     //Methods
 
     public AppLogic(Data pData, Gui pGui) {
-
         mData = pData;
         mGui = pGui;
-
     }
 
-    public void OnButtonStartClick(){
+    public void onButtonSaveClick(){
         //System.out.println("Button Start clicked");
-        Navigation.startActivityUserSelection(mData.getActivity(),"");
+        Navigation.startActivityFileSelection(mData.getActivity());
     }
 }
