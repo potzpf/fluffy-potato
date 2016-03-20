@@ -3,6 +3,8 @@ package de.fhdw.mfws413a.fluffy_potato.Activities.ChallengeInput;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import de.fhdw.mfws413a.fluffy_potato.Navigation.Navigation;
+
 public class Init extends AppCompatActivity {
 
     //Vars
@@ -38,4 +40,9 @@ public class Init extends AppCompatActivity {
     private void initEvents(){
         new Event_listener(mLogic,mGui);
     }
+    @Override
+    public void onBackPressed() {
+        Navigation.startActivityScore(this);
+    }
+
 }

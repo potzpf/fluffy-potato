@@ -28,6 +28,7 @@
         <activity android:name=".Activities.UserEdit.Init"></activity>
         <activity android:name=".Activities.Score.Init"></activity>
         <activity android:name=".Activities.DetailScore.Init"></activity>
+        <activity android:name=".Activities.FileScore.Init"></activity>
     </application>
 
 </manifest>

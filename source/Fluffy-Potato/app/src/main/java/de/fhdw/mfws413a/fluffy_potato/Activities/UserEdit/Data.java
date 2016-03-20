@@ -10,6 +10,7 @@ public class Data {
 
     private Activity mActivity;
     private MyApp mGlobal;
+    //* default zeitspannen gegebenenfalls hard codieren
   //Methods
 
     public Data(Activity pActivity) {
@@ -22,12 +23,13 @@ public class Data {
     }
 
     public String getTimespan(Integer pClass){
-        mGlobal.getAppIF().getDuration(mGlobal.getActUser(),pClass);
+        //mGlobal.getAppIF().getDuration(mGlobal.getActUser(),pClass);
         //*in integer umwandeln
         return pClass.toString();
     }
 
     public void setTimespan(Integer pClass, Integer pTimespan){
-        mGlobal.getAppIF().setDuration(mGlobal.getActUser(),pClass-1,pTimespan);
+        mGlobal.getAppIF().setDuration(mGlobal.getActUser(),pClass,pTimespan);
+        //*prüfen
     }
 }

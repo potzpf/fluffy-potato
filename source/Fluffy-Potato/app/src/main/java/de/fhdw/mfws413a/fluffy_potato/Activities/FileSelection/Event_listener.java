@@ -24,16 +24,20 @@ public class Event_listener implements View.OnClickListener{
             }
         });
         pGui.getBtnDeatil().setOnClickListener(this);
+        pGui.getBtnStats().setOnClickListener(this);
         mLogic = pLogic;
 
     }
 
     @Override public void onClick(View v) {
         switch(v.getId()){
-            case R.id.btn_start_challenge: mLogic.onButtonStartChallengeClick();;
+            case R.id.btn_stats_challenge: mLogic.onButtonFileClick();
+                break;
+            case R.id.btn_start_challenge: mLogic.onButtonStartChallengeClick();
                 break;
             case R.id.btn_detail_challenge: mLogic.onButtonDetailClick();
                 break;
+
         }
     }
 

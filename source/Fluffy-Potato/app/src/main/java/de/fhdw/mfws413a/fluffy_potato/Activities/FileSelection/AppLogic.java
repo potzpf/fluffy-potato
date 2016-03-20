@@ -59,4 +59,7 @@ public class AppLogic {
             Navigation.startActivityDetailScore(mData.getActivity(), mData.getSelectedFile());
         }
     }
+    public void onButtonFileClick(){
+        Navigation.startActivityFileScore(mData.getActivity());
+    }
 }

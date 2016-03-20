@@ -184,6 +184,15 @@
         android:textSize="50px"
         android:text="Änderungen bestätigen"
         android:id="@+id/usredt_btn_edit"
+        android:layout_above="@+id/usredt_btn_default"
+         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="50px"
+        android:text="Default werte setzen"
+        android:id="@+id/usredt_btn_default"
         android:layout_alignParentBottom="true" />
 
 

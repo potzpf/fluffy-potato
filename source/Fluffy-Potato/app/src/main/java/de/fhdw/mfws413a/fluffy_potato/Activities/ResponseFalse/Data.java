@@ -36,4 +36,8 @@ public class Data {
     public Challenge getCurrentChallenge() {
         return mGlobal.getCurrentChallenge();
     }
+
+    public void dropChallenge() {
+        mGlobal.dropChallenge();
+    }
 }

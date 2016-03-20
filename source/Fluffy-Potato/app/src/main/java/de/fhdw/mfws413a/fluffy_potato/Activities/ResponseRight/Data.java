@@ -33,4 +33,8 @@ public class Data {
     public boolean incCurrentChallengeIndex() {
         return mGlobal.incCurrentChallengeIndex();
     }
+
+    public void pushChallenge() {
+        mGlobal.pushChallenge();
+    }
 }

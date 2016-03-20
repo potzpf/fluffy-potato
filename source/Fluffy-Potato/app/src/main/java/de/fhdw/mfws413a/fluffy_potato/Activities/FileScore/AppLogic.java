@@ -1,6 +1,11 @@
 package de.fhdw.mfws413a.fluffy_potato.Activities.FileScore;
 
+import android.widget.ArrayAdapter;
+
+import java.util.ArrayList;
+
 import de.fhdw.mfws413a.fluffy_potato.Navigation.Navigation;
+import de.fhdw.mfws413a.fluffy_potato.R;
 
 public class AppLogic {
 
@@ -16,10 +21,9 @@ public class AppLogic {
         mData = pData;
         mGui = pGui;
 
-    }
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(mData.getActivity(),
+                R.layout.gridview, mData.getFileData());
+        mGui.getmGvFile().setAdapter(adapter);
 
-    public void onButtonBackClick(){
-        System.out.println("Button Back clicked");
-        Navigation.startActivityFileSelection(mData.getActivity());
     }
 }
