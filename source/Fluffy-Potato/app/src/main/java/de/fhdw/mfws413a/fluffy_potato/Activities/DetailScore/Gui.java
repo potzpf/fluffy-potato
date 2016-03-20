@@ -44,4 +44,55 @@ public class Gui {
         mTvDue6      = (TextView) pActivity.findViewById(R.id.det_textView_faellig6);
     }
 
+    public TextView getmTvFile() {
+        return mTvFile;
+    }
+
+    public TextView getmTvQuestion1() {
+        return mTvQuestion1;
+    }
+
+    public TextView getmTvQuestion2() {
+        return mTvQuestion2;
+    }
+
+    public TextView getmTvQuestion3() {
+        return mTvQuestion3;
+    }
+
+    public TextView getmTvQuestion4() {
+        return mTvQuestion4;
+    }
+
+    public TextView getmTvQuestion5() {
+        return mTvQuestion5;
+    }
+
+    public TextView getmTvQuestion6() {
+        return mTvQuestion6;
+    }
+
+    public TextView getmTvDue1() {
+        return mTvDue1;
+    }
+
+    public TextView getmTvDue2() {
+        return mTvDue2;
+    }
+
+    public TextView getmTvDue3() {
+        return mTvDue3;
+    }
+
+    public TextView getmTvDue4() {
+        return mTvDue4;
+    }
+
+    public TextView getmTvDue5() {
+        return mTvDue5;
+    }
+
+    public TextView getmTvDue6() {
+        return mTvDue6;
+    }
 }

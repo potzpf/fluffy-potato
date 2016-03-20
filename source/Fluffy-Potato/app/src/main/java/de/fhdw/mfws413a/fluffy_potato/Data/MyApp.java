@@ -4,14 +4,17 @@ import android.app.Application;
 
 import java.util.ArrayList;
 
-import de.fhdw.mfws413a.fluffy_potato.AppInterface.ApplicationInterface;
+import de.fhdw.mfws413a.fluffy_potato.ApplicationLayer.ApplicationInterface;
+import de.fhdw.mfws413a.fluffy_potato.Data.*;
+import de.fhdw.mfws413a.fluffy_potato.Data.Challenge;
+import de.fhdw.mfws413a.fluffy_potato.ApplicationLayer.ApplicationInterface;
 
 public class MyApp extends Application {
 
     private ArrayList<Challenge> gCurrentChallengeList;
     private Integer gCurrentChallengeIndex;
+    private ApplicationInterface gAppIF = new ApplicationInterface(this);
     private Integer gRightAnsweredCount;
-    private ApplicationInterface gAppIF = new ApplicationInterface();
     private String gActUser;
 
     public boolean incCurrentChallengeIndex(){
@@ -19,7 +22,7 @@ public class MyApp extends Application {
             gCurrentChallengeIndex++;
             return false;
         }
-        else{
+        else {
             gCurrentChallengeIndex++;
             return true;
         }

@@ -15,7 +15,7 @@ public class AppLogic {
 
         mData = pData;
         mGui = pGui;
-
+        mGui.getmTvFile().setText(mData.getFileName());
     }
 
     public void onButtonBackClick(){
