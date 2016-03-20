@@ -23,7 +23,6 @@ public class Navigation {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.CreateUser.Init.class);
 
         callingActivity.startActivity(intent);
-        callingActivity.finish();
     }
     public static void startActivityFileSelection(Activity callingActivity) {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.FileSelection.Init.class);
@@ -86,4 +85,10 @@ public class Navigation {
 
     }
 
+    public static void startActivityFileScore(Activity callingActivity) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.FileScore.Init.class);
+        callingActivity.startActivity(intent);
+        callingActivity.finish();
+
+    }
 }

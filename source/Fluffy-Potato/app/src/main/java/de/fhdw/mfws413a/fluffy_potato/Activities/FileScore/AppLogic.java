@@ -17,9 +17,4 @@ public class AppLogic {
         mGui = pGui;
 
     }
-
-    public void onButtonBackClick(){
-        System.out.println("Button Back clicked");
-        Navigation.startActivityFileSelection(mData.getActivity());
-    }
 }

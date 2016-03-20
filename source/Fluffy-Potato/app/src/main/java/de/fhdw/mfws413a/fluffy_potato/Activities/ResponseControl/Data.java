@@ -39,4 +39,12 @@ public class Data {
     public void incRightAnsweredCount() {
         mGlobal.incRightAnsweredCount();
     }
+
+    public void pushChallenge() {
+        mGlobal.pushChallenge();
+    }
+
+    public void dropChallenge() {
+        mGlobal.dropChallenge();
+    }
 }

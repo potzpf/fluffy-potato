@@ -22,7 +22,7 @@ public class Data {
     }
 
     public String getTimespan(Integer pClass){
-        mGlobal.getAppIF().getDuration(mGlobal.getActUser(),pClass);
+        //mGlobal.getAppIF().getDuration(mGlobal.getActUser(),pClass);
         //*in integer umwandeln
         return pClass.toString();
     }

@@ -22,6 +22,7 @@ public class AppLogic {
 
     public void onButtonNextChallengeClick(){
         System.out.println("Button Challenge Next Wrong clicked");
+        mData.dropChallenge();
         if ( mData.incCurrentChallengeIndex() ) {
 
             switch (mData.getCurrentChallenge().getTyp()) {

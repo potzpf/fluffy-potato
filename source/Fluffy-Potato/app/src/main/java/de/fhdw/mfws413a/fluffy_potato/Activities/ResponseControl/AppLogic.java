@@ -23,11 +23,13 @@ public class AppLogic {
     public void onButtonAnswerRightClick(){
         System.out.println("Button Answer Right clicked");
         mData.incRightAnsweredCount();
+        mData.pushChallenge();
         nextChallenge();
     }
 
     public void onButtonAnswerWrongClick(){
         System.out.println("Button Answer Wrong clicked");
+        mData.dropChallenge();
         nextChallenge();
     }
 

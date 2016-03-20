@@ -29,6 +29,7 @@ public class Init extends AppCompatActivity {
 
     private void initData(){
         mData = new Data(this);
+
     }
 
     private void initLogic(){

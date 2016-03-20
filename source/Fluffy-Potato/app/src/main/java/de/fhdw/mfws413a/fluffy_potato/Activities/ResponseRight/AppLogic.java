@@ -23,6 +23,7 @@ public class AppLogic {
     public void onButtonNextChallengeClick(){
         System.out.println("Button Next Challenge Right clicked");
         mData.incRightAnswerdCount();
+        mData.pushChallenge();
         if ( mData.incCurrentChallengeIndex() ) {
 
             switch (mData.getCurrentChallenge().getTyp()) {

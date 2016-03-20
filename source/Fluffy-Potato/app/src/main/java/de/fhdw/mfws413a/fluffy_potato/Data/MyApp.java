@@ -72,4 +72,12 @@ public class MyApp extends Application {
 
         return gCurrentChallengeIndex;
     }
+
+    public void pushChallenge() {
+        gAppIF.pushChallenge(gActUser,getCurrentChallenge().getChallengeID());
+    }
+
+    public void dropChallenge() {
+        gAppIF.dropChallenge(gActUser,getCurrentChallenge().getChallengeID());
+    }
 }
