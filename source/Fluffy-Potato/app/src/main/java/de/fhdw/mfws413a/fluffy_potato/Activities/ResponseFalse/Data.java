@@ -4,6 +4,7 @@ import android.app.Activity;
 
 import java.util.ArrayList;
 
+import de.fhdw.mfws413a.fluffy_potato.Data.Challenge;
 import de.fhdw.mfws413a.fluffy_potato.Data.MyApp;
 
 public class Data {
@@ -11,22 +12,28 @@ public class Data {
   //vars
 
     private Activity mActivity;
-    public MyApp Global;
+    private MyApp mGlobal;
+
   //Methods
 
     public Data(Activity pActivity) {
         mActivity = pActivity;
-        Global = (MyApp) mActivity.getApplication();
+        mGlobal = (MyApp) mActivity.getApplication();
     }
 
     public Activity getActivity() {
         return mActivity;
     }
 
-
     public String getRightAnswerText(){
-        return Global.getCurrentChallenge().getRightAnswerText();
+        return mGlobal.getCurrentChallenge().getRightAnswerText();
     }
 
+    public boolean incCurrentChallengeIndex() {
+        return mGlobal.incCurrentChallengeIndex();
+    }
 
+    public Challenge getCurrentChallenge() {
+        return mGlobal.getCurrentChallenge();
+    }
 }

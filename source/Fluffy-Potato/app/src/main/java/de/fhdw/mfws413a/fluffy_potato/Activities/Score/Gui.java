@@ -37,22 +37,6 @@ public class Gui {
         return mBtnToFiles;
     }
 
-    public TextView getTvGoal() {
-        return mTvGoal;
-    }
-
-    public TextView getTvDone() {
-        return mTvDone;
-    }
-
-    public TextView getTvRight() {
-        return mTvRight;
-    }
-
-    public TextView getTvWrong() {
-        return mTvWrong;
-    }
-
     public void setGoal(double pPercentage) {
 
         DecimalFormatSymbols decimalFormatSymbols = new DecimalFormatSymbols();

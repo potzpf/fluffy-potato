@@ -29,7 +29,7 @@ public class Navigation {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.FileSelection.Init.class);
 
         callingActivity.startActivity(intent);
-        callingActivity.finish();
+
     }
     public static void startActivityChallenge1Of3 (Activity callingActivity) {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.Challenge1Of3.Init.class);
@@ -67,11 +67,11 @@ public class Navigation {
         callingActivity.startActivity(intent);
         callingActivity.finish();
     }
-    public static void startActivityDetailScore(Activity callingActivity) {
-        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.UserSelection.Init.class);
-
+    public static void startActivityDetailScore(Activity callingActivity,String pSelectedsFile) {
+        Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.DetailScore.Init.class);
+        intent.putExtra(Const.P_SELECTED_FILE, pSelectedsFile);
         callingActivity.startActivity(intent);
-        callingActivity.finish();
+
     }
     public static void startActivityScore(Activity callingActivity) {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.Score.Init.class);
@@ -83,7 +83,7 @@ public class Navigation {
         Intent intent = new Intent(callingActivity, de.fhdw.mfws413a.fluffy_potato.Activities.UserEdit.Init.class);
 
         callingActivity.startActivity(intent);
-        callingActivity.finish();
+
     }
 
 }

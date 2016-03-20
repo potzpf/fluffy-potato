@@ -4,13 +4,11 @@ import android.app.Application;
 
 import java.util.ArrayList;
 
-import de.fhdw.mfws413a.fluffy_potato.ApplicationInterface;
-import de.fhdw.mfws413a.fluffy_potato.Data.*;
-import de.fhdw.mfws413a.fluffy_potato.Data.Challenge;
+import de.fhdw.mfws413a.fluffy_potato.AppInterface.ApplicationInterface;
 
 public class MyApp extends Application {
 
-    private ArrayList<de.fhdw.mfws413a.fluffy_potato.Data.Challenge> gCurrentChallengeList;
+    private ArrayList<Challenge> gCurrentChallengeList;
     private Integer gCurrentChallengeIndex;
     private Integer gRightAnsweredCount;
     private ApplicationInterface gAppIF = new ApplicationInterface();
@@ -27,20 +25,22 @@ public class MyApp extends Application {
         }
     }
 
-
     public Challenge getCurrentChallenge(){
         return gCurrentChallengeList.get(gCurrentChallengeIndex);
     }
 
     public ApplicationInterface getAppIF() {
+
         return gAppIF;
     }
 
     public String getActUser() {
+
         return gActUser;
     }
 
     public void setActUser(String pActUser) {
+
         gActUser = pActUser;
     }
 
@@ -51,18 +51,22 @@ public class MyApp extends Application {
     }
 
     public String getCurrentChallengeType(){
+
         return getCurrentChallenge().getTyp();
     }
 
     public void incRightAnsweredCount(){
+
         gRightAnsweredCount++;
     }
 
     public Integer getRightAnsweredCount() {
+
         return gRightAnsweredCount;
     }
 
     public Integer getDoneChallengesCount(){
+
         return gCurrentChallengeIndex;
     }
 }

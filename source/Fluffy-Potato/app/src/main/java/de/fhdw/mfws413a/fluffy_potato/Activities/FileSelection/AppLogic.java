@@ -51,4 +51,12 @@ public class AppLogic {
     public void setSelectedFile(String pSelectedFiel) {
         mData.setSelectedFile(pSelectedFiel);
     }
+
+    public void onButtonDetailClick() {
+        if (mData.getSelectedFile().equals("")) {
+            Toast.makeText(mData.getActivity().getApplicationContext(),"keine Kartei Ausgew�hlt", Toast.LENGTH_LONG).show();
+        }else{
+            Navigation.startActivityDetailScore(mData.getActivity(), mData.getSelectedFile());
+        }
+    }
 }

@@ -22,9 +22,9 @@ public class AppLogic {
 
     public void onButtonNextChallengeClick(){
         System.out.println("Button Challenge Next Wrong clicked");
-        if ( mData.Global.incCurrentChallengeIndex() ) {
+        if ( mData.incCurrentChallengeIndex() ) {
 
-            switch (mData.Global.getCurrentChallenge().getTyp()) {
+            switch (mData.getCurrentChallenge().getTyp()) {
                 case Const.P_CHALLENGE_XOF3:
                     Navigation.startActivityChallenge1Of3(mData.getActivity());
                     break;

@@ -1,6 +1,4 @@
-package de.fhdw.mfws413a.fluffy_potato;
-
-import android.os.Parcelable;
+package de.fhdw.mfws413a.fluffy_potato.Persistent;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

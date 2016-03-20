@@ -23,6 +23,7 @@ public class Event_listener implements View.OnClickListener{
                 mLogic.setSelectedFile((String) adapter.getItemAtPosition(position));
             }
         });
+        pGui.getBtnDeatil().setOnClickListener(this);
         mLogic = pLogic;
 
     }
@@ -30,6 +31,8 @@ public class Event_listener implements View.OnClickListener{
     @Override public void onClick(View v) {
         switch(v.getId()){
             case R.id.btn_start_challenge: mLogic.onButtonStartChallengeClick();;
+                break;
+            case R.id.btn_detail_challenge: mLogic.onButtonDetailClick();
                 break;
         }
     }

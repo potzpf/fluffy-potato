@@ -6,8 +6,6 @@ import java.util.ArrayList;
 
 import de.fhdw.mfws413a.fluffy_potato.Data.Const;
 import de.fhdw.mfws413a.fluffy_potato.Data.MyApp;
-import de.fhdw.mfws413a.fluffy_potato.Storage;
-import de.fhdw.mfws413a.fluffy_potato.UserPotato;
 
 public class Data {
 

@@ -1,4 +1,4 @@
-package de.fhdw.mfws413a.fluffy_potato;
+package de.fhdw.mfws413a.fluffy_potato.AppInterface;
 
 import java.util.ArrayList;
 import javax.xml.datatype.Duration;

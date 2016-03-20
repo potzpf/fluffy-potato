@@ -5,11 +5,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-import java.sql.Array;
 import java.util.ArrayList;
 
 import de.fhdw.mfws413a.fluffy_potato.R;
-import de.fhdw.mfws413a.fluffy_potato.UserPotato;
 
 public class Gui {
 
