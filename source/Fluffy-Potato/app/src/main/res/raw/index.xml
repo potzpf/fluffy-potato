@@ -1,0 +1,309 @@
+<index>
+   <challenge cid="0" type="Xof3">
+     <question> Wie macht die Muh? </question>
+     <solution true="true"> Kuh </solution>
+     <solution> Maeh </solution>
+     <solution> Maunz </solution>
+   </challenge>
+
+   <challenge cid="1" type="Xof3">
+     <question> Was ist der goldene Schnitt? </question>
+	<solution true="true"> A/B = A+B/A </solution>
+	<solution true="true"> (1 + 5 ^ 0.5)/2 </solution>
+	<solution true="true"> x = (1 + x) ^ 0.5 </solution>
+   </challenge>
+
+   <challenge cid="2" type="input" >
+     <question> Wofuer ist Alfred Nobel bekannt? </question>
+	<solution> Dynamit </solution>
+   </challenge>
+
+   <challenge cid="3" type="Xof3">
+     <question>Im Jahr 1953 gab es in der DDR einen Aufstand, an den lange Zeit in der Bundesrepublik Deutschland ein Feiertag erinnerte. Wann war das?</question>
+     <solution true="true"> 17. Juni </solution>
+     <solution> 01. April </solution>
+     <solution> 0. Mai </solution>
+   </challenge>
+
+   <challenge cid="4" type="Xof3">
+     <question> Welches Grundrecht ist in Artikel 1 des Grundgesetzes der Bundesrepublik Deutschland garantiert?
+</question>
+	<solution true="true"> die Unantastbarkeit der Menschenwürde
+  </solution>
+	<solution > das Recht auf Leben</solution>
+	<solution > Religionsfreiheit</solution>
+   </challenge>
+
+   <challenge cid="5" type="Xof3">
+     <question> Wann wurde die Bundesrepublik Deutschland gegründet?
+  </question>
+	 <solution true="true"> 1949 </solution>
+     <solution> 1939 </solution>
+     <solution> 1945 </solution>
+   </challenge>
+
+<challenge cid="6" type="Xof3">
+     <question> Welche Farben hat die deutsche Flagge?
+  </question>
+     <solution true="true"> schwarz-rot-gold
+  </solution>
+     <solution> rot-weiß-schwarz</solution>
+     <solution> schwarz-rot-grün</solution>
+   </challenge>
+
+   <challenge cid="7" type="Xof3">
+     <question> Wer wählt den deutschen Bundeskanzler / die deutsche Bundeskanzlerin?
+  </question>
+	<solution true="true"> der Bundestag </solution>
+	<solution > die Bundesversammlung </solution>
+	<solution > das Volk </solution>
+   </challenge>
+
+   <challenge cid="8" type="Xof3">
+     <question> Wie endete der Zweite Weltkrieg in Europa offiziell?</question>
+	<solution> mit dem Tod Adolf Hitlers </solution>
+	<solution true="true"> durch die bedingungslose Kapitulation Deutschlands </solution>
+	<solution> mit dem Rückzug der Deutschen aus den besetzten Gebieten </solution>
+   </challenge>
+
+<challenge cid="9" type="Xof3">
+     <question> In welchem US-Bundesstaat liegt Los Angeles? 		</question>
+     <solution true="true"> Kalifornien </solution>
+     <solution> Nebraska </solution>
+     <solution> Michigan </solution>
+   </challenge>
+
+   <challenge cid="10" type="Xof3">
+     <question> Welche ist die längste Gebirgskette der Welt? </question>
+	<solution true="true"> Anden </solution>
+	<solution > Alpen </solution>
+	<solution > Mount Everest </solution>
+   </challenge>
+
+   <challenge cid="11" type="Xof3">
+     <question> In welchem Bundesland liegt Magdeburg? </question>
+	<solution true="true"> Sachsen Anhalt </solution>
+	<solution > Niedersachsen </solution>
+	<solution > Baden-Würtemberg </solution>
+   </challenge>
+
+<challenge cid="12" type="input">
+     <question> Wie heißt das deutsche Wort für "current"?
+  </question>
+     <solution true="true"> aktuell </solution>
+   </challenge>
+
+   <challenge cid="13" type="Xof3">
+     <question> Was ist das Meistverkaufte Musikalbum in Deutschland? 
+</question>
+	<solution true="true"> Mensch  </solution>
+	<solution > Tier </solution>
+	<solution > 99 Luftballons </solution>
+   </challenge>
+
+   <challenge cid="14" type="input">
+     <question> Aus wie vielen Linien besteht ein Notensystem? 
+</question>
+	<solution true="true"> 5 </solution>
+   </challenge>
+
+<challenge cid="15" type="input">
+     <question> Wie heißt das deutsche Wort für "to get"?
+  </question>
+     <solution true="true"> bekommen </solution>
+   </challenge>
+
+<challenge cid="16" type="input">
+     <question> Wie heißt das deutsche Wort für "possible"?
+  </question>
+     <solution true="true"> eventuell </solution>
+	 <solution true="true"> möglich </solution>
+   </challenge>
+
+<challenge cid="17" type="input">
+     <question> Wie heißt das deutsche Wort für "pension"?
+  </question>
+     <solution true="true"> Rente </solution>
+   </challenge>
+
+   <challenge cid="13" type="Xof3">
+     <question> Was ist das Meistverkaufte Musikalbum in Deutschland? 
+</question>
+	<solution true="true"> Mensch  </solution>
+	<solution > Tier </solution>
+	<solution > 99 Luftballons </solution>
+   </challenge>
+
+   <challenge cid="14" type="Xof3">
+     <question> Wer schrieb das Theaterstück "Lohengrin"? </question>
+	<solution true="true"> Wagner  </solution>
+	<solution > Haydn </solution>
+	<solution > Mozart </solution>
+   </challenge>
+
+   <challenge cid="15" type="Xof3">
+     <question> Seit wann gibt es Poetry Slams in Deutschland </question>
+	<solution true="true"> 1996  </solution>
+	<solution > 2001 </solution>
+	<solution > 2005 </solution>
+   </challenge>
+
+   <challenge cid="16" type="Xof3">
+     <question> Wie heißen die Arbeiter, die Straßendecken öffnen und schließen? </question>
+	<solution true="true">Tiefbauer </solution>
+	<solution > Asphaltleger </solution>
+	<solution > Teerer </solution>
+   </challenge>
+
+   <challenge cid="17" type="Xof3">
+     <question> In welchem bekannten Weihnachtslied lacht ein "Oh wie"? 
+</question>
+	<solution true="true"> Stille Nacht, Heilige Nacht </solution>
+	<solution > Es kommt ein Schiff geladen </solution>
+	<solution > Alle Jahre wieder </solution>
+   </challenge>
+
+   <challenge cid="18" type="Xof3">
+     <question> Ist folgende Aussage korrekt? "In London ist der Besuch der staatlichen Museen kostenfrei!"
+  </question>
+	<solution > ja </solution>
+   </challenge>
+
+  <challenge cid="19" type="think">
+     <question> Ist folgende Aussage korrekt? "Backgammon ist eine olympische Disziplin!" </question>
+	<solution true="true"> nein, aber Schach ist eine olympische Disziplin.  
+</solution>
+   </challenge>
+
+  <challenge cid="20" type="Xof3">
+     <question> Was ist der oder das Tabernakel? </question>
+	<solution true="true"> Schrein zur verwahrung geweihter Hostien und Altarsakramente </solution>
+	<solution > Der Gebetsteppich von Muslimen </solution>
+	<solution > Ein jüdischer Feiertag </solution>
+   </challenge>
+
+  <challenge cid="21" type="Xof3">
+     <question> Wer schrieb "Tabaluga"? </question>
+	<solution true="true"> Peter Maffay </solution>
+	<solution > Thomas Mann </solution>
+	<solution > Astrid Lindgren </solution>
+   </challenge>
+
+  <challenge cid="22" type="input">
+     <question> Wie heißt die Autorin von "Hanni und Nanni" und "Dolly"? 
+</question>
+	<solution true="true"> Enid Blyton </solution>
+   </challenge>
+
+  <challenge cid="23" type="think">
+     <question> Ist diese Aussage korrekt? "Martin Luther übersetzte als erster Kaffka ins Deutsche!" </question>
+	<solution true="true"> nein, er übersetzte die Bibel </solution>
+   </challenge>
+
+  <challenge cid="24" type="think">
+     <question> Ist folgende Aussage korrekt? "Ein Energieversorger ist zuständig für das Stromleitungsnetz im Boden!" </question>
+	<solution true="true" > nein, der Netzbetreiber ist seit 2012 vom Energieversorger getrennt und ist nun zuständig dafür. </solution>
+   </challenge>
+
+  <challenge cid="25" type="think">
+     <question> Was sind die Apokryphen? </question>
+	<solution true="true" > Bücher, die dem alten Testament zugeordnet werden, deren Quelle aber nicht belegt werden kann
+  </solution>
+   </challenge>
+
+  <challenge cid="26" type="Xof3">
+     <question> In welchem bekannten Weihnachtslied lacht ein "Oh wie"? 
+</question>
+	<solution true="true"> Stille Nacht, Heilige Nacht </solution>
+	<solution > Es kommt ein Schiff geladen </solution>
+	<solution > Alle Jahre wieder </solution> </challenge>
+
+
+  <challenge cid="27" type="Xof3">
+     <question> Wo liegt der Gefrierpunkt von Milch? </question>
+	<solution true="true"> leicht unter 0 Grad Celsisus </solution>
+	<solution > leicht über 0 Grad Celsiu s</solution>
+	<solution > Bei 0 Grad Celsius </solution> </challenge>
+
+
+  <challenge cid="28" type="input">
+     <question> Was kam zuerst? Unix oder Linux? </question>
+	<solution true="true" > Unix </solution>
+</challenge>
+
+
+  <challenge cid="29" type="Xof3">
+     <question> Je kürzer das Sit, desto </question>
+	<solution true="true"> schneller das Bums </solution>
+	<solution > länger das Sat </solution>
+	<solution > höher der Baum </solution> </challenge>
+
+
+  <challenge cid="30" type="think">
+     <question> Ist folgende Aussage korrekt? "Java Script ist die Vorgeängerversion von Java"
+  </question>
+	<solution true="true" > nein, Java Script ist eine Skriptsprache und Java eine objektorientierte Programmiersprache, die etwa zu selben Zeit entwickelt wurden. </solution> </challenge>
+
+
+  <challenge cid="31" type="Xof3">
+     <question> Die Grundformel der Mechanik lautet: </question>
+	<solution true="true"> F=m*a </solution>
+	<solution > W=F*s </solution>
+	<solution > P=W/t </solution>
+</challenge>
+
+
+  <challenge cid="32" type="think">
+     <question> was ergiebt sieben mal sieben?
+  </question>
+	<solution true="true" > feinen Sand </solution>
+</challenge>
+
+
+  <challenge cid="33" type="Xof3">
+     <question> Was bedeutet die Abkürzung IEEE? </question>
+	<solution true="true"> Institute of Electrical and Electronic Engineers </solution>
+	<solution > Institution for Events in Electronic and Electrics </solution>
+	<solution > Imperative Engineer for Electrical and Electronic Standards </solution> </challenge>
+
+
+  <challenge cid="34" type="Xof3">
+     <question> Welche der folgenden Tonarten ist keine Kirchentonart? 
+</question>
+	<solution true="true"> Moll </solution>
+	<solution > Dur (Ionisch) </solution>
+	<solution > Phrygisch </solution>
+</challenge>
+
+<challenge cid="35" type="Xof3">
+     <question> Wobei handelt es sich um dortmunder Bier?
+  </question>
+	<solution true="true"> DBB </solution>
+	<solution > Hövels </solution>
+	<solution > Kronen </solution>
+</challenge>
+
+<challenge cid="36" type="Xof3">
+     <question> Wie viele Einwohner hat Deutschland? </question>
+     <solution true="true"> 80 Millionen </solution>
+     <solution> 90 Millionen </solution>
+     <solution> 80 Milliarden </solution>
+   </challenge>
+
+
+<challenge cid="37" type="Xof3">
+     <question> Die Wirtschaftsform in Deutschland nennt man? </question>
+     <solution true="true"> soziale Marktwirtschaft </solution>
+     <solution> freie Zentralwirtschaft </solution>
+     <solution> gelenkte Zentralwirtschaft </solution>
+   </challenge>
+
+<challenge cid="38" type="Xof3">
+     <question> Wie viele Einwohner hat Deutschland? </question>
+     <solution true="true"> 80 Millionen </solution>
+     <solution> 90 Millionen </solution>
+     <solution> 80 Milliarden </solution>
+   </challenge>
+
+
+</index>
