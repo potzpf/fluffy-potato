@@ -13,20 +13,12 @@ public class Event_listener implements View.OnClickListener{
     //Methods
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
-        pGui.getBtnDetail().setOnClickListener(this);
-        pGui.getBtnStart().setOnClickListener(this);
+        pGui.getBtnToFiles().setOnClickListener(this);
         mLogic = pLogic;
     }
 
     @Override public void onClick(View v) {
-        switch(v.getId()){
-            case R.id.scr_button_detail:
-                mLogic.onButtonDetailClick();
-                break;
-            case R.id.scr_button_start:
-                mLogic.onButtonStartClick();
-                break;
-        }
+        mLogic.onButtonStartClick();
     }
 }
 

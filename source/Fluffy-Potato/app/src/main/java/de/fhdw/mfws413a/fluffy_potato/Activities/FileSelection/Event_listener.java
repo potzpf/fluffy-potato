@@ -1,6 +1,7 @@
 package de.fhdw.mfws413a.fluffy_potato.Activities.FileSelection;
 
 import android.view.View;
+import android.widget.AdapterView;
 
 import de.fhdw.mfws413a.fluffy_potato.R;
 
@@ -15,6 +16,13 @@ public class Event_listener implements View.OnClickListener{
     public Event_listener(AppLogic pLogic, Gui pGui) {
 
         pGui.getBtnNext().setOnClickListener(this);
+        pGui.getListViewFiles().setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapter, View v, int position,
+                                    long arg3) {
+                mLogic.setSelectedFile((String) adapter.getItemAtPosition(position));
+            }
+        });
         mLogic = pLogic;
 
     }
@@ -25,5 +33,6 @@ public class Event_listener implements View.OnClickListener{
                 break;
         }
     }
+
 }
 

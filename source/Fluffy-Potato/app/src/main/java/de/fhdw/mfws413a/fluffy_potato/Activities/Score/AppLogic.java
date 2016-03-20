@@ -15,14 +15,15 @@ public class AppLogic {
 
         mData = pData;
         mGui = pGui;
+        mGui.setGoal(mData.getPercentage());
+        mGui.setDone(mData.getDone());
+        mGui.setRight(mData.getRight());
+        mGui.setWrong(mData.getWrong());
 
     }
 
     public void onButtonStartClick(){
+        //System.out.println("Button Start clicked");
         Navigation.startActivityFileSelection(mData.getActivity());
-    }
-
-    public void onButtonDetailClick() {
-        Navigation.startActivityDetailScore(mData.getActivity());
     }
 }

@@ -22,6 +22,7 @@ public class AppLogic {
 
     public void onButtonAnswerRightClick(){
         System.out.println("Button Answer Right clicked");
+        mData.incRightAnsweredCount();
         nextChallenge();
     }
 
@@ -31,9 +32,8 @@ public class AppLogic {
     }
 
     private void nextChallenge() {
-        if ( mData.Global.incCurrentChallengeIndex() ) {
-
-            switch (mData.Global.getCurrentChallenge().getTyp()) {
+        if ( mData.incCurrentChallengeIndex() ) {
+            switch (mData.getCurrentChallenge().getTyp()) {
                 case Const.P_CHALLENGE_XOF3:
                     Navigation.startActivityChallenge1Of3(mData.getActivity());
                     break;

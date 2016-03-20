@@ -13,49 +13,51 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fragestellung"
-        android:layout_marginTop="30px"
-        android:textSize="40px"
-        android:id="@+id/challa_textView_question"
-        />
+        android:text="Wähle eine Kartei aus:"
+        android:textSize="50px"
+        android:id="@+id/textViewInfoText"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:id="@+id/listView_fileSelection"
+        android:layout_below="@id/textViewInfoText"
+        android:layout_above="@+id/File_ll"
+        android:layout_marginTop="15px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:choiceMode="singleChoice" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Weiter"
-        android:textAllCaps="false"
-        android:textSize="50px"
-        android:id="@+id/challa_btn_next"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        />
-
-    <CheckBox
+        android:text="Weiter"
+        android:textSize="50px"
+        android:id="@+id/btn_start_challenge"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:layout_above="@+id/btn_start_challenge"
+        android:id="@+id/File_ll"
+        >
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70px"
-        android:layout_centerVertical="true"
-        android:layout_below="@+id/challa_textView_question"
-        android:text="Antwort A"
+        android:layout_weight="1"
+        android:text="Stats"
         android:textSize="50px"
-        android:id="@+id/challa_checkBox_answer_a"
-       />
 
-    <CheckBox
+        android:id="@+id/btn_stats_challenge"/>
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Antwort B"
-        android:layout_marginTop="30px"
+        android:text="Details"
+        android:layout_weight="1"
         android:textSize="50px"
-        android:id="@+id/challa_checkBox_answer_b"
-        android:layout_below="@+id/challa_checkBox_answer_a" />
+        android:id="@+id/btn_detail_challenge"/>
 
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Antwort C"
-        android:layout_marginTop="30px"
-        android:textSize="50px"
-        android:id="@+id/challa_checkBox_answer_c"
-        android:layout_below="@+id/challa_checkBox_answer_b" />
+    </LinearLayout>
 </RelativeLayout>

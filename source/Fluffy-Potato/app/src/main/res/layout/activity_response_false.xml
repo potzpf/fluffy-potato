@@ -13,22 +13,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="110sp"
-        android:text="Richtig wäre:"
-        android:textSize="30sp"
+        android:text="Richtig wäre(n):"
+        android:textSize="60px"
         android:gravity="center"
         android:id="@+id/resb_textView_wrong"
         android:textAlignment="center"
         android:background="#fa7474" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="100sp"
-        android:text="Antwort"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:id="@+id/resb_textView_answer"
-        android:textAlignment="center"
-        android:layout_below="@id/resb_textView_wrong"/>
 
     <Button
         android:layout_width="match_parent"
@@ -36,9 +26,22 @@
         android:text="Weiter"
         android:textAllCaps="false"
         android:id="@+id/resb_btn_next"
-        android:textSize="25sp"
+        android:textSize="50px"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:text="Antwort"
+        android:textSize="40px"
+        android:gravity="center"
+        android:layout_above="@id/resb_btn_next"
+        android:id="@+id/resb_textView_answer"
+        android:textAlignment="center"
+        android:layout_below="@id/resb_textView_wrong"/>
+
+
 
 </RelativeLayout>

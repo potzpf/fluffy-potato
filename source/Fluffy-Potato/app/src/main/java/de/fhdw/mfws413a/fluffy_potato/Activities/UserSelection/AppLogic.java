@@ -30,7 +30,7 @@ public class AppLogic {
 
     public void onButtonGoToFileSelectionClick() {
         mData.setActUser(mGui.getSpSelectUser().getSelectedItem().toString());
-        Toast.makeText(mData.getActivity().getApplicationContext(),mData.getActUser(),Toast.LENGTH_LONG).show();
+        Toast.makeText(mData.getActivity().getApplicationContext(),mData.getActUser(),Toast.LENGTH_SHORT).show();
         System.out.println("Button Go To File Selection clicked" + mData.getActUser());
         Navigation.startActivityFileSelection(mData.getActivity());
     }

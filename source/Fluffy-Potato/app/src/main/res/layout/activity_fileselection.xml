@@ -19,18 +19,35 @@
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200px"
         android:id="@+id/listView_fileSelection"
         android:layout_below="@id/textViewInfoText"
+        android:layout_above="@+id/btn_stats_challenge"
+        android:layout_marginTop="30px"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:clickable="true"
         android:choiceMode="singleChoice" />
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/listView_fileSelection"
+        android:layout_alignParentBottom="true"
         android:text="Weiter"
         android:textSize="50px"
         android:id="@+id/btn_start_challenge"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_detail_challenge"
+        android:text="Stats"
+        android:textSize="50px"
+
+        android:id="@+id/btn_stats_challenge"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_start_challenge"
+        android:text="Details"
+        android:textSize="50px"
+        android:id="@+id/btn_detail_challenge"/>
 </RelativeLayout>
