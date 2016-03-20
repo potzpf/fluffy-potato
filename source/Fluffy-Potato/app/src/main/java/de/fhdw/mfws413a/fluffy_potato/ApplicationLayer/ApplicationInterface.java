@@ -7,26 +7,25 @@ import android.util.Log;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
 
-import de.fhdw.mfws413a.fluffy_potato.Data.Challenge;
-import de.fhdw.mfws413a.fluffy_potato.Data.Const;
-import de.fhdw.mfws413a.fluffy_potato.Data.Solution;
+import de.fhdw.mfws413a.fluffy_potato.Data.*;
 import de.fhdw.mfws413a.fluffy_potato.DataLayer.*;
 import de.fhdw.mfws413a.fluffy_potato.R;
 
 import android.content.Context;
 
 public class ApplicationInterface {
-	int timespans[] = {1, 4, 7, 10, 13, 16};
-	DataInterface di;
-	Context here;
-	byte[] buf;
+	private Hashtable<Integer, Challenge> challenges;
+	private Hashtable<String, ArrayList<Integer>> folder;
+	private Hashtable<String, User> users;
+	private DataInterface di;
 
-	Hashtable<Integer, Challenge> challenges;
-	Hashtable<String, ArrayList<Integer>> folder;
+	Context here;
+
 
 	public ApplicationInterface(Context c) {
 		here = c;
@@ -39,6 +38,7 @@ public class ApplicationInterface {
 			ios.iFolder = here.getResources().openRawResource(R.raw.folder);
 			ios.iIndex = here.getResources().openRawResource(R.raw.index);
 			di = new DataInterface(ios);
+			users = di.parseUsers();
 			challenges = di.parseChallenges();
 			folder = di.parseFolders();
 		}
@@ -46,59 +46,76 @@ public class ApplicationInterface {
 
 		}
 	}
-
-
 	public ArrayList<String> getUserNames() {
-
-		init();
-		ArrayList<String> ret = getFileNames();
-
-		ret.add("Adolf Hitler");
-		ret.add("Joseph Stalin");
-		ret.add("Benito Mussolini");
-		return ret;
-	}
-	
-	public ArrayList<String> getFileNames() {
 		ArrayList<String> ret = new ArrayList<String>();
-		Enumeration<String> e = folder.keys();
-
-		while(e.hasMoreElements()) {
-			ret.add(e.nextElement());
+		Enumeration<String> user = users.keys();
+		while(user.hasMoreElements()) {
+			ret.add(user.nextElement());
 		}
 		return ret;
 	}
-	
-	public ArrayList<Challenge> getDueChallenges(String user, String file) {
-		ArrayList<Challenge> ret = new ArrayList<Challenge>();
-		ArrayList<Solution> o3 = new ArrayList<>();
-		ArrayList<Solution> o1 = new ArrayList<Solution>();
-		
-		o1.add(new Solution("Adolf Hitler", false));
-		o1.add(new Solution("Koterbrechen", true));
-		o3.add(new Solution("A+B / A = A / B", true));
-		o3.add(new Solution("(1+sqrt(5))/2", true));
-		o3.add(new Solution("phi = sqrt(1 + phi)", true));
-		ret.add(new Challenge(0, Const.P_CHALLENGE_XOF3, "Wie ist Phi definiert?", o3));
-		ret.add(new Challenge(1, "guess", "Wer ist der tollste Mensch der Welt?", o1));
-		
+
+	public ArrayList<String> getFileNames() {
+		ArrayList<String> ret = new ArrayList<String>();
+		Enumeration<String> files = folder.keys();
+		while(files.hasMoreElements()) {
+			ret.add(files.nextElement());
+		}
 		return ret;
 	}
-	
-	public void pushChallenge(String user, int cid) {
-		//
-	}
-	
-	public void dropChallenge(String user, int cid) {
-		//
-	}
-	
-	//public Duration getDuration(String user, int class_no) {
-		//return Duration.ofMinutes(timespans[class_no]);
 
-	//}
-	
-	public void setDuration(String user, int class_no, int  n) {
-		timespans[class_no] = n;
+	public ArrayList<Challenge> getDueChallenges(String user, String file) {
+		ArrayList<Challenge> ret = new ArrayList<>();
+		ArrayList<Integer> lst = folder.get(file);
+		for(int i = 0; i < lst.size(); i++) {
+			int cid = lst.get(i);
+			Calendar c = users.get(user).expiration.get(cid);
+			if (c == null) {
+				System.out.println("boo");
+				pushChallenge(user, cid);
+				ret.add(challenges.get(cid));
+			}
+			else if (c.before(Calendar.getInstance())) {
+				ret.add(challenges.get(cid));
+			}
+		}
+		return ret;
+	}
+
+	public void pushChallenge(String user, int cid) {
+		Calendar c = Calendar.getInstance();
+		//System.out.println(users.get(user).progress.get);
+		Integer class_id = users.get(user).progress.get(cid);
+		if (class_id == null) {
+			class_id = 0;
+		}
+		class_id++;
+		Calendar d = getDuration(user,class_id);
+		c.add(Calendar.DAY_OF_YEAR, d.get(Calendar.DAY_OF_YEAR));
+		c.add(Calendar.HOUR_OF_DAY, d.get(Calendar.HOUR_OF_DAY));
+		c.add(Calendar.MINUTE, d.get(Calendar.MINUTE));
+		users.get(user).progress.put(cid, class_id);
+		users.get(user).expiration.put(cid, c);
+		di.syncExpiration(user, cid, class_id, c);
+	}
+
+	public void dropChallenge(String user, int cid) {
+		users.get(user).progress.remove(cid);
+		pushChallenge(user, cid);
+	}
+
+	public Calendar getDuration(String user, int class_no) {
+		Calendar c = users.get(user).durations.get(class_no);
+		if (c == null) {
+			return users.get("default").durations.get(class_no);
+		}
+		return c;
+	}
+
+	public void setDuration(String user, int class_no, Calendar set) {
+		if (set != null) {
+			users.get(user).durations.put(class_no, set);
+			di.syncDuration(user, class_no, set);
+		}
 	}
 }

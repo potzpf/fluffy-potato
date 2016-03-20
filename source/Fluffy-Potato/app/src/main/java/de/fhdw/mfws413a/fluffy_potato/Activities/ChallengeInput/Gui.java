@@ -19,8 +19,8 @@ public class Gui {
     //methods
 
     public Gui(Activity pActivity) {
-        pActivity.setContentView(R.layout.activity_challenge_input);
-        mBtnAnswerInput = (Button)pActivity.findViewById(R.id.challb_btn_next);
+        pActivity.setContentView(R.layout.activity_challenge_Input);
+        mBtnAnswerInput = (Button)pActivity.findViewById(R.id.challa_btn_next);
         mEdAnswer = (EditText)pActivity.findViewById(R.id.challb_edittext_answer);
         mTvQuestion = (TextView)pActivity.findViewById(R.id.challb_textView_question);
     }
