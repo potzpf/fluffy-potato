@@ -177,15 +177,31 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/usredt_editText_ph5"/>
 
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:layout_alignParentBottom="true"
+      android:layout_height="wrap_content">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="30px"
+        android:text="Änderungen bestätigen"
+        android:id="@+id/usredt_btn_edit"
+
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:textSize="35px"
-        android:text="Änderungen bestätigen"
-        android:layout_marginBottom="0px"
-        android:id="@+id/usredt_btn_edit"
+        android:layout_weight="1"
+        android:textSize="30px"
+        android:text="Defaut werte setzen"
+        android:id="@+id/usredt_btn_default"
         android:layout_alignParentBottom="true" />
+  </LinearLayout>
 
 
 </RelativeLayout>

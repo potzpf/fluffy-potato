@@ -31,6 +31,10 @@ public class AppLogic {
         mData.setTimespan(4, Integer.parseInt(mGui.getEt_PC4().getText().toString()));
         mData.setTimespan(5, Integer.parseInt(mGui.getEt_PC5().getText().toString()));
         mData.setTimespan(6, Integer.parseInt(mGui.getEt_PC6().getText().toString()));
-        Navigation.startActivityUserSelection(mData.getActivity(),"");
+        Navigation.startActivityUserSelection(mData.getActivity(), "");
+    }
+
+    public void OnButtonDefaultClick() {
+        //*default werte setzen
     }
 }

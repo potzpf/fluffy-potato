@@ -17,6 +17,7 @@ public class Gui {
     //Vars
 
     private Button mBtn_Edit;
+    private Button mBtn_Default;
     private Spinner mSP_PC1;
     private Spinner mSP_PC2;
     private Spinner mSP_PC3;
@@ -41,6 +42,7 @@ public class Gui {
 
         pActivity.setContentView(R.layout.activity_useredit);
         mBtn_Edit = (Button) pActivity.findViewById(R.id.usredt_btn_edit);
+        mBtn_Default = (Button) pActivity.findViewById(R.id.usredt_btn_default);
         mEt_PC1 = (EditText) pActivity.findViewById(R.id.usredt_editText_ph1);
         mEt_PC2 = (EditText) pActivity.findViewById(R.id.usredt_editText_ph2);
         mEt_PC3 = (EditText) pActivity.findViewById(R.id.usredt_editText_ph3);
@@ -106,5 +108,9 @@ public class Gui {
     }
     public EditText getEt_PC6() {
         return mEt_PC6;
+    }
+
+    public Button getBtn_Default() {
+        return mBtn_Default;
     }
 }

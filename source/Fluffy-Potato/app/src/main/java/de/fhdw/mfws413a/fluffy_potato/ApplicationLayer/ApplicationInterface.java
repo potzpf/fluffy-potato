@@ -80,7 +80,7 @@ public class ApplicationInterface {
 		o3.add(new Solution("(1+sqrt(5))/2", true));
 		o3.add(new Solution("phi = sqrt(1 + phi)", true));
 		ret.add(new Challenge(0, Const.P_CHALLENGE_XOF3, "Wie ist Phi definiert?", o3));
-		ret.add(new Challenge(1, "guess", "Wer ist der tollste Mensch der Welt?", o1));
+		ret.add(new Challenge(1, Const.P_CHALLENGE_THINK, "Wer ist der tollste Mensch der Welt?", o1));
 		
 		return ret;
 	}

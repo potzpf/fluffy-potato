@@ -10,6 +10,7 @@ public class Data {
 
     private Activity mActivity;
     private MyApp mGlobal;
+    //* default zeitspannen gegebenenfalls hard codieren
   //Methods
 
     public Data(Activity pActivity) {
@@ -28,6 +29,7 @@ public class Data {
     }
 
     public void setTimespan(Integer pClass, Integer pTimespan){
-        mGlobal.getAppIF().setDuration(mGlobal.getActUser(),pClass-1,pTimespan);
+        mGlobal.getAppIF().setDuration(mGlobal.getActUser(),pClass,pTimespan);
+        //*prüfen
     }
 }

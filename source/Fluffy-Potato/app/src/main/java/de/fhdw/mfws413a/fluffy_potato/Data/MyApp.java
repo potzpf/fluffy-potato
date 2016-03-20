@@ -16,6 +16,7 @@ public class MyApp extends Application {
     private ApplicationInterface gAppIF = new ApplicationInterface(this);
     private Integer gRightAnsweredCount;
     private String gActUser;
+    private boolean gAboardFlg = false;
 
     public boolean incCurrentChallengeIndex(){
         if (gCurrentChallengeIndex +1 == gCurrentChallengeList.size()){
@@ -78,6 +79,14 @@ public class MyApp extends Application {
     }
 
     public void dropChallenge() {
-        gAppIF.dropChallenge(gActUser,getCurrentChallenge().getChallengeID());
+        gAppIF.dropChallenge(gActUser, getCurrentChallenge().getChallengeID());
+    }
+
+    public void setAboardFlg() {
+        gAboardFlg = true;
+    }
+
+    public boolean isgAboardFlg() {
+        return gAboardFlg;
     }
 }

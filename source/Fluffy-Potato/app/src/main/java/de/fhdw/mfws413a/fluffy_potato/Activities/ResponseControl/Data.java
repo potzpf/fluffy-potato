@@ -47,4 +47,5 @@ public class Data {
     public void dropChallenge() {
         mGlobal.dropChallenge();
     }
+
 }

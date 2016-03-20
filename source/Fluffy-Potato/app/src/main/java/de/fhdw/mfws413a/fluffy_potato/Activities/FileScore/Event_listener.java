@@ -11,7 +11,7 @@ public class Event_listener implements View.OnClickListener{
     //Methods
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
-        pGui.getBtnStart().setOnClickListener(this);
+        //pGui.getBtnStart().setOnClickListener(this);
         mLogic = pLogic;
     }
 
