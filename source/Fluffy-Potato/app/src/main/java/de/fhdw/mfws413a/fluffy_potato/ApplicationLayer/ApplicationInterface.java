@@ -37,6 +37,8 @@ public class ApplicationInterface {
 			ios.iUsers = here.getResources().openRawResource(R.raw.users_data);
 			ios.iFolder = here.getResources().openRawResource(R.raw.folder);
 			ios.iIndex = here.getResources().openRawResource(R.raw.index);
+			ios.root = here.getFilesDir();
+
 			di = new DataInterface(ios);
 			users = di.parseUsers();
 			challenges = di.parseChallenges();

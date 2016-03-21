@@ -27,17 +27,18 @@ public class DataInterface extends Activity {
 	
 	public DataInterface(IOStreams ios) {
 		this.ios = ios;
-		dh = new DocumentHandler();
-		foo = "foo";
+		dh = new DocumentHandler(ios);
 		try {
-			user = dh.getDocument(ios.iUsers);
-			folder = dh.getDocument(ios.iFolder);
-			index = dh.getDocument(ios.iIndex);
+			user = dh.getDocument("users_data");
+			folder = dh.getDocument("folder");
+			index = dh.getDocument("index");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 			foo = e.toString();
 		}
+
+		System.out.println();
 	}
 
 	public Hashtable<Integer, Challenge> parseChallenges() {
