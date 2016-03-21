@@ -28,7 +28,7 @@ public class DocumentHandler extends Activity {
    public Document getDocument(String fname) throws Exception {
 	   InputStream iS = null;
 	   File tagFile=new File(ios.root,fname+".xml");
-	   //if(!tagFile.exists()) {
+	   if(!tagFile.exists()) {
 		   if(fname.equals("users_data")){
 			   iS = ios.iUsers;
 		   } else if(fname.equals("index")) {
@@ -36,9 +36,9 @@ public class DocumentHandler extends Activity {
 		   } else if(fname.equals("folder")) {
 			   iS = ios.iFolder;
 		   }
-	  // } else {
-	//	   iS = new FileInputStream(tagFile);
-	 //  }
+	   } else {
+		   iS = new FileInputStream(tagFile);
+	   }
 	   Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(iS);
 	   doc.getDocumentElement().normalize();
 	   return doc;
