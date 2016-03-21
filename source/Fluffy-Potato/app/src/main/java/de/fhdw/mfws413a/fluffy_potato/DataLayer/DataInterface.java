@@ -5,6 +5,7 @@ import android.content.Context;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -190,6 +191,20 @@ public class DataInterface extends Activity {
 				break;
 			}
 		}
+		try {
+			dh.putDocument("users_data", user);
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+	}
+
+	public void addUser(String name) {
+		Element u = user.createElement("user");
+		u.setAttribute("name", name);
+		Element s = user.createElement("schedule");
+		((Node)u).appendChild(s);
+		((Node)user.getDocumentElement()).appendChild(u);
+
 		try {
 			dh.putDocument("users_data", user);
 		} catch (Exception e1) {

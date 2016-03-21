@@ -133,4 +133,8 @@ public class ApplicationInterface {
 			di.syncDuration(user, class_no, set);
 		}
 	}
+
+	public void addUser(String name) {
+		di.addUser(name);
+	}
 }
