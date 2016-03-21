@@ -104,12 +104,27 @@ public class ApplicationInterface {
 		pushChallenge(user, cid);
 	}
 
-	public String getDurationText(String user, int class_no) {
-		Calendar c = users.get(user).durations.get(class_no);
-		if (c == null) {
-			c = users.get("default").durations.get(class_no);
+	public int getDurationMin(String user, int class_no) {
+		int ret = 0;
+		switch (class_no) {
+			case 1: ret = 5;
+			  break;
+			case 2: ret = 1*60;
+			  break;
+			case 3: ret = 1*60*24;
+			  break;
+			case 4: ret = 7*60*24;
+			  break;
+			case 5: ret = 30*60*24;
+			  break;
+			case 6: ret = 180*60*24;
+			  break;
 		}
-		return di.duration2String(c,"dd.HH.mm");
+		return ret;
+	}
+
+	public void setDurationMin(String user, int class_no, int set) {
+		//kp
 	}
 
 	public Calendar getDuration(String user, int class_no) {

@@ -48,4 +48,8 @@ public class Data {
     public String GetCurrentChallengeTyp(){
         return mGlobal.getCurrentChallengeType();
     }
+
+    public int getCurrentChallengeCount(){
+        return mGlobal.getCurrentChallengeCount();
+    }
 }

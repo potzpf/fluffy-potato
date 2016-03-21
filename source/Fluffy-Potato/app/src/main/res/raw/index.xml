@@ -15,7 +15,7 @@
 
    <challenge cid="2" type="input" >
      <question> Wofuer ist Alfred Nobel bekannt? </question>
-	<solution> Dynamit </solution>
+	<solution true="true"> Dynamit </solution>
    </challenge>
 
    <challenge cid="3" type="Xof3">

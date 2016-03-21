@@ -28,7 +28,7 @@ public class AppLogic {
             Toast.makeText(mData.getActivity().getApplicationContext(),"keine Kartei Ausgew�hlt", Toast.LENGTH_LONG).show();
         } else {
             mData.buildChallengeList(mData.getSelectedFile());
-            if (mData.getDuePerFile(mData.getSelectedFile()) > 0) {
+            if (mData.getCurrentChallengeCount() > 0) {
                 switch (mData.GetCurrentChallengeTyp()) {
                     case Const.P_CHALLENGE_XOF3:
                         Navigation.startActivityChallenge1Of3(mData.getActivity());

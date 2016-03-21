@@ -82,11 +82,15 @@ public class MyApp extends Application {
         ArrayList<String> lUserList;
         gAppIF.init();
         lUserList = gAppIF.getUserNames();
-        for (int i = 0; i < lUserList.size() ; i++) {
-            if (lUserList.get(i).equals("default")) {
-                lUserList.remove(i);
-            }
-        }
+        //for (int i = 0; i < lUserList.size() ; i++) {
+        //    if (lUserList.get(i).equals("default")) {
+        //        lUserList.remove(i);
+        //    }
+        //}
         return lUserList;
+    }
+
+    public int getCurrentChallengeCount() {
+        return gCurrentChallengeList.size();
     }
 }
