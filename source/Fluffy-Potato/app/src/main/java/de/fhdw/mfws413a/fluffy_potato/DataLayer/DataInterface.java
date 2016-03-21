@@ -27,16 +27,24 @@ public class DataInterface extends Activity {
 	
 	public DataInterface(IOStreams ios) {
 		this.ios = ios;
-		dh = new DocumentHandler();
-		foo = "foo";
+		dh = new DocumentHandler(ios);
 		try {
-			user = dh.getDocument(ios.iUsers);
-			folder = dh.getDocument(ios.iFolder);
-			index = dh.getDocument(ios.iIndex);
+			user = dh.getDocument("users_data");
+			folder = dh.getDocument("folder");
+			index = dh.getDocument("index");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			foo = e.toString();
+		}
+
+		System.out.println();
+	}
+
+	public void saveUsers() {
+		try {
+			dh.putDocument("users_data", user);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 
@@ -150,7 +158,7 @@ public class DataInterface extends Activity {
 			}
 		}
 		try {
-			dh.putDocument("users_data_data.xml", user);
+			dh.putDocument("users_data", user);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
@@ -183,7 +191,7 @@ public class DataInterface extends Activity {
 			}
 		}
 		try {
-			dh.putDocument("users_data.xmla.xml", user);
+			dh.putDocument("users_data", user);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}

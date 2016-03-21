@@ -14,24 +14,44 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 
 public class DocumentHandler extends Activity {
 
-	Context here;
-	public DocumentHandler() {
+	IOStreams ios;
+	public DocumentHandler(IOStreams ios) {
+		this.ios = ios;
 	}
-   public Document getDocument(InputStream iS) throws Exception {
+   public Document getDocument(String fname) throws Exception {
+	   InputStream iS = null;
+	   File tagFile=new File(ios.root,fname+".xml");
+	   if(!tagFile.exists()) {
+		   if(fname.equals("users_data")){
+			   iS = ios.iUsers;
+		   } else if(fname.equals("index")) {
+			   iS = ios.iIndex;
+		   } else if(fname.equals("folder")) {
+			   iS = ios.iFolder;
+		   }
+	   } else {
+		   iS = new FileInputStream(tagFile);
+	   }
 	   Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(iS);
 	   doc.getDocumentElement().normalize();
 	   return doc;
    }
    
    public void putDocument(String fname, Document doc) throws Exception {
+	   File tagFile=new File(ios.root,fname+".xml");
+	   if(!tagFile.exists()){
+		   tagFile.createNewFile();
+	   }
 	   DOMSource source = new DOMSource(doc);
 	   Transformer trans = TransformerFactory.newInstance().newTransformer();
-	   trans.transform(source, new StreamResult(fname));
+	   trans.transform(source, new StreamResult(tagFile));
    }
    
    public ArrayList<Element> getElementsByName(Document doc, String name) {

@@ -37,6 +37,8 @@ public class ApplicationInterface {
 			ios.iUsers = here.getResources().openRawResource(R.raw.users_data);
 			ios.iFolder = here.getResources().openRawResource(R.raw.folder);
 			ios.iIndex = here.getResources().openRawResource(R.raw.index);
+			ios.root = here.getFilesDir();
+
 			di = new DataInterface(ios);
 			users = di.parseUsers();
 			challenges = di.parseChallenges();
@@ -146,26 +148,16 @@ public class ApplicationInterface {
 	}
 
 	public int getDurationMin(String user, int class_no) {
-		int ret = 0;
-		switch (class_no) {
-			case 1: ret = 5;
-			  break;
-			case 2: ret = 1*60;
-			  break;
-			case 3: ret = 1*60*24;
-			  break;
-			case 4: ret = 7*60*24;
-			  break;
-			case 5: ret = 30*60*24;
-			  break;
-			case 6: ret = 180*60*24;
-			  break;
-		}
-		return ret;
+		Calendar c = getDuration(user, class_no);
+		return c.MINUTE + 60 *(c.HOUR + 24 * (c.DAY_OF_YEAR % 365));
 	}
 
 	public void setDurationMin(String user, int class_no, int set) {
-		//kp
+		int day = set % (60 * 24);
+		set -= day * (60 * 24);
+		int hour = set % 60;
+		set -= hour * 60;
+		getDuration(user, class_no).set(0, 0, day, hour, set);
 	}
 
 	public Calendar getDuration(String user, int class_no) {
