@@ -17,6 +17,7 @@ public class AppLogic {
         mGui = pGui;
         mGui.getmTvFile().setText(mData.getFileName());
         mData.setQuestionCount(mGui);
+        mData.setDueCount(mGui);
     }
 
     public void onButtonBackClick(){

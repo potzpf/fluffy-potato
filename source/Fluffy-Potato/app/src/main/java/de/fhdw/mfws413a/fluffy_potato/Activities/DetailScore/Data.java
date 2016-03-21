@@ -32,7 +32,7 @@ public class Data {
     }
 
     public void setQuestionCount(Gui pGui) {
-        ArrayList<String> lQuestionCountList = mGlobal.getAppIF().getClassesQuestionCount(mFileName);
+        ArrayList<String> lQuestionCountList = mGlobal.getAppIF().getClassesQuestionCount(mFileName,mGlobal.getActUser());
 
         pGui.getmTvQuestion1().setText(lQuestionCountList.get(0));
         pGui.getmTvQuestion2().setText(lQuestionCountList.get(1));
@@ -40,5 +40,16 @@ public class Data {
         pGui.getmTvQuestion4().setText(lQuestionCountList.get(3));
         pGui.getmTvQuestion5().setText(lQuestionCountList.get(4));
         pGui.getmTvQuestion6().setText(lQuestionCountList.get(5));
+    }
+
+    public void setDueCount(Gui pGui) {
+        ArrayList<String> lDueCountList = mGlobal.getAppIF().getClassesDuenCount(mFileName,mGlobal.getActUser());
+
+        pGui.getmTvDue1().setText(lDueCountList.get(0));
+        pGui.getmTvDue2().setText(lDueCountList.get(1));
+        pGui.getmTvDue3().setText(lDueCountList.get(2));
+        pGui.getmTvDue4().setText(lDueCountList.get(3));
+        pGui.getmTvDue5().setText(lDueCountList.get(4));
+        pGui.getmTvDue6().setText(lDueCountList.get(5));
     }
 }
