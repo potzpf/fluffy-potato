@@ -4,7 +4,7 @@ import android.app.Application;
 
 import java.util.ArrayList;
 
-import de.fhdw.mfws413a.fluffy_potato.AppInterface.ApplicationInterface;
+import de.fhdw.mfws413a.fluffy_potato.ApplicationLayer.ApplicationInterface;
 
 public class MyApp extends Application {
 
@@ -71,11 +71,22 @@ public class MyApp extends Application {
     }
 
     public void pushChallenge() {
-        gAppIF.pushChallenge(gActUser,getCurrentChallenge().getChallengeID());
+        gAppIF.pushChallenge(gActUser, getCurrentChallenge().getChallengeID());
     }
 
     public void dropChallenge() {
         gAppIF.dropChallenge(gActUser, getCurrentChallenge().getChallengeID());
     }
 
+    public ArrayList<String> getUserNames() {
+        ArrayList<String> lUserList;
+        gAppIF.init();
+        lUserList = gAppIF.getUserNames();
+        for (int i = 0; i < lUserList.size() ; i++) {
+            if (lUserList.get(i).equals("default")) {
+                lUserList.remove(i);
+            }
+        }
+        return lUserList;
+    }
 }

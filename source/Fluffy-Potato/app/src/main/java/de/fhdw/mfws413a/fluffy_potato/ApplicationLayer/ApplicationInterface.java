@@ -34,7 +34,7 @@ public class ApplicationInterface {
 	public void init( ) {
 		try {
 			IOStreams ios = new IOStreams();
-			ios.iUsers = here.getResources().openRawResource(R.raw.users);
+			ios.iUsers = here.getResources().openRawResource(R.raw.users_data);
 			ios.iFolder = here.getResources().openRawResource(R.raw.folder);
 			ios.iIndex = here.getResources().openRawResource(R.raw.index);
 			di = new DataInterface(ios);
@@ -84,7 +84,7 @@ public class ApplicationInterface {
 
 	public void pushChallenge(String user, int cid) {
 		Calendar c = Calendar.getInstance();
-		//System.out.println(users.get(user).progress.get);
+		//System.out.println(users_data.get(user).progress.get);
 		Integer class_id = users.get(user).progress.get(cid);
 		if (class_id == null) {
 			class_id = 0;
@@ -104,10 +104,18 @@ public class ApplicationInterface {
 		pushChallenge(user, cid);
 	}
 
+	public String getDurationText(String user, int class_no) {
+		Calendar c = users.get(user).durations.get(class_no);
+		if (c == null) {
+			c = users.get("default").durations.get(class_no);
+		}
+		return di.duration2String(c,"dd.HH.mm");
+	}
+
 	public Calendar getDuration(String user, int class_no) {
 		Calendar c = users.get(user).durations.get(class_no);
 		if (c == null) {
-			return users.get("default").durations.get(class_no);
+			c = users.get("default").durations.get(class_no);
 		}
 		return c;
 	}

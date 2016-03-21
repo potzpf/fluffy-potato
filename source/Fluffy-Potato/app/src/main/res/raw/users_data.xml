@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><users>
+<users>
     <user name="default">
         <schedule>
             <duration class="1" timespan="0.0.05"/>
@@ -25,7 +25,7 @@
 		<schedule>
 		</schedule>
 	</user>
-	<user name="Cathy"">
+	<user name="Cathy">
 		<schedule>
 		</schedule>
 	</user>

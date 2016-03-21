@@ -26,6 +26,7 @@ public class AppLogic {
     public void onButtonCreateNewUserClick(){
         System.out.println("Button Create User clicked");
         Navigation.startActivityCreateUser(mData.getActivity());
+
     }
 
     public void onButtonGoToFileSelectionClick() {
@@ -37,6 +38,7 @@ public class AppLogic {
 
     public void onButtonEditUserClick() {
         System.out.println("Button Edit User clicked");
+        mData.setActUser(mGui.getSpSelectUser().getSelectedItem().toString());
         Navigation.startActivityUserEdit(mData.getActivity());
     }
 }

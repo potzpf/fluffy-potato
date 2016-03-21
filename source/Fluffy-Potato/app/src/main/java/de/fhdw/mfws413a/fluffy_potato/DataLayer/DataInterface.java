@@ -150,7 +150,7 @@ public class DataInterface extends Activity {
 			}
 		}
 		try {
-			dh.putDocument("users.xml", user);
+			dh.putDocument("users_data_data.xml", user);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
@@ -183,7 +183,7 @@ public class DataInterface extends Activity {
 			}
 		}
 		try {
-			dh.putDocument("users.xml", user);
+			dh.putDocument("users_data.xmla.xml", user);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}

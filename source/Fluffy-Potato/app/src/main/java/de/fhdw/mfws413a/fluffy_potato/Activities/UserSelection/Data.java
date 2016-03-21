@@ -22,7 +22,7 @@ public class Data {
 
         mActivity = pActivity;
         mGlobal = (MyApp) mActivity.getApplication();
-        mUserList = mGlobal.getAppIF().getUserNames();
+        mUserList = mGlobal.getUserNames();
 
         lUser = mActivity.getIntent().getStringExtra(Const.P_USER_List);
         if (lUser.equals("")){

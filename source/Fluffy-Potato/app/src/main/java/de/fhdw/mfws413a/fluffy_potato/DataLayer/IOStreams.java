@@ -1,4 +1,4 @@
-package de.fhdw.mfws413a.fluffy_potato.Persisten;
+package de.fhdw.mfws413a.fluffy_potato.DataLayer;
 
 import java.io.InputStream;
 import java.io.OutputStream;

@@ -23,13 +23,13 @@ public class Data {
     }
 
     public String getTimespan(Integer pClass){
-        //mGlobal.getAppIF().getDuration(mGlobal.getActUser(),pClass);
+         return mGlobal.getAppIF().getDurationText(mGlobal.getActUser(), pClass);
         //*in integer umwandeln
-        return pClass.toString();
+        // return pClass.toString();
     }
 
     public void setTimespan(Integer pClass, Integer pTimespan){
-        mGlobal.getAppIF().setDuration(mGlobal.getActUser(),pClass,pTimespan);
+        //mGlobal.getAppIF().setDuration(mGlobal.getActUser(),pClass,pTimespan);
         //*prüfen
     }
 }
