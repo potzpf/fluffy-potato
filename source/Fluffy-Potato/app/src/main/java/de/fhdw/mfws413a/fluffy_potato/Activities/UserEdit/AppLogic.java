@@ -35,6 +35,11 @@ public class AppLogic {
     }
 
     public void OnButtonDefaultClick() {
-        //*default werte setzen
+        mGui.getEt_PC1().setText(mData.getDefaultTimespan(1, mGui.getSP_PC1()));
+        mGui.getEt_PC2().setText(mData.getDefaultTimespan(2, mGui.getSP_PC2()));
+        mGui.getEt_PC3().setText(mData.getDefaultTimespan(3, mGui.getSP_PC3()));
+        mGui.getEt_PC4().setText(mData.getDefaultTimespan(4, mGui.getSP_PC4()));
+        mGui.getEt_PC5().setText(mData.getDefaultTimespan(5, mGui.getSP_PC5()));
+        mGui.getEt_PC6().setText(mData.getDefaultTimespan(6,mGui.getSP_PC6()));
     }
 }

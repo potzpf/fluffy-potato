@@ -20,7 +20,7 @@ public class AppLogic {
 
         mData = pData;
         mGui = pGui;
-
+        mData.makeFileData();
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(mData.getActivity(),
                 R.layout.gridview, mData.getFileData());
         mGui.getmGvFile().setAdapter(adapter);

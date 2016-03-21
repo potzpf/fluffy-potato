@@ -25,10 +25,10 @@ public class Data {
         return mActivity;
     }
 
-    public void addFileData(String pFile, int pQuestion,int pDue){
+    public void addFileData(String pFile, String pQuestion,String pDue){
         mFileData.add(pFile);
-        mFileData.add(Integer.toString(pQuestion));
-        mFileData.add(Integer.toString(pDue));
+        mFileData.add(pQuestion);
+        mFileData.add(pDue);
     }
 
     public ArrayList<String> getFileData() {
@@ -36,6 +36,16 @@ public class Data {
         mFileData.add("9");
         mFileData.add("5");
         return mFileData;
+    }
+
+    public void makeFileData() {
+        ArrayList<String> lFiles = mGlobal.getAppIF().getFileNames();
+        for (int i = 0; i < lFiles.size(); i++) {
+            addFileData(lFiles.get(i),
+                        mGlobal.getAppIF().getFilesQuestionCount(lFiles.get(i)),
+                        Integer.toString(mGlobal.getAppIF().getDueChallenges(mGlobal.getActUser(),lFiles.get(i)).size()));
+
+        }
     }
 
     //* methode für s laden der kartei daten über global appif
