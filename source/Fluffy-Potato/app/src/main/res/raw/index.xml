@@ -15,7 +15,7 @@
 
    <challenge cid="2" type="input" >
      <question> Wofuer ist Alfred Nobel bekannt? </question>
-	<solution true="true"> Dynamit </solution>
+	<solution true="true">Dynamit</solution>
    </challenge>
 
    <challenge cid="3" type="Xof3">
@@ -90,7 +90,7 @@
 <challenge cid="12" type="input">
      <question> Wie heißt das deutsche Wort für "current"?
   </question>
-     <solution true="true"> aktuell </solution>
+     <solution true="true">aktuell</solution>
    </challenge>
 
    <challenge cid="13" type="Xof3">
@@ -104,63 +104,26 @@
    <challenge cid="14" type="input">
      <question> Aus wie vielen Linien besteht ein Notensystem? 
 </question>
-	<solution true="true"> 5 </solution>
+	<solution true="true">5</solution>
    </challenge>
 
 <challenge cid="15" type="input">
      <question> Wie heißt das deutsche Wort für "to get"?
   </question>
-     <solution true="true"> bekommen </solution>
+     <solution true="true">bekommen</solution>
    </challenge>
 
 <challenge cid="16" type="input">
      <question> Wie heißt das deutsche Wort für "possible"?
   </question>
-     <solution true="true"> eventuell </solution>
-	 <solution true="true"> möglich </solution>
+     <solution true="true">eventuell</solution>
+	 <solution true="true">möglich</solution>
    </challenge>
 
 <challenge cid="17" type="input">
      <question> Wie heißt das deutsche Wort für "pension"?
   </question>
-     <solution true="true"> Rente </solution>
-   </challenge>
-
-   <challenge cid="13" type="Xof3">
-     <question> Was ist das Meistverkaufte Musikalbum in Deutschland? 
-</question>
-	<solution true="true"> Mensch  </solution>
-	<solution > Tier </solution>
-	<solution > 99 Luftballons </solution>
-   </challenge>
-
-   <challenge cid="14" type="Xof3">
-     <question> Wer schrieb das Theaterstück "Lohengrin"? </question>
-	<solution true="true"> Wagner  </solution>
-	<solution > Haydn </solution>
-	<solution > Mozart </solution>
-   </challenge>
-
-   <challenge cid="15" type="Xof3">
-     <question> Seit wann gibt es Poetry Slams in Deutschland </question>
-	<solution true="true"> 1996  </solution>
-	<solution > 2001 </solution>
-	<solution > 2005 </solution>
-   </challenge>
-
-   <challenge cid="16" type="Xof3">
-     <question> Wie heißen die Arbeiter, die Straßendecken öffnen und schließen? </question>
-	<solution true="true">Tiefbauer </solution>
-	<solution > Asphaltleger </solution>
-	<solution > Teerer </solution>
-   </challenge>
-
-   <challenge cid="17" type="Xof3">
-     <question> In welchem bekannten Weihnachtslied lacht ein "Oh wie"? 
-</question>
-	<solution true="true"> Stille Nacht, Heilige Nacht </solution>
-	<solution > Es kommt ein Schiff geladen </solution>
-	<solution > Alle Jahre wieder </solution>
+     <solution true="true">Rente</solution>
    </challenge>
 
    <challenge cid="18" type="Xof3">
@@ -192,7 +155,7 @@
   <challenge cid="22" type="input">
      <question> Wie heißt die Autorin von "Hanni und Nanni" und "Dolly"? 
 </question>
-	<solution true="true"> Enid Blyton </solution>
+	<solution true="true">Enid Blyton</solution>
    </challenge>
 
   <challenge cid="23" type="think">
@@ -228,7 +191,7 @@
 
   <challenge cid="28" type="input">
      <question> Was kam zuerst? Unix oder Linux? </question>
-	<solution true="true" > Unix </solution>
+	<solution true="true" >Unix</solution>
 </challenge>
 
 
@@ -305,5 +268,33 @@
      <solution> 80 Milliarden </solution>
    </challenge>
 
+    <challenge cid="39" type="Xof3">
+        <question> Wer schrieb das Theaterstück "Lohengrin"? </question>
+        <solution true="true"> Wagner  </solution>
+        <solution > Haydn </solution>
+        <solution > Mozart </solution>
+    </challenge>
+
+    <challenge cid="40" type="Xof3">
+        <question> Seit wann gibt es Poetry Slams in Deutschland </question>
+        <solution true="true"> 1996  </solution>
+        <solution > 2001 </solution>
+        <solution > 2005 </solution>
+    </challenge>
+
+    <challenge cid="41" type="Xof3">
+        <question> Wie heißen die Arbeiter, die Straßendecken öffnen und schließen? </question>
+        <solution true="true">Tiefbauer </solution>
+        <solution > Asphaltleger </solution>
+        <solution > Teerer </solution>
+    </challenge>
+
+    <challenge cid="42" type="Xof3">
+        <question> In welchem bekannten Weihnachtslied lacht ein "Oh wie"?
+        </question>
+        <solution true="true"> Stille Nacht, Heilige Nacht </solution>
+        <solution > Es kommt ein Schiff geladen </solution>
+        <solution > Alle Jahre wieder </solution>
+    </challenge>
 
 </index>

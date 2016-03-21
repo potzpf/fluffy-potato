@@ -77,26 +77,70 @@ public class ApplicationInterface {
 		return Integer.toString(ret.size());
 	}
 
-	public ArrayList<String> getClassesQuestionCount( String file) {
+	public ArrayList<String> getClassesQuestionCount( String pfile, String pUser) {
 		ArrayList<String> ret = new ArrayList<>();
-		ArrayList<Integer> lst = folder.get(file);
+		ArrayList<Integer> lst = folder.get(pfile);
 		int k1=0,k2=0,k3=0,k4=0,k5=0,k6=0;
 		for(int i = 0; i < lst.size(); i++) {
 			int cid = lst.get(i);
-			switch (users.get(cid).progress.get(cid)){
-				case 1: k1++;
-					break;
-				case 2: k2++;
-					break;
-				case 3: k3++;
-					break;
-				case 4: k4++;
-					break;
-				case 5: k5++;
-					break;
-				case 6: k6++;
-					break;
+			try {
+				switch (users.get(pUser).progress.get(cid)){
+					case 1: k1++;
+						break;
+					case 2: k2++;
+						break;
+					case 3: k3++;
+						break;
+					case 4: k4++;
+						break;
+					case 5: k5++;
+						break;
+					case 6: k6++;
+						break;
+				}
+			}catch (Exception j) {
+				k1 = Integer.parseInt(getFilesQuestionCount(pfile));
 			}
+
+		}
+		ret.add(Integer.toString(k1));
+		ret.add(Integer.toString(k2));
+		ret.add(Integer.toString(k3));
+		ret.add(Integer.toString(k4));
+		ret.add(Integer.toString(k5));
+		ret.add(Integer.toString(k6));
+		return ret;
+	}
+	public ArrayList<String> getClassesDuenCount( String pfile, String pUser) {
+		ArrayList<String> ret = new ArrayList<>();
+		ArrayList<Integer> lst = folder.get(pfile);
+		int k1=0,k2=0,k3=0,k4=0,k5=0,k6=0;
+		for(int i = 0; i < lst.size(); i++) {
+			int cid = lst.get(i);
+			Calendar c = users.get(pUser).expiration.get(cid);
+			if (c != null) {
+				try {
+					switch (users.get(pUser).progress.get(cid)) {
+						case 1:k1++;
+							break;
+						case 2:k2++;
+							break;
+						case 3:k3++;
+							break;
+						case 4:k4++;
+							break;
+						case 5:k5++;
+							break;
+						case 6:k6++;
+							break;
+					}
+				} catch (Exception j) {
+					k1 = Integer.parseInt(getFilesQuestionCount(pfile));
+				}
+			}else{
+				k1 = Integer.parseInt(getFilesQuestionCount(pfile));
+			}
+
 		}
 		ret.add(Integer.toString(k1));
 		ret.add(Integer.toString(k2));

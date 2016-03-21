@@ -29,7 +29,6 @@ public class Data {
           //nix
         }else{
             mUserList.add(lUser);
-            //*vernüngtig speichern
         }
     }
 
