@@ -36,9 +36,9 @@ public class Gui {
     public Gui(Activity pActivity) {
 
         ArrayList<String> lTimeUnits = new ArrayList<>();
-        lTimeUnits.add("min/s");
-        lTimeUnits.add("hour/s");
-        lTimeUnits.add("day/s");
+        lTimeUnits.add("min");
+        lTimeUnits.add("hour");
+        lTimeUnits.add("day");
 
         pActivity.setContentView(R.layout.activity_useredit);
         mBtn_Edit = (Button) pActivity.findViewById(R.id.usredt_btn_edit);
@@ -109,7 +109,6 @@ public class Gui {
     public EditText getEt_PC6() {
         return mEt_PC6;
     }
-
     public Button getBtn_Default() {
         return mBtn_Default;
     }

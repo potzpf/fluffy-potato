@@ -4,10 +4,7 @@ import android.app.Application;
 
 import java.util.ArrayList;
 
-import de.fhdw.mfws413a.fluffy_potato.ApplicationLayer.ApplicationInterface;
-import de.fhdw.mfws413a.fluffy_potato.Data.*;
-import de.fhdw.mfws413a.fluffy_potato.Data.Challenge;
-import de.fhdw.mfws413a.fluffy_potato.ApplicationLayer.ApplicationInterface;
+import de.fhdw.mfws413a.fluffy_potato.AppInterface.ApplicationInterface;
 
 public class MyApp extends Application {
 
@@ -16,7 +13,6 @@ public class MyApp extends Application {
     private ApplicationInterface gAppIF = new ApplicationInterface(this);
     private Integer gRightAnsweredCount;
     private String gActUser;
-    private boolean gAboardFlg = false;
 
     public boolean incCurrentChallengeIndex(){
         if (gCurrentChallengeIndex +1 == gCurrentChallengeList.size()){
@@ -82,11 +78,4 @@ public class MyApp extends Application {
         gAppIF.dropChallenge(gActUser, getCurrentChallenge().getChallengeID());
     }
 
-    public void setAboardFlg() {
-        gAboardFlg = true;
-    }
-
-    public boolean isgAboardFlg() {
-        return gAboardFlg;
-    }
 }

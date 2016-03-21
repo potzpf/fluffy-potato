@@ -1,9 +1,7 @@
-package de.fhdw.mfws413a.fluffy_potato.DataLayer;
+package de.fhdw.mfws413a.fluffy_potato.Persisten;
 
 import android.app.Activity;
 import android.content.Context;
-import android.os.Bundle;
-import android.os.Environment;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.*;
@@ -11,7 +9,6 @@ import javax.xml.transform.stream.*;
 import javax.xml.transform.dom.*;
 
 
-import java.io.File;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;  
 import org.w3c.dom.Node;
@@ -19,8 +16,6 @@ import org.w3c.dom.Element;
 
 import java.io.InputStream;
 import java.util.ArrayList;
-
-import de.fhdw.mfws413a.fluffy_potato.R;
 
 public class DocumentHandler extends Activity {
 

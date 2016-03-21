@@ -44,6 +44,7 @@ public class Gui {
         decimalFormatSymbols.setGroupingSeparator(',');
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00", decimalFormatSymbols);
         mTvGoal.setText(mTvGoal.getText() + decimalFormat.format(pPercentage * 100)+"%");
+
     }
 
     public void setDone(int pDone) {
