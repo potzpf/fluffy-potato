@@ -163,7 +163,7 @@ public class ApplicationInterface {
 	public Calendar getDuration(String user, int class_no) {
 		Calendar c = users.get(user).durations.get(class_no);
 		if (c == null) {
-			getDuration("default", class_no);
+			return getDuration("default", class_no);
 		}
 		return c;
 	}
@@ -177,5 +177,6 @@ public class ApplicationInterface {
 
 	public void addUser(String name) {
 		di.addUser(name);
+		users = di.parseUsers();
 	}
 }
