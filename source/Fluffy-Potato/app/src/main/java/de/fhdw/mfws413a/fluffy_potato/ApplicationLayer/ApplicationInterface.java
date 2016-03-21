@@ -193,7 +193,7 @@ public class ApplicationInterface {
 
 	public int getDurationMin(String user, int class_no) {
 		Calendar c = getDuration(user, class_no);
-		return c.MINUTE + 60 *(c.HOUR + 24 * (c.DAY_OF_YEAR % 365));
+		return c.get(c.MINUTE) + 60 *(c.get(c.HOUR_OF_DAY) + 24 * (c.get(c.DAY_OF_YEAR) % 365));
 	}
 
 	public void setDurationMin(String user, int class_no, int set) {
@@ -207,7 +207,7 @@ public class ApplicationInterface {
 	public Calendar getDuration(String user, int class_no) {
 		Calendar c = users.get(user).durations.get(class_no);
 		if (c == null) {
-			c = users.get("default").durations.get(class_no);
+			getDuration("default", class_no);
 		}
 		return c;
 	}
