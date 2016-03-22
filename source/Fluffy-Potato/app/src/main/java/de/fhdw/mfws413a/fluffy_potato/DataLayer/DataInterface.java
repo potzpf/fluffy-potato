@@ -40,6 +40,7 @@ public class DataInterface extends Activity {
 		System.out.println();
 	}
 
+	//saves the Userdocument to a file;
 	public void saveUsers() {
 		try {
 			dh.putDocument("users_data", user);
@@ -47,7 +48,7 @@ public class DataInterface extends Activity {
 			e.printStackTrace();
 		}
 	}
-
+	// xml-data -> java data
 	public Hashtable<Integer, Challenge> parseChallenges() {
 		Hashtable<Integer, Challenge> challenges = new Hashtable<Integer, Challenge>();
 
@@ -72,6 +73,7 @@ public class DataInterface extends Activity {
 		return challenges;
 	}
 
+	// xml->data -> java-data
 	public Hashtable<String, ArrayList<Integer>> parseFolders() {
 		Hashtable<String, ArrayList<Integer>> ret = new Hashtable<String, ArrayList<Integer>>();
 
@@ -90,7 +92,7 @@ public class DataInterface extends Activity {
 		}
 		return ret;
 	}
-
+	// xml->data -> user-data
 	public Hashtable<String, User> parseUsers() {
 		Hashtable<String, User> ret = new Hashtable<String, User>();
 		ArrayList<Element> userElems = dh.getElementsByName(user, "user");
@@ -116,6 +118,8 @@ public class DataInterface extends Activity {
 		}
 		return ret;
 	}
+
+	//parses a string with given format to a calendar
 	public Calendar String2Calendar(String str, String format) {
 		Calendar c = Calendar.getInstance();
 		DateFormat df = new SimpleDateFormat(format);
@@ -127,11 +131,13 @@ public class DataInterface extends Activity {
 		return c;
 	}
 
+	//returns a string of a calendar with given format
 	public String duration2String(Calendar c, String format) {
 		DateFormat df = new SimpleDateFormat(format);
 		return df.format(c.getTime());
 	}
 
+	//synchronize document-data with given data
 	public void syncDuration(String username, int class_no, Calendar c) {
 		Element e = null;
 		boolean bfound = false;
@@ -164,6 +170,7 @@ public class DataInterface extends Activity {
 		}
 	}
 
+	//synchronize document data with given data
 	public void syncExpiration(String username, int cid, int class_no, Calendar c) {
 		Element e = null;
 		boolean bfound = false;
