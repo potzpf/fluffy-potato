@@ -25,10 +25,11 @@ public class DocumentHandler extends Activity {
 	public DocumentHandler(IOStreams ios) {
 		this.ios = ios;
 	}
+	/* reads a file to a dom-document */
    public Document getDocument(String fname) throws Exception {
 	   InputStream iS = null;
-	   File tagFile=new File(ios.root,fname+".xml");
-	   if(!tagFile.exists()) {
+	   File file=new File(ios.root,fname+".xml");
+	   if(!file.exists()) {
 		   if(fname.equals("users_data")){
 			   iS = ios.iUsers;
 		   } else if(fname.equals("index")) {
@@ -37,23 +38,25 @@ public class DocumentHandler extends Activity {
 			   iS = ios.iFolder;
 		   }
 	   } else {
-		   iS = new FileInputStream(tagFile);
+		   iS = new FileInputStream(file);
 	   }
 	   Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(iS);
 	   doc.getDocumentElement().normalize();
 	   return doc;
    }
-   
+
+	/* saves a dom-document */
    public void putDocument(String fname, Document doc) throws Exception {
-	   File tagFile=new File(ios.root,fname+".xml");
-	   if(!tagFile.exists()){
-		   tagFile.createNewFile();
+	   File file=new File(ios.root,fname+".xml");
+	   if(!file.exists()){
+		   file.createNewFile();
 	   }
 	   DOMSource source = new DOMSource(doc);
 	   Transformer trans = TransformerFactory.newInstance().newTransformer();
-	   trans.transform(source, new StreamResult(tagFile));
+	   trans.transform(source, new StreamResult(file));
    }
-   
+
+	/* get all elements of a documents with given name */
    public ArrayList<Element> getElementsByName(Document doc, String name) {
 	   ArrayList<Element> ret = new ArrayList<Element>();
 	   NodeList nList = doc.getElementsByTagName(name);
@@ -64,6 +67,8 @@ public class DocumentHandler extends Activity {
 	   }
 	   return ret;
    }
+
+	/* gets all children of a node with given name */
    public ArrayList<Element> getChildrenByName(Node no, String name) {
 	   ArrayList<Element> ret = new ArrayList<Element>();
 	   NodeList nList = no.getChildNodes();

@@ -26,6 +26,9 @@ public class ApplicationInterface {
 		here = c;
 	}
 
+	/*
+	* provides ressources to DataInterface & loads the Database
+	* */
 	public void init( ) {
 		try {
 			IOStreams ios = new IOStreams();
@@ -43,6 +46,11 @@ public class ApplicationInterface {
 
 		}
 	}
+	/*
+	 * returns a ArrayList containing the user nam
+	 * of all registered users. Technically listing
+	 * all keys of the user-Hashtable.
+	 */
 	public ArrayList<String> getUserNames() {
 		ArrayList<String> ret = new ArrayList<String>();
 		Enumeration<String> user = users.keys();
@@ -51,7 +59,9 @@ public class ApplicationInterface {
 		}
 		return ret;
 	}
-
+	/*
+	 * same technique as getUserNames(), but for files.
+	 */
 	public ArrayList<String> getFileNames() {
 		ArrayList<String> ret = new ArrayList<String>();
 		Enumeration<String> files = folder.keys();
@@ -72,6 +82,9 @@ public class ApplicationInterface {
 		return Integer.toString(ret.size());
 	}
 
+	/*
+	returns an arraylist with the number of challenges each classf for a specific user
+	 */
 	public ArrayList<String> getClassesQuestionCount( String pfile, String pUser) {
 		ArrayList<String> ret = new ArrayList<>();
 		ArrayList<Integer> lst = folder.get(pfile);
@@ -146,6 +159,9 @@ public class ApplicationInterface {
 		return ret;
 	}
 
+	/*
+	 * lists all challenges from a specific file due to a user
+	 */
 	public ArrayList<Challenge> getDueChallenges(String user, String file) {
 		ArrayList<Challenge> ret = new ArrayList<>();
 		ArrayList<Integer> lst = folder.get(file);
@@ -153,8 +169,6 @@ public class ApplicationInterface {
 			int cid = lst.get(i);
 			Calendar c = users.get(user).expiration.get(cid);
 			if (c == null) {
-				System.out.println("boo");
-				pushChallenge(user, cid);
 				ret.add(challenges.get(cid));
 			}
 			else if (c.before(Calendar.getInstance())) {
@@ -164,6 +178,9 @@ public class ApplicationInterface {
 		return ret;
 	}
 
+	/*
+	 * re-calculates the expiration date and increases the class counter
+	 */
 	public void pushChallenge(String user, int cid) {
 		Calendar c = Calendar.getInstance();
 		//System.out.println(users_data.get(user).progress.get);
@@ -181,6 +198,9 @@ public class ApplicationInterface {
 		di.syncExpiration(user, cid, class_id, c);
 	}
 
+	/*
+	 * re-sets the class-counter and push
+	 */
 	public void dropChallenge(String user, int cid) {
 		users.get(user).progress.remove(cid);
 		pushChallenge(user, cid);
@@ -190,6 +210,7 @@ public class ApplicationInterface {
 		Calendar c = getDuration(user, class_no);
 		return c.get(c.MINUTE) + 60 *(c.get(c.HOUR_OF_DAY) + 24 * (c.get(c.DAY_OF_YEAR) % 365));
 	}
+
 
 	public void setDurationMin(String user, int class_no, int set) {
 		int day = set % (60 * 24);
@@ -202,6 +223,9 @@ public class ApplicationInterface {
 		setDuration(user, class_no, c);
 	}
 
+	/*
+	 get duration for class/user, if empty return default value
+	 */
 	public Calendar getDuration(String user, int class_no) {
 		Calendar c = users.get(user).durations.get(class_no);
 		if (c == null) {

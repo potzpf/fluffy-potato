@@ -5,9 +5,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class IOStreams {
+    // res raw
     public InputStream iUsers;
     public InputStream iFolder;
     public InputStream iIndex;
 
-    public File root;
+    public File root; // local folder
 }
