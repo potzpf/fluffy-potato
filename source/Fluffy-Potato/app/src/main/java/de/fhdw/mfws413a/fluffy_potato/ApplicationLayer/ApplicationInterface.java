@@ -201,7 +201,9 @@ public class ApplicationInterface {
 		set -= day * (60 * 24);
 		int hour = set % 60;
 		set -= hour * 60;
-		getDuration(user, class_no).set(0, 0, day, hour, set);
+		Calendar c = Calendar.getInstance();
+		c.set(0, 0, day, hour, set);
+		//setDuration(user, class_no, c);
 	}
 
 	public Calendar getDuration(String user, int class_no) {
