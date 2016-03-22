@@ -38,6 +38,7 @@ public class Data {
 
             mGlobal.getAppIF().addUser(lUser);
             mGlobal.getAppIF().init();
+            mUserList = mGlobal.getUserNames();
 
         }
 

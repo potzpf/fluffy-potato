@@ -5,14 +5,14 @@ public class Solution {
     // Vars
 
     private String mText;
-    private boolean mcorrect;
+    private boolean mCorrect;
 
     // Constructor
 
-    public Solution(String text, boolean correct) {
+    public Solution(String pText, boolean pCorrect) {
 
-        this.mText = text;
-        this.mcorrect = correct;
+        mText = pText;
+        mCorrect = pCorrect;
 
     }
 
@@ -26,7 +26,7 @@ public class Solution {
 
     public boolean isCorrect() {
 
-        return mcorrect;
+        return mCorrect;
 
     }
 
