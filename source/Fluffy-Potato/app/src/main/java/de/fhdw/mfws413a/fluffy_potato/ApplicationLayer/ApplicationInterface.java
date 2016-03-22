@@ -199,7 +199,7 @@ public class ApplicationInterface {
 		//getDuration(user,class_no).set(0,0,day,hour,set);
 		Calendar c = Calendar.getInstance();
 		c.set(0, 0, day, hour, set);
-		//setDuration(user, class_no, c);
+		setDuration(user, class_no, c);
 	}
 
 	public Calendar getDuration(String user, int class_no) {
@@ -213,7 +213,7 @@ public class ApplicationInterface {
 	public void setDuration(String user, int class_no, Calendar set) {
 		if (set != null) {
 			users.get(user).durations.put(class_no, set);
-			di.syncDuration(user, class_no, set);
+			//di.syncDuration(user, class_no, set);
 		}
 	}
 
