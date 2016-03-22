@@ -4,17 +4,24 @@ import android.app.Activity;
 
 public class Data {
 
-  //vars
+    // vars
 
     private Activity mActivity;
 
-  //Methods
+    // Constructur
 
     public Data(Activity pActivity) {
+
         mActivity = pActivity;
+
     }
 
+    // methods (getter)
+
     public Activity getActivity() {
+
         return mActivity;
+
     }
+
 }

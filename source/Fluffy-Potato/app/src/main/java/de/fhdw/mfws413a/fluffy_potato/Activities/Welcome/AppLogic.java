@@ -4,12 +4,12 @@ import de.fhdw.mfws413a.fluffy_potato.Navigation.Navigation;
 
 public class AppLogic {
 
-    //vars
+    // vars
 
     private Data mData;
     private Gui mGui;
 
-    //Methods
+    // Constructor
 
     public AppLogic(Data pData, Gui pGui) {
 
@@ -18,8 +18,12 @@ public class AppLogic {
 
     }
 
+    // methods
+
     public void onButtonStartClick(){
-        //System.out.println("Button Start clicked");
+
         Navigation.startActivityUserSelection(mData.getActivity(),"");
+
     }
+
 }

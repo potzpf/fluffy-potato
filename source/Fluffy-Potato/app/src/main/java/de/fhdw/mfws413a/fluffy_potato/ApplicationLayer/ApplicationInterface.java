@@ -1,11 +1,6 @@
 package de.fhdw.mfws413a.fluffy_potato.ApplicationLayer;
 //import java.time.*;
 
-import android.app.Activity;
-import android.os.Environment;
-import android.util.Log;
-
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Enumeration;
@@ -201,10 +196,10 @@ public class ApplicationInterface {
 		set -= day * (60 * 24);
 		int hour = set % 60;
 		set -= hour * 60;
+		//getDuration(user,class_no).set(0,0,day,hour,set);
 		Calendar c = Calendar.getInstance();
-		c.set(0,0,day,hour,set);
-		setDuration(user,class_no,c);
-		//getDuration(user, class_no).set(0, 0, day, hour, set);
+		c.set(0, 0, day, hour, set);
+		//setDuration(user, class_no, c);
 	}
 
 	public Calendar getDuration(String user, int class_no) {
@@ -224,5 +219,6 @@ public class ApplicationInterface {
 
 	public void addUser(String name) {
 		di.addUser(name);
+		users = di.parseUsers();
 	}
 }

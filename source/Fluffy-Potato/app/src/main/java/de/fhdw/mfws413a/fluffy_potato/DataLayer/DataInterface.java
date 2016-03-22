@@ -1,7 +1,6 @@
 package de.fhdw.mfws413a.fluffy_potato.DataLayer;
 
 import android.app.Activity;
-import android.content.Context;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

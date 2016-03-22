@@ -6,18 +6,28 @@ import de.fhdw.mfws413a.fluffy_potato.R;
 
 public class Gui {
 
-    //Vars
+    // Vars
 
     private Button mBtnStart;
 
-    //methods
+    // Constructor
 
     public Gui(Activity pActivity) {
+
         pActivity.setContentView(R.layout.activity_main);
+
+        // set Gui element
+
         mBtnStart = (Button) pActivity.findViewById(R.id.main_btn_start);
+
     }
 
+    // methods (getter)
+
     public Button getBtnStart() {
+
         return mBtnStart;
+
     }
+
 }

@@ -1,4 +1,4 @@
-package de.fhdw.mfws413a.fluffy_potato.Data;
+package de.fhdw.mfws413a.fluffy_potato.DataLayer;
 
 
 import java.util.*;

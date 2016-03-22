@@ -1,9 +1,9 @@
 <users>
     <user name="default">
         <schedule>
-            <duration class="1" timespan="0.0.01"/>
-            <duration class="2" timespan="0.0.2"/>
-            <duration class="3" timespan="0.0.3"/>
+            <duration class="1" timespan="0.0.05"/>
+            <duration class="2" timespan="0.1.0"/>
+            <duration class="3" timespan="1.0.0"/>
             <duration class="4" timespan="7.0.0"/>
             <duration class="5" timespan="30.0.0"/>
             <duration class="6" timespan="180.0.0"/>
@@ -11,6 +11,12 @@
     </user>
 	<user name="Alf">
 		<schedule>
+			<duration class="1" timespan="0.0.01"/>
+			<duration class="2" timespan="0.0.02"/>
+			<duration class="3" timespan="0.0.03"/>
+			<duration class="4" timespan="7.0.0"/>
+			<duration class="5" timespan="30.0.0"/>
+			<duration class="6" timespan="180.0.0"/>
 		</schedule>
 	</user>
 	<user name="Felske">

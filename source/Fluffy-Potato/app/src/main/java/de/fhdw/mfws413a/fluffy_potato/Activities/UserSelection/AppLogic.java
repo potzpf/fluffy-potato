@@ -1,44 +1,47 @@
 package de.fhdw.mfws413a.fluffy_potato.Activities.UserSelection;
 
-import android.widget.Toast;
-
-import java.util.ArrayList;
-
 import de.fhdw.mfws413a.fluffy_potato.Navigation.Navigation;
 
 public class AppLogic {
 
-    //vars
+    // vars
 
     private Data mData;
     private Gui mGui;
 
-    //Methods
+    // Constructor
 
     public AppLogic(Data pData, Gui pGui) {
 
         mData = pData;
         mGui = pGui;
+
+        // fill Gui elements with Data
+
         mGui.SetUsers(mData.getUsers(),mData.getActivity());
 
     }
 
+    // Methods
+
     public void onButtonCreateNewUserClick(){
-        System.out.println("Button Create User clicked");
+
         Navigation.startActivityCreateUser(mData.getActivity());
 
     }
 
     public void onButtonGoToFileSelectionClick() {
+
         mData.setActUser(mGui.getSpSelectUser().getSelectedItem().toString());
-        Toast.makeText(mData.getActivity().getApplicationContext(),mData.getActUser(),Toast.LENGTH_SHORT).show();
-        System.out.println("Button Go To File Selection clicked" + mData.getActUser());
         Navigation.startActivityFileSelection(mData.getActivity());
+
     }
 
     public void onButtonEditUserClick() {
-        System.out.println("Button Edit User clicked");
+
         mData.setActUser(mGui.getSpSelectUser().getSelectedItem().toString());
         Navigation.startActivityUserEdit(mData.getActivity());
+
     }
+
 }
