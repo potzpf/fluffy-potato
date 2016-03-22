@@ -8,7 +8,7 @@ public class Event_listener implements View.OnClickListener{
 
     private AppLogic mLogic;
 
-    //Methods
+    // Construktor
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
 
@@ -17,10 +17,13 @@ public class Event_listener implements View.OnClickListener{
 
     }
 
+    // Methods
+
     @Override public void onClick(View v) {
 
         mLogic.onButtonAnswerThinkClick();
 
     }
+
 }
 

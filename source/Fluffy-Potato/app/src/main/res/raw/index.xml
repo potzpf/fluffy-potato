@@ -28,8 +28,7 @@
    <challenge cid="4" type="Xof3">
      <question> Welches Grundrecht ist in Artikel 1 des Grundgesetzes der Bundesrepublik Deutschland garantiert?
 </question>
-	<solution true="true"> die Unantastbarkeit der Menschenwürde
-  </solution>
+	<solution true="true"> die Unantastbarkeit der Menschenwürde</solution>
 	<solution > das Recht auf Leben</solution>
 	<solution > Religionsfreiheit</solution>
    </challenge>
@@ -129,7 +128,9 @@
    <challenge cid="18" type="Xof3">
      <question> Ist folgende Aussage korrekt? "In London ist der Besuch der staatlichen Museen kostenfrei!"
   </question>
-	<solution > ja </solution>
+	<solution true="true"> ja </solution>
+    <solution > nein </solution>
+       <solution > tangiert mich peripher </solution>
    </challenge>
 
   <challenge cid="19" type="think">
@@ -242,8 +243,8 @@
      <question> Wobei handelt es sich um dortmunder Bier?
   </question>
 	<solution true="true"> DBB </solution>
-	<solution > Hövels </solution>
-	<solution > Kronen </solution>
+	<solution true="true"> Hövels </solution>
+	<solution true="true"> Kronen </solution>
 </challenge>
 
 <challenge cid="36" type="Xof3">

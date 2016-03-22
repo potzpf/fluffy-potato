@@ -5,12 +5,12 @@ import de.fhdw.mfws413a.fluffy_potato.Navigation.Navigation;
 
 public class AppLogic {
 
-    //vars
+    // vars
 
     private Data mData;
     private Gui mGui;
 
-    //Methods
+    // Constructor
 
     public AppLogic(Data pData, Gui pGui) {
 
@@ -20,12 +20,20 @@ public class AppLogic {
 
     }
 
+    // methods
+
     public void onButtonNextChallengeClick(){
-        System.out.println("Button Challenge Next Wrong clicked");
+
+        // put challenge in lower progress class
+
         mData.dropChallenge();
+
+        // test if index is incable and incs it
+
         if ( mData.incCurrentChallengeIndex() ) {
 
             switch (mData.getCurrentChallenge().getTyp()) {
+
                 case Const.P_CHALLENGE_XOF3:
                     Navigation.startActivityChallenge1Of3(mData.getActivity());
                     break;
@@ -35,9 +43,15 @@ public class AppLogic {
                 case Const.P_CHALLENGE_THINK:
                     Navigation.startActivityChallengeThink(mData.getActivity());
                     break;
+
             }
+
         }else{
+
             Navigation.startActivityScore(mData.getActivity());
+
         }
+
     }
+
 }

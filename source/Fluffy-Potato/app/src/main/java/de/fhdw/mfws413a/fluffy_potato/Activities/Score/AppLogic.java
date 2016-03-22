@@ -4,17 +4,20 @@ import de.fhdw.mfws413a.fluffy_potato.Navigation.Navigation;
 
 public class AppLogic {
 
-    //vars
+    // vars
 
     private Data mData;
     private Gui mGui;
 
-    //Methods
+    // constructor
 
     public AppLogic(Data pData, Gui pGui) {
 
         mData = pData;
         mGui = pGui;
+
+        // fill gui elements with data
+
         mGui.setGoal(mData.getPercentage());
         mGui.setDone(mData.getDone());
         mGui.setRight(mData.getRight());
@@ -22,8 +25,16 @@ public class AppLogic {
 
     }
 
+    // methods
+
     public void onButtonStartClick(){
-        //System.out.println("Button Start clicked");
+
         Navigation.startActivityFileSelection(mData.getActivity());
+
+        // end this activity
+
+        mData.getActivity().finish();
+
     }
+
 }

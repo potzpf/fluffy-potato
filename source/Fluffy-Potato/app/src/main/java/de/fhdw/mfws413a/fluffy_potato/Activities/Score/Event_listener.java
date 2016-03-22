@@ -2,23 +2,28 @@ package de.fhdw.mfws413a.fluffy_potato.Activities.Score;
 
 import android.view.View;
 
-import de.fhdw.mfws413a.fluffy_potato.R;
-
 public class Event_listener implements View.OnClickListener{
 
-    //Vars
+    // Vars
 
     private AppLogic mLogic;
 
-    //Methods
+    // Constructor
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
+
         pGui.getBtnToFiles().setOnClickListener(this);
         mLogic = pLogic;
+
     }
 
+    // methods
+
     @Override public void onClick(View v) {
+
         mLogic.onButtonStartClick();
+
     }
+
 }
 

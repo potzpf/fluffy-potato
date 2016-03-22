@@ -4,23 +4,28 @@ import de.fhdw.mfws413a.fluffy_potato.Navigation.Navigation;
 
 public class AppLogic {
 
-    //vars
+    // Vars
 
     private Data mData;
     private Gui mGui;
 
-    //Methods
+    // Constructor
 
     public AppLogic(Data pData, Gui pGui) {
 
         mData = pData;
         mGui = pGui;
         mGui.setChallenge(mData.getCurrentChallenge());
+
     }
 
+    //Methods
+
     public void onButtonAnswerThinkClick(){
+
         System.out.println("Button Answer Think clicked");
         Navigation.startActivityResponseControl(mData.getActivity());
+
     }
 
 }

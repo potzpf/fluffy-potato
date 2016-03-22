@@ -4,18 +4,23 @@ import android.view.View;
 
 public class Event_listener implements View.OnClickListener{
 
-    //Vars
+    // Vars
 
     private AppLogic mLogic;
 
-    //Methods
+    // Methods
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
+
         mLogic = pLogic;
+
     }
 
     @Override public void onClick(View v) {
-        mLogic.onButtonBackClick(); //
+
+        // empty
+
     }
+
 }
 

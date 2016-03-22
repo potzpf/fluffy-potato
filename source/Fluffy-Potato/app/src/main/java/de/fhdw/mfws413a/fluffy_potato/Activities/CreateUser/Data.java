@@ -4,26 +4,39 @@ import android.app.Activity;
 
 public class Data {
 
-  //vars
+    // vars
 
     private Activity mActivity;
     private String mUser;
 
-  //Methods
+    // Constructor
 
     public Data(Activity pActivity ) {
+
         mActivity = pActivity;
+
     }
 
+    // Methods (getter)
+
     public Activity getActivity() {
+
         return mActivity;
+
     }
 
     public String getUser() {
+
         return mUser;
+
     }
 
+    // save new username for next Activity
+
     public void setUser(String pUser) {
+
         mUser = pUser;
+
     }
+
 }

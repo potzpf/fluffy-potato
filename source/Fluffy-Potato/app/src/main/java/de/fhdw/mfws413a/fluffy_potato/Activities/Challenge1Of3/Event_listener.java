@@ -1,16 +1,15 @@
 package de.fhdw.mfws413a.fluffy_potato.Activities.Challenge1Of3;
 
 import android.view.View;
-
 import de.fhdw.mfws413a.fluffy_potato.R;
 
 public class Event_listener implements View.OnClickListener{
 
-    //Vars
+    // Vars
 
     private AppLogic mLogic;
 
-    //Methods
+    // Constructor
 
     public Event_listener(AppLogic pLogic, Gui pGui) {
 
@@ -19,13 +18,17 @@ public class Event_listener implements View.OnClickListener{
 
     }
 
+    // Methods
+
     @Override public void onClick(View v) {
 
-
         switch(v.getId()){
+
             case R.id.challa_btn_next: mLogic.onButtonNextClick();
                 break;
+
         }
+
     }
 }
 

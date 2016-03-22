@@ -4,12 +4,12 @@ import de.fhdw.mfws413a.fluffy_potato.Navigation.Navigation;
 
 public class AppLogic {
 
-    //vars
+    // vars
 
     private Data mData;
     private Gui mGui;
 
-    //Methods
+    // Constructor
 
     public AppLogic(Data pData, Gui pGui) {
 
@@ -18,10 +18,13 @@ public class AppLogic {
 
     }
 
+    // Methods
+
     public void onButtonCreateUserClick(){
+
         mData.setUser(mGui.getEdUsername().getText().toString());
-        System.out.println("Button Create New User clicked");
         Navigation.startActivityUserSelection(mData.getActivity(),mData.getUser());
+
     }
 
 }

@@ -28,7 +28,8 @@ public class Data {
         if (lUser.equals("")){
           //nix
         }else{
-            mUserList.add(lUser);
+            mGlobal.getAppIF().addUser(lUser);
+            mGlobal.getAppIF().init();
         }
     }
 

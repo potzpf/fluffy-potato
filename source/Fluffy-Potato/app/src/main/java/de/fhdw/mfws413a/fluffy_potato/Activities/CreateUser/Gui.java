@@ -3,17 +3,16 @@ package de.fhdw.mfws413a.fluffy_potato.Activities.CreateUser;
 import android.app.Activity;
 import android.widget.Button;
 import android.widget.EditText;
-
 import de.fhdw.mfws413a.fluffy_potato.R;
 
 public class Gui {
 
-    //Vars
+    // Vars
 
     private Button mBtnCreateUser;
     private EditText mEdUsername;
 
-    //methods
+    // Constructor
 
     public Gui(Activity pActivity) {
 
@@ -23,11 +22,18 @@ public class Gui {
 
     }
 
+    // Methods ( getter )
+
     public Button getBtnCreateUser() {
+
         return mBtnCreateUser;
+
     }
 
     public EditText getEdUsername() {
+
         return mEdUsername;
+
     }
+
 }

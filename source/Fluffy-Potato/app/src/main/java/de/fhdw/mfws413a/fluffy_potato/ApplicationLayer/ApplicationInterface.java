@@ -118,27 +118,27 @@ public class ApplicationInterface {
 		for(int i = 0; i < lst.size(); i++) {
 			int cid = lst.get(i);
 			Calendar c = users.get(pUser).expiration.get(cid);
-			if (c != null) {
+			if (c == null) {
 				try {
-					switch (users.get(pUser).progress.get(cid)) {
-						case 1:k1++;
-							break;
-						case 2:k2++;
-							break;
-						case 3:k3++;
-							break;
-						case 4:k4++;
-							break;
-						case 5:k5++;
-							break;
-						case 6:k6++;
-							break;
-					}
+					k1 = Integer.parseInt(getFilesQuestionCount(pfile));
 				} catch (Exception j) {
 					k1 = Integer.parseInt(getFilesQuestionCount(pfile));
 				}
-			}else{
-				k1 = Integer.parseInt(getFilesQuestionCount(pfile));
+			}else if (c.before(Calendar.getInstance())) {
+				switch (users.get(pUser).progress.get(cid)) {
+					case 1:k1++;
+						break;
+					case 2:k2++;
+						break;
+					case 3:k3++;
+						break;
+					case 4:k4++;
+						break;
+					case 5:k5++;
+						break;
+					case 6:k6++;
+						break;
+				}
 			}
 
 		}
@@ -178,9 +178,9 @@ public class ApplicationInterface {
 		}
 		class_id++;
 		Calendar d = getDuration(user,class_id);
-		c.add(Calendar.DAY_OF_YEAR, d.get(Calendar.DAY_OF_YEAR));
-		c.add(Calendar.HOUR_OF_DAY, d.get(Calendar.HOUR_OF_DAY));
-		c.add(Calendar.MINUTE, d.get(Calendar.MINUTE));
+		c.add(Calendar.DAY_OF_YEAR, d.get(d.DAY_OF_YEAR)%365);
+		c.add(Calendar.HOUR_OF_DAY, d.get(d.HOUR_OF_DAY));
+		c.add(Calendar.MINUTE, d.get(d.MINUTE));
 		users.get(user).progress.put(cid, class_id);
 		users.get(user).expiration.put(cid, c);
 		di.syncExpiration(user, cid, class_id, c);
@@ -201,13 +201,16 @@ public class ApplicationInterface {
 		set -= day * (60 * 24);
 		int hour = set % 60;
 		set -= hour * 60;
-		getDuration(user, class_no).set(0, 0, day, hour, set);
+		Calendar c = Calendar.getInstance();
+		c.set(0,0,day,hour,set);
+		setDuration(user,class_no,c);
+		//getDuration(user, class_no).set(0, 0, day, hour, set);
 	}
 
 	public Calendar getDuration(String user, int class_no) {
 		Calendar c = users.get(user).durations.get(class_no);
 		if (c == null) {
-			getDuration("default", class_no);
+			return getDuration("default", class_no);
 		}
 		return c;
 	}
